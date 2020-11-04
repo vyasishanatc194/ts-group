@@ -1,0 +1,113 @@
+.menu-icon {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23fff' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-menu white-color'%3E%3Cline x1='3' y1='12' x2='21' y2='12'%3E%3C/line%3E%3Cline x1='3' y1='6' x2='21' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='18' x2='21' y2='18'%3E%3C/line%3E%3C/svg%3E");
+}
+
+.menu-icon-hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23131727' stroke='%23131727' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-menu white-color'%3E%3Cline x1='3' y1='12' x2='21' y2='12'%3E%3C/line%3E%3Cline x1='3' y1='6' x2='21' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='18' x2='21' y2='18'%3E%3C/line%3E%3C/svg%3E");
+}
+
+@mixin menu-icon {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23fff' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-menu white-color'%3E%3Cline x1='3' y1='12' x2='21' y2='12'%3E%3C/line%3E%3Cline x1='3' y1='6' x2='21' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='18' x2='21' y2='18'%3E%3C/line%3E%3C/svg%3E");
+}
+
+@mixin menu-black-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='%23131727' stroke='%23131727' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-menu white-color'%3E%3Cline x1='3' y1='12' x2='21' y2='12'%3E%3C/line%3E%3Cline x1='3' y1='6' x2='21' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='18' x2='21' y2='18'%3E%3C/line%3E%3C/svg%3E");
+}
+
+/* BG ICON */
+.bg-custom-icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.search-icon {
+  width: 21px;
+  height: 21px;
+  background-image: url("../images/icons/custom/search-icon.png");
+}
+
+.left-arrow-round {
+  width: 35px;
+  height: 35px;
+  background-image: url("../images/icons/custom/left-arrow.png");
+}
+
+.right-arrow-round {
+  width: 35px;
+  height: 35px;
+  background-image: url("../images/icons/custom/right-arrow.png");
+}
+
+.stopwatch-icon {
+  width: 17px;
+  height: 17px;
+  background-image: url("../images/icons/custom/stopwatch-icon.png");
+}
+
+.price-tag-icon {
+  width: 15px;
+  height: 15px;
+  background-image: url("../images/icons/custom/price-tag-icons.png");
+}
+
+.category-icon {
+  width: 13px;
+  height: 13px;
+  background-image: url("../images/icons/custom/category-icon.png");
+}
+
+.active,
+.show {
+  .stopwatch-icon {
+    background-image: url("../images/icons/custom/stopwatch-icon-active.png");
+  }
+
+  .price-tag-icon {
+    background-image: url("../images/icons/custom/price-tag-icons-active.png");
+  }
+
+  .category-icon {
+    background-image: url("../images/icons/custom/category-icon-active.png");
+  }
+}
+
+.credit-icon {
+  width: 18px;
+  height: 25px;
+  background-image: url("../images/icons/custom/credit-icon.png");
+}
+
+.credit-icon-active {
+  width: 18px;
+  height: 25px;
+  background-image: url("../images/icons/custom/credit-icon-active.png");
+}
+
+.calendar-icon {
+  width: 19px;
+  height: 19px;
+  background-image: url("../images/icons/custom/calendar-icon.png");
+}
+
+.spot-alert-icon {
+  width: 14px;
+  height: 21px;
+  background-image: url("../images/icons/custom/spot-alert-icon.png");
+}
+
+.arrow-right-side-icon {
+  width: 30px;
+  height: 25px;
+  background-image: url("../images/icons/custom/arrow-right-side-icon.png");
+}
