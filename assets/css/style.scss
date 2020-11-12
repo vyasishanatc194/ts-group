@@ -114,6 +114,29 @@
   }
 }
 
+.btn.btn-white {
+  padding: 6px 15px;
+  background: #fff;
+  border: 1px solid #ececf2;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1c1d21;
+  text-align: center;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.8s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #ececf2;
+    border: 1px solid #ececf2;
+  }
+}
+
 /* End of Button */
 
 /* select2 */
@@ -429,31 +452,29 @@
 
 /* main right content area */
 .middle-area-dashboard {
-  padding: 0 0 0 305px;
+  padding: 0 0 0 245px;
   margin: 0;
   position: relative;
   transition: all 0.8s;
 
-  &.dashboard-expand {
-    padding: 0 0 0 70px;
-  }
-
   .main-middle-area {
-    padding: 0 0 0 45px;
+    padding: 0 0 0 0;
     margin: 0;
     position: relative;
     min-height: 100vh;
-    width: calc(100% - 120px);
+    width: 100%;
     transition: all 0.8s;
   }
 }
 
 .header-dashboard {
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 0 0;
 
   .navbar {
     padding: 0;
+    background: #fff;
+    border-bottom: 1px solid #e8ecef;
 
     .nav-dashboard {
       display: flex;
@@ -482,23 +503,19 @@
   flex-wrap: wrap;
 
   .heading-div {
-    padding: 15px 0;
+    padding: 15px 0 15px 30px;
     margin: 0;
     position: relative;
     width: 100%;
 
     h1 {
-      font-weight: 500;
+      font-weight: 400;
       font-size: 20px;
-      color: rgba(1, 28, 48, 0.6);
       letter-spacing: 0;
-      line-height: 30px;
+      color: #252631;
 
       b {
-        color: #071c2e;
         font-weight: 700;
-        font-size: 24px;
-        line-height: 30px;
       }
     }
 
@@ -520,15 +537,19 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 50%;
-  // colors
-  $text-black: #282d30;
-  $text-grey: #727272;
-  $blue-color: #297cbd;
-  $sub-color1: #f8f9fa;
-  $sub-color2: #424242;
-  $sub-color3: #222221;
+ 
   // End of colors
   .dropdown-menu {
+    background: #fff;
+    box-shadow: 0 6px 20px 0 rgba(153,155,168,0.10);
+    border-radius: 8px;
+    right: 0;
+    margin-top: -5px;
+    left: auto !important;
+    min-width: 182px;
+    border: 0 solid #f1f1f1;
+    padding: 0;
+
     &::before {
       content: "";
       border-top: 10px solid transparent;
@@ -541,38 +562,32 @@
       right: 17px;
     }
 
-    background: #fff;
-    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.09);
-    border-radius: 6px 6px;
-    right: 0;
-    margin-top: 0;
-    left: auto !important;
-    min-width: 180px;
-    border: 0 solid #f1f1f1;
-
     a.dropdown-item {
       font-weight: 400;
       padding: 0 20px;
-      font-size: 16px;
-      color: #071c2e;
       letter-spacing: 0;
-      line-height: 40px;
+      min-height: 52px;
       display: flex;
       align-items: center;
+      justify-content: center;
       flex-wrap: wrap;
+      font-size: 14px;
+      color: #9b9b9b;
+      line-height: 24px;
+      font-family: 'Lato', sans-serif;
 
       &:hover,
       &:focus,
       &:active {
-        color: #071c2e;
+        color: #ff586d;
         text-decoration: none;
-        background-color: #f8f9fa;
+        background-color: #fff;
       }
 
       &.active {
-        color: #16181b;
+        color: #ff586d;
         text-decoration: none;
-        background-color: #f8f9fa;
+        background-color: #fff;
       }
 
       .common-icon {
@@ -590,11 +605,32 @@
         a {
           text-align: left;
           display: block;
+          border-bottom: 1px solid #f6f6f6;
+        }
+
+        &:first-child {
+          a {
+            border-radius: 8px 8px 0 0;
+          }
+        }
+
+        &:last-child {
+          a {
+            border-radius: 0 0 8px 8px;
+            border-bottom: 0 solid #f6f6f6;
+          }
         }
 
         &.logout-li {
           a {
-            padding: 5px 20px;
+            color: #ff586d;
+
+            .fe {
+              margin: 0 10px 0 0;
+              color: #ff6376;
+              display: inline-block;
+              font-size: 18px;
+            }
           }
         }
       }
@@ -621,10 +657,10 @@
         align-items: center;
         box-shadow: none;
         outline: none;
-        min-height: 70px;
+        min-height: 64px;
 
         &::after {
-          border-top: 5px solid #808a93;
+          border-top: 7px solid #9b9b9b;
           border-right: 5px solid transparent;
           border-left: 5px solid transparent;
           position: absolute;
@@ -641,7 +677,8 @@
           padding: 0 0 0 0;
           display: flex;
           align-items: center;
-          justify-content: flex-end;
+          justify-content: flex-start;
+          min-width: 80px;
 
           .user-info {
             padding: 0 30px 0 10px;
@@ -803,8 +840,9 @@
   position: relative;
 
   .main-div {
-    padding: 0;
+    padding: 20px 5px;
     margin: 0;
+    min-height: calc(100vh - 127px);
   }
 }
 
@@ -1695,6 +1733,32 @@
   }
 }
 
+.footer {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  .footer-div {
+    padding: 0 5px;
+    margin: 0;
+    background: #fcfdfd;
+    min-height: 62px;
+    display: flex;
+    align-items: center;
+
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+      color: #98a9bc;
+      text-align: left;
+
+      .link {
+        color: inherit;
+      }
+    }
+  }
+}
+
 @media (min-width: 1025px) {
   /* main right content area */
   .middle-area-dashboard {
@@ -1714,16 +1778,10 @@
   .nav-dashboard-right {
     max-width: 60%;
   }
-
-  body {
-    zoom: 88%;
-  }
 }
 
 @media (min-width: 1025px) and (max-width: 1150px) {
-  body {
-    zoom: 80%;
-  }
+ 
 }
 
 @media (max-width: 767px) {
@@ -1768,13 +1826,64 @@
     .nav-dashboard-right {
       max-width: 100%;
       width: 100%;
+      order: 1;
+
+      .user-drop-down {
+        margin-left: 0;
+        max-width: 100%;
+        width: 80px;
+        position: fixed;
+        top: 0;
+        right: 50px;
+        z-index: 9999;
+        animation-duration: 0.3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        
+        .dropdown-custom-top {
+          .btn.dropdown-toggle {
+            padding-right: 5px;
+            padding-left: 5px;
+
+            &::after {
+              right: 10px;
+            }
+
+            .user-profile {
+              min-width: 60px;
+            }
+          }
+        }
+      }
+
+      @keyframes fadeInRight {
+        0% {
+           opacity: 1;
+           transform: scale(1);
+        }
+        100% {
+           opacity: 0;
+           transform: scale(0);
+        }
+      }
+
+      &.active {
+        .user-drop-down {
+          opacity: 0;
+          animation-name: fadeInRight;
+        }
+      }
     }
   }
 
   .nav-dashboard-left {
     max-width: 100%;
+    width: 100%;
+    order: 2;
 
     .heading-div {
+      padding: 15px 0 15px 0px;
+
       h1 {
         font-size: 18px;
         line-height: 30px;
@@ -1963,82 +2072,6 @@
     }
   }
 
-  /* progressbar */
-  .progress-group-fixed-root {
-    z-index: 9999;
-
-    .progress-group-box {
-      top: 85px;
-    }
-
-    .btn-progress-bar {
-      background-image: none;
-      padding: 8px 5px;
-      min-height: 36px;
-      font-size: 14px;
-      background-color: #42b4e7;
-      border-radius: 15px 0 0 15px;
-
-      .text-span {
-        display: none;
-      }
-    }
-
-    .progress-group-inner {
-      &:before {
-        opacity: 0;
-      }
-    }
-
-    &.active {
-      .progress-group-box {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-      }
-
-      .btn-progress-bar {
-        span.round-span {
-          height: 30px;
-          width: 30px;
-          color: #000;
-          background-color: transparent;
-
-          .arrow {
-            &:before {
-              content: "\ea02";
-            }
-          }
-        }
-      }
-
-      .progress-group-inner {
-        padding: 75px 15px 25px 15px;
-        max-width: 100%;
-        overflow-y: auto;
-      }
-    }
-  }
-
-  /* End of progressbar */
-
-  /* color picker */
-  .color-picker-group-root {
-    .color-picker-group-row {
-      .status-color-grid {
-        width: 100%;
-        padding: 0;
-        margin: 0 0 10px 0;
-      }
-
-      .color-box-group {
-        width: 100%;
-        padding: 0 0 0 0;
-      }
-    }
-  }
-
-  /* End of color picker */
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -2079,12 +2112,66 @@
         width: calc(100% + 30px);
       }
     }
+
+    .nav-dashboard-right {
+      max-width: 100%;
+      width: 100%;
+      order: 1;
+
+      .user-drop-down {
+        margin-left: 0;
+        max-width: 100%;
+        width: 80px;
+        position: fixed;
+        top: 0;
+        right: 50px;
+        z-index: 9999;
+        animation-duration: 0.3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        
+        .dropdown-custom-top {
+          .btn.dropdown-toggle {
+            padding-right: 5px;
+            padding-left: 5px;
+
+            &::after {
+              right: 10px;
+            }
+
+            .user-profile {
+              min-width: 60px;
+            }
+          }
+        }
+      }
+
+      @keyframes fadeInRight {
+        0% {
+           opacity: 1;
+           transform: scale(1);
+        }
+        100% {
+           opacity: 0;
+           transform: scale(0);
+        }
+      }
+
+      &.active {
+        .user-drop-down {
+          opacity: 0;
+          animation-name: fadeInRight;
+        }
+      }
+    }
   }
 
   .nav-dashboard-left {
     max-width: 100%;
 
     .heading-div {
+      padding: 15px 0 15px 0px;
+      
       h1 {
         font-size: 18px;
         line-height: 30px;
@@ -2092,33 +2179,6 @@
         b {
           font-size: 20px;
           line-height: 30px;
-        }
-      }
-    }
-  }
-
-  .timeline-div {
-    .timeline-list {
-      li {
-        font-size: 16px;
-        line-height: 26px;
-        padding: 0 0 20px 0;
-
-        &::before {
-          width: 2px;
-          left: 13px;
-        }
-
-        .timeline-number {
-          border: 2px solid #42b4e7;
-          font-size: 14px;
-          width: 26px;
-          height: 26px;
-        }
-
-        .timeline-text {
-          width: calc(100% - 26px);
-          padding: 0 0 0 15px;
         }
       }
     }
