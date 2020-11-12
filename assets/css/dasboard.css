@@ -184,8 +184,8 @@
   position: relative;
   background: #fff;
   border-radius: 12px;
-  -webkit-box-shadow: 0 0 4px 0 #E5E5E5;
-          box-shadow: 0 0 4px 0 #E5E5E5;
+  -webkit-box-shadow: 0 0 4px 0 #e5e5e5;
+          box-shadow: 0 0 4px 0 #e5e5e5;
 }
 
 .table-white-card-section .white-card .white-card-inner {
@@ -304,6 +304,158 @@
   background-color: #fbfbfd;
 }
 
+.table-white-card-section .statistics-card {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 0 4px 0 #e5e5e5;
+          box-shadow: 0 0 4px 0 #e5e5e5;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-header {
+  padding: 25px 15px 20px 15px;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-header h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #252631;
+  letter-spacing: 0.2px;
+  margin: 0 0 0 0;
+  display: block;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body {
+  padding: 0 0 20px 0;
+  margin: 0;
+  position: relative;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body .statistics-number-view-box {
+  padding: 10px 15px 15px 15px;
+  margin: 0 0 10px 0;
+  position: relative;
+  font-family: "Lato", sans-serif;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body .statistics-number-view-box h4 {
+  font-size: 26px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #1c1d21;
+  letter-spacing: 0.2px;
+  display: block;
+  width: 100%;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body .statistics-number-view-box p {
+  font-size: 14px;
+  color: #8181a5;
+  line-height: 1.4;
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body .statistics-graph-div {
+  padding: 0;
+  position: relative;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body .statistics-graph-div .img-graph {
+  width: 100%;
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 767px) {
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header {
+    padding: 12px 12px;
+  }
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-left {
+    width: calc(100% - 65px);
+    padding-right: 5px;
+  }
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-left h3 {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-right {
+    width: 65px;
+  }
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-right .btn.btn-white {
+    min-width: 65px;
+    font-size: 12px;
+    padding: 6px 8px;
+    min-height: 34px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header {
+    padding: 15px 15px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-left {
+    width: calc(100% - 65px);
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-left h3 {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-right {
+    width: 65px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-right .btn.btn-white {
+    min-width: 65px;
+    font-size: 12px;
+    padding: 6px 8px;
+    min-height: 34px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table thead th {
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table thead th:first-child {
+    padding-left: 12px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table thead th:last-child {
+    padding-right: 12px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table td {
+    font-size: 10px;
+    padding: 12px 10px;
+    line-height: 16px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table td:first-child {
+    padding-left: 12px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table td:last-child {
+    padding-right: 12px;
+  }
+  .table-white-card-section .statistics-card .statistics-card-inner .statistics-card-header h3 {
+    font-size: 16px;
+  }
+  .table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body .statistics-number-view-box h4 {
+    font-size: 22px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header {
     padding: 12px 12px;
@@ -325,9 +477,18 @@
     padding: 6px 8px;
     min-height: 34px;
   }
+  .table-white-card-section .white-card .white-card-inner .white-card-header {
+    padding: 15px 15px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-left {
+    width: calc(100% - 65px);
+  }
   .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-left h3 {
     font-size: 16px;
     letter-spacing: 0;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-right {
+    width: 65px;
   }
   .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-right .btn.btn-white {
     min-width: 65px;
@@ -339,10 +500,28 @@
     padding: 12px 10px;
     font-size: 12px;
   }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table thead th:first-child {
+    padding-left: 15px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table thead th:last-child {
+    padding-right: 15px;
+  }
   .table-white-card-section .white-card .white-card-inner .white-card-body .table td {
     font-size: 12px;
     padding: 12px 10px;
     line-height: 18px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table td:first-child {
+    padding-left: 15px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table td:last-child {
+    padding-right: 15px;
+  }
+  .table-white-card-section .statistics-card .statistics-card-inner .statistics-card-header h3 {
+    font-size: 16px;
+  }
+  .table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body .statistics-number-view-box h4 {
+    font-size: 22px;
   }
 }
 /*# sourceMappingURL=dasboard.css.map */

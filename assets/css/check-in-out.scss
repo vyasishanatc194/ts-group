@@ -1,0 +1,362 @@
+.check-top-row {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+  .check-top-right {
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+}
+
+.check-in-out-card-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.check-in-out-card {
+  padding: 0;
+  margin: 0 0 16px 0;
+
+  .check-in-out-card-row {
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    .check-io-top {
+      padding: 10px 10px;
+      margin: 0;
+      position: relative;
+      background: #fff;
+      border-radius: 4px;
+
+      .check-io-top-row {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        min-height: 108px;
+
+        .col-width {
+          padding: 10px;
+        }
+
+        .width-25 {
+          width: 25%;
+        }
+
+        .width-15 {
+          width: 15%;
+        }
+
+        .width-10 {
+          width: 10%;
+        }
+
+        .img-text-col {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          padding-left: 20px;
+
+          .img-thumb {
+            width: 40px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+
+            .img-responsive {
+              height: 40px;
+              width: 40px;
+              border-radius: 100px;
+            }
+          }
+
+          .text-div {
+            padding: 0 0 0 15px;
+            margin: 0;
+            width: calc(100% - 40px);
+
+            h3 {
+              font-weight: 400;
+              font-size: 18px;
+              color: #000;
+              line-height: 1.4;
+              margin: 0 0 0 0;
+              display: block;
+
+              a {
+                color: inherit;
+              }
+            }
+          }
+        }
+
+        .btn-col {
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        .btn-div {
+          .btn.btn-common-primary {
+            min-width: 120px;
+            width: 100%;
+
+            &.btn-next {
+              max-width: 130px;
+            }
+          }
+        }
+
+        .center-text {
+          text-align: center;
+
+          h4,
+          p {
+            text-align: center;
+            justify-content: center;
+          }
+        }
+
+        h4 {
+          font-weight: 400;
+          font-size: 14px;
+          color: #98a9bc;
+          line-height: 1.5;
+          margin: 0 0 10px 0;
+          min-height: 40px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+
+          span.text {
+            width: 100%;
+            word-break: break-word;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+          }
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 14px;
+          color: #98a9bc;
+          line-height: 1.5;
+          margin: 0;
+          min-height: 40px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+
+          span.text {
+            word-break: break-word;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
+
+.check-in-out-details-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  .check-in-out-card.mm-20 {
+    margin: -20px -20px 16px -20px;
+  }
+}
+
+.normal-check-io-card {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  .io-box-text {
+    padding: 15px 10px 15px 10px;
+    margin: 0 0 5px 0;
+    position: relative;
+    
+    h4 {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #252631;
+      display: block;
+      margin: 0 0 10px 0;
+      min-height: 24px;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.4;
+      color: #98a9bc;
+      display: block;
+      padding: 0 0 0 15px;
+      margin: 0 0 0 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .check-top-row {
+    .check-top-right {
+      width: 100%;
+    }
+  }
+
+  .check-in-out-card {
+    .check-in-out-card-row {
+      .check-io-top {
+        .check-io-top-row {
+          .img-text-col {
+            padding-left: 10px;
+
+            .text-div {
+              h3 {
+                font-size: 16px;
+              }
+            }
+          }
+
+          .width-25 {
+            width: 100%;
+          }
+
+          .width-10 {
+            width: 50%;
+          }
+
+          .width-15 {
+            width: 50%;
+          }
+
+          h4 {
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 0 0 5px 0;
+            min-height: auto;
+          }
+
+          p {
+            font-size: 12px;
+            line-height: 1.4;
+            min-height: auto;
+          }
+
+          .center-text {
+            h4,
+            p {
+              text-align: left;
+              justify-content: flex-start;
+            }
+          }
+
+          .btn-col {
+            width: 50%;
+          }
+
+          .btn-div {
+            width: 100%;
+
+            .btn.btn-common-primary.btn-next {
+              max-width: 100%;
+              width: 100%;
+              min-width: 100%;
+              padding: 5px 20px 4px 20px;
+              min-height: 40px;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .check-in-out-card {
+    .check-in-out-card-row {
+      .check-io-top {
+        .check-io-top-row {
+          .img-text-col {
+            padding-left: 10px;
+
+            .text-div {
+              h3 {
+                font-size: 16px;
+              }
+            }
+          }
+
+          .width-25 {
+            width: 100%;
+          }
+
+          .width-10 {
+            width: 50%;
+          }
+
+          .width-15 {
+            width: 50%;
+          }
+
+          h4 {
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 0 0 5px 0;
+            min-height: auto;
+          }
+
+          p {
+            font-size: 12px;
+            line-height: 1.4;
+            min-height: auto;
+          }
+
+          .center-text {
+            h4,
+            p {
+              text-align: left;
+              justify-content: flex-start;
+            }
+          }
+
+          .btn-col {
+            width: 50%;
+          }
+
+          .btn-div {
+            width: 100%;
+
+            .btn.btn-common-primary.btn-next {
+              max-width: 100%;
+              width: 100%;
+              min-width: 100%;
+              padding: 5px 20px 4px 20px;
+              min-height: 40px;
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,171 @@
+.setting-card-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  .tabs-root-custom {
+    padding: 10px;
+    margin: 0;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .tabs-header {
+      padding: 0;
+      margin: 0;
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: 295px;
+
+      .nav-tabs {
+        border: none;
+        width: 100%;
+
+        .nav-item {
+          width: 100%;
+
+          .nav-link {
+            border-radius: 0;
+            background-color: #fbfcfc;
+            color: #4d7cfe;
+            border: none;
+            border-right: 2px solid transparent;
+            padding: 15px 20px;
+
+            .tabs-left-link {
+              display: flex;
+              align-items: flex-start;
+              flex-wrap: wrap;
+              padding: 0;
+              margin: 0;
+              position: relative;
+
+              .icon-div {
+                width: 40px;
+
+                .las {
+                  font-size: 20px;
+                  padding: 2px 0 2px 0;
+                }
+              }
+
+              .text-div {
+                width: calc(100% - 40px);
+
+                h3 {
+                  font-size: 16px;
+                  line-height: 1.4;
+                  font-weight: 400;
+                  margin: 0 0 1px 0;
+                }
+
+                p {
+                  font-weight: 400;
+                  font-size: 12px;
+                  color: #98a9bc;
+                  line-height: 1.5;
+                  display: block;
+                }
+              }
+            }
+
+            &.active {
+              background-color: #fbfcfc;
+              color: #4d7cfe;
+              border: none;
+              border-right: 2px solid #4d7cfe;
+            }
+          }
+        }
+      }
+    }
+
+    .tabs-body {
+      padding: 0;
+      margin: 0;
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      width: calc(100% - 295px);
+
+      .tab-content {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        background: #fff;
+        border-radius: 4px;
+        width: 100%;
+        min-height: 400px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .setting-card-section {
+    .tabs-root-custom {
+      padding: 0;
+
+      .tabs-header {
+        width: 100%;
+
+        .nav-tabs {
+          .nav-item {
+            .nav-link {
+              .tabs-left-link {
+                .icon-div {
+                  width: 30px;
+                }
+
+                .text-div {
+                  width: calc(100% - 30px);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .tabs-body {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .setting-card-section {
+    .tabs-root-custom {
+      padding: 0;
+
+      .tabs-header {
+        width: 260px;
+
+        .nav-tabs {
+          .nav-item {
+            .nav-link {
+              .tabs-left-link {
+                .icon-div {
+                  width: 30px;
+                }
+
+                .text-div {
+                  width: calc(100% - 30px);
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .tabs-body {
+        width: calc(100% - 260px);
+      }
+    }
+  }
+}

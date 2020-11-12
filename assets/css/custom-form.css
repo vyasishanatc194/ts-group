@@ -1,0 +1,220 @@
+.card-white-form .card-white-form-header {
+  padding: 25px 30px 15px 30px;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+.card-white-form .card-white-form-header .card-white-form-header-row h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: #252631;
+  margin: 0 0 0 0;
+  display: block;
+}
+
+.card-white-form .card-white-form-body {
+  padding: 15px 30px;
+  margin: 0 0 0 0;
+  position: relative;
+}
+
+.form-custom-div {
+  padding: 0 0;
+  margin: 0;
+  position: relative;
+  /* checkbox */
+  /* End of checkbox */
+}
+
+.form-custom-div .form-group-custom {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.form-custom-div .form-group-custom label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #252631;
+  line-height: 1.4;
+  margin: 0 0 10px 0;
+}
+
+.form-custom-div .form-group-custom .form-control {
+  font-size: 14px;
+  color: #98a9bc;
+  border: 1px solid #e8ecef;
+  border-radius: 4px;
+  min-height: 52px;
+  padding: 8px 15px 8px 15px;
+  line-height: 24px;
+  margin: 0 0 5px 0;
+  font-weight: 500;
+}
+
+.form-custom-div .form-group-custom .form-control::-webkit-input-placeholder {
+  color: #98a9bc;
+}
+
+.form-custom-div .form-group-custom .form-control::-moz-placeholder {
+  color: #98a9bc;
+}
+
+.form-custom-div .form-group-custom .form-control:-ms-input-placeholder {
+  color: #98a9bc;
+}
+
+.form-custom-div .form-group-custom .form-control:-moz-placeholder {
+  color: #98a9bc;
+}
+
+.form-custom-div .form-group-custom .form-control:hover, .form-custom-div .form-group-custom .form-control:focus, .form-custom-div .form-group-custom .form-control:active {
+  border-color: #4d7cfe;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.form-custom-div .form-group-custom input[type="password"].form-control {
+  padding-right: 40px;
+}
+
+.form-custom-div .form-group-custom .custom-icon {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  height: 38px;
+  width: 38px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #8e98a0;
+}
+
+.form-custom-div .form-group-custom .custom-icon .icon-UserName1 {
+  font-size: 20px;
+}
+
+.form-custom-div .form-group-custom .custom-icon .icon-Password {
+  font-size: 20px;
+}
+
+.form-custom-div .form-group-custom .icon-group {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+}
+
+.form-custom-div .form-group-custom .pass-hide {
+  height: 40px;
+  width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+  border: none;
+  color: rgba(142, 152, 160, 0.5);
+  cursor: pointer;
+  outline: none;
+}
+
+.form-custom-div .form-group-custom h3.h3-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1b1e24;
+  min-height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.form-custom-div .button-update-div {
+  padding: 55px 0 0 0;
+  margin: 0 0 15px 0;
+  position: relative;
+}
+
+.form-custom-div .custom-checkbox {
+  position: relative;
+  display: block;
+  min-height: 1.5rem;
+  padding-left: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: #778ca2;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.form-custom-div .custom-checkbox .custom-control-label {
+  margin-bottom: 0;
+  cursor: pointer;
+  padding: 0 0 0 30px;
+}
+
+.form-custom-div .custom-checkbox .custom-control-label::before {
+  background-color: #e8ecef;
+  border: 1px solid #e8ecef;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  top: 2px;
+}
+
+.form-custom-div .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
+  background-size: 10px;
+  top: 3px;
+  left: 1px;
+}
+
+.form-custom-div .custom-checkbox .custom-control-input:focus ~ .custom-control-label::before {
+  -webkit-box-shadow: 0 0 0 0 #fff, 0 0 0 0 rgba(142, 152, 160, 0.25);
+          box-shadow: 0 0 0 0 #fff, 0 0 0 0 rgba(142, 152, 160, 0.25);
+}
+
+.form-custom-div .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #4d7cfe;
+}
+
+@media (max-width: 767px) {
+  .card-white-form .card-white-form-header {
+    padding: 15px 20px 5px 20px;
+  }
+  .card-white-form .card-white-form-body {
+    padding: 10px 20px;
+  }
+  .form-custom-div .button-update-div {
+    padding: 35px 0 0 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card-white-form .card-white-form-header {
+    padding: 25px 20px 15px 20px;
+  }
+  .card-white-form .card-white-form-body {
+    padding: 10px 20px;
+  }
+  .form-custom-div .button-update-div {
+    padding: 35px 0 0 0;
+  }
+}
+/*# sourceMappingURL=custom-form.css.map */

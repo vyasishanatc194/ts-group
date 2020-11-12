@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Check In | TS Group</title>
+<meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+<meta name="theme-color" content="#0D2A76">
+<meta name="msapplication-navbutton-color" content="#0D2A76">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#0D2A76">
+<link href='assets/images/favicon.png' rel='shortcut icon'>
+<link href="assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/fonts/rubik/rubik-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/fonts/lato/lato-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/line-awesome.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/left-sidebar.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/check-in-out.css" media="all" rel="stylesheet" type="text/css" />
+<script src="assets/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper" class="wrapper dashboard-wrapper">
+
+  <!-- left-side -->
+  <div class="left-side-nav">
+    <div class="left-side-nav-inner">
+
+        <div class="nav-logo-section">
+          <a href="admin-dashboard.html" class="dash-logo" >
+            <img src="assets/images/logo.png" class="logo" alt="logo" /> 
+          </a>
+
+          <div class="mobile-menu-div desktop-hidden">
+            <button class="navbar-toggler mobile-menu-button" id="menu-open" type="button">
+                <span class="navbar-toggler-icon"> <i class="fe fe-menu"></i> </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="left-side-menu" id="dashboard-menu-clone">
+          <div class="left-side-inner">
+
+            <!--  mobile  -->
+            <a href="javascript:void(0)" class="closebtn desktop-hidden" id="menu-closed"> <i class="fe fe-x"></i> </a>
+            <!--  End of mobile  -->
+
+            <div class="side-nav-item accordion" id="menu-collapse">
+              <ul class="main-listing">
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="admin-dashboard.html">
+                    <span class="text-collapse-menu">Dashboard</span>
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link nav-normal" href="#">
+                    <span class="text-collapse-menu">CHECK IN</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="#">
+                    <span class="text-collapse-menu">CHECK OUT</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="#">
+                    <span class="text-collapse-menu">TRANSFER</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="#">
+                    <span class="text-collapse-menu">Workers</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="#">
+                    <span class="text-collapse-menu">companies</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="#">
+                    <span class="text-collapse-menu">History</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+              
+          </div>
+        </div>
+        
+        <!--  mobile  -->
+        <div id="cd-shadow-layer" class="menu-closed backdrop-menu-layer"></div>
+        <!--  End of mobile  -->
+
+    </div>
+  </div>
+  <!--  End of left-side  -->
+
+  <!-- Begin page content -->
+  <main role="main" class="middle-area-dashboard main-dashboard">
+    <div class="main-middle-area">
+
+        <!--  Header  -->
+        <header class="header header-dashboard">
+            <nav class="navbar navbar-light">
+                <div class="container-fluid d-block">
+                    
+                    <div class="row col-header-row">
+                        <div class="col-lg-12 col-12">
+
+                            <div class="nav-dashboard-row">
+
+                                <div class="nav-dashboard-left">
+                                    <div class="heading-div"><h1>Check In</h1></div>
+                                </div>
+
+                                <div class="nav-dashboard-right">
+                                    <div class="user-drop-down">
+                                        <div class="dropdown drop-left dropdown-custom-top">
+                                            <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <div class="user-profile">
+                                                  <div class="user-img">
+                                                      <img src="assets/images/profile.jpg" class="user-top-image" alt="user image" />
+                                                  </div>
+                                                </div>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <ul>
+                                                    <li><a class="dropdown-item" href="admin-settings.html"> Settings</a></li>
+                                                    <li class="logout-li"><a class="dropdown-item" href="login.html"> <i class="fe fe-log-in"></i> Logout</a></li>
+                                                </ul>                   
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                
+                </div>
+            </nav>
+        </header>
+        <!-- End of header -->
+        
+        <!--  main  -->
+        <div class="main-section">
+          <div class="main-div">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+
+                  <div class="check-top-root">
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12">
+                        <div class="check-top-row">
+                          <div class="check-top-right">
+                            <div class="search-div">
+                              <div class="search-row">
+                                <div class="search-icon-box">
+                                  <span class="bg-custom-icon search-icon"></span>
+                                </div>
+                                <div class="search-input-box">
+                                  <input type="text" class="form-control form-search" id="form-search" placeholder="Search..." />
+                                </div>
+                              </div>
+
+                              <div class="dropdown-menu dropdown-menu-card" id="search-dropdown">
+                                <div class="back-dropdown"></div>
+                                <div class="card-body">
+                                  <div class="list-group">
+                                    <div class="list-group-item">
+                                      <div class="row align-items-center">
+                                        <div class="col-auto">
+                                          <h4 class="text-h4">
+                                            <a href="#" class="link"> WORKER NAME </a>
+                                          </h4>
+                                          <p>FIN. NO.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                      <div class="row align-items-center">
+                                        <div class="col-auto">
+                                          <h4 class="text-h4">
+                                            <a href="#" class="link"> WORKER NAME </a>
+                                          </h4>
+                                          <p>FIN. NO.</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <section class="check-in-out-card-section">
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12">
+
+                        <div class="check-in-out-card">
+                          <div class="check-in-out-card-row">
+
+                            <div class="check-io-top">
+                              <div class="check-io-top-row">
+                                
+                                <div class="img-text-col col-width width-25">
+                                  <div class="img-thumb">
+                                    <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive" />
+                                  </div>
+                                  <div class="text-div">
+                                    <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
+                                  </div>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">EMAIL</span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-15 center-text">
+                                  <h4> <span class="text">CONTACT PERSON </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-15 center-text">
+                                  <h4> <span class="text">CONTACT NUMBER </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">DATE</span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">TIME </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="btn-col col-width width-15">
+                                  <div class="btn-div">
+                                    <a href="#" class="link-btn-a"> <button type="button" class="btn btn-common-primary btn-next">NEXT</button> </a>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div class="check-in-out-card">
+                          <div class="check-in-out-card-row">
+
+                            <div class="check-io-top">
+                              <div class="check-io-top-row">
+                                
+                                <div class="img-text-col col-width width-25">
+                                  <div class="img-thumb">
+                                    <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive" />
+                                  </div>
+                                  <div class="text-div">
+                                    <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
+                                  </div>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">EMAIL</span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-15 center-text">
+                                  <h4> <span class="text">CONTACT PERSON </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-15 center-text">
+                                  <h4> <span class="text">CONTACT NUMBER </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">DATE</span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">TIME </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="btn-col col-width width-15">
+                                  <div class="btn-div">
+                                    <a href="#" class="link-btn-a"> <button type="button" class="btn btn-common-primary btn-next">NEXT</button> </a>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div class="check-in-out-card">
+                          <div class="check-in-out-card-row">
+
+                            <div class="check-io-top">
+                              <div class="check-io-top-row">
+                                
+                                <div class="img-text-col col-width width-25">
+                                  <div class="img-thumb">
+                                    <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive" />
+                                  </div>
+                                  <div class="text-div">
+                                    <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
+                                  </div>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">EMAIL</span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-15 center-text">
+                                  <h4> <span class="text">CONTACT PERSON </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-15 center-text">
+                                  <h4> <span class="text">CONTACT NUMBER </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">DATE</span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">TIME </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="btn-col col-width width-15">
+                                  <div class="btn-div">
+                                    <a href="#" class="link-btn-a"> <button type="button" class="btn btn-common-primary btn-next">NEXT</button> </a>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div class="check-in-out-card">
+                          <div class="check-in-out-card-row">
+
+                            <div class="check-io-top">
+                              <div class="check-io-top-row">
+                                
+                                <div class="img-text-col col-width width-25">
+                                  <div class="img-thumb">
+                                    <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive" />
+                                  </div>
+                                  <div class="text-div">
+                                    <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
+                                  </div>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">EMAIL</span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-15 center-text">
+                                  <h4> <span class="text">CONTACT PERSON </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-15 center-text">
+                                  <h4> <span class="text">CONTACT NUMBER </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">DATE</span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">TIME </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="btn-col col-width width-15">
+                                  <div class="btn-div">
+                                    <a href="#" class="link-btn-a"> <button type="button" class="btn btn-common-primary btn-next">NEXT</button> </a>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div class="check-in-out-card">
+                          <div class="check-in-out-card-row">
+
+                            <div class="check-io-top">
+                              <div class="check-io-top-row">
+                                
+                                <div class="img-text-col col-width width-25">
+                                  <div class="img-thumb">
+                                    <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive" />
+                                  </div>
+                                  <div class="text-div">
+                                    <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
+                                  </div>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">EMAIL</span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-15 center-text">
+                                  <h4> <span class="text">CONTACT PERSON </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-15 center-text">
+                                  <h4> <span class="text">CONTACT NUMBER </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">DATE</span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="col-width width-10">
+                                  <h4> <span class="text">TIME </span></h4>
+                                  <p><span class="text">-</span></p>
+                                </div>
+
+                                <div class="btn-col col-width width-15">
+                                  <div class="btn-div">
+                                    <a href="#" class="link-btn-a"> <button type="button" class="btn btn-common-primary btn-next">NEXT</button> </a>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col-lg-12 col-md-12">
+
+                        <div class="pagination-root">
+                          <div class="pagination-row">
+                            <ul class="pagination pagination-custom">
+                              <li class="page-item page-left disabled"><a class="page-link" href="#"><i class="las la-angle-left"></i></a></li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item"><a class="page-link" href="#">4</a></li>
+                              <li class="page-item"><a class="page-link" href="#">5</a></li>
+                              <li class="page-item page-right"><a class="page-link" href="#"><i class="las la-angle-right"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+                  </section>
+                  
+                </div>  
+              </div>        
+            </div>
+          </div>
+        </div><!--  end of main  -->
+
+        <footer class="footer">
+          <div class="footer-div">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <p> &copy; 2020 <a href="#" class="link"> TSGroup </a>- All Rights Reserved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+  </main>
+
+</div><!-- end of wrapper -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-asPieProgress.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+  // search-dropdown
+  $(document).ready(function(){
+    $("#form-search").focus(function(e){
+      $("#search-dropdown").addClass("show");
+        $(".back-dropdown").click(function(){
+          $("#search-dropdown").removeClass("show");
+        });
+    });
+  });
+</script>
+
+</body>
+</html>
