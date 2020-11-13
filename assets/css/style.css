@@ -2254,12 +2254,6 @@ body {
   .middle-area-dashboard .main-middle-area.active-progress-area {
     width: calc(100% - 310px);
   }
-
-  .header-dashboard {
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-  }
 }
 
 @media (min-width: 1025px) and (max-width: 1290px) {

@@ -222,7 +222,7 @@
 
 .normal-check-transfer-card .io-box-text {
   padding: 15px 10px 15px 10px;
-  margin: 0 0 5px 0;
+  margin: 0 0 15px 0;
   position: relative;
 }
 
@@ -244,6 +244,30 @@
   display: block;
   padding: 0 0 0 15px;
   margin: 0 0 0 0;
+}
+
+.normal-check-transfer-card .io-box-text.pl-10per {
+  padding-left: 10%;
+}
+
+.normal-check-transfer-card .io-box-text.title-box-text {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.normal-check-transfer-card .io-box-text.title-box-text h4 {
+  min-height: auto;
+  margin: 0;
+}
+
+.normal-check-transfer-card .btn-group-footer {
+  padding: 22px 0 10px 0;
+  margin: 0;
+  position: relative;
+}
+
+.normal-check-transfer-card .btn-group-footer .btn.btn-general {
+  margin-bottom: 5px;
 }
 
 .worker-check-transfer-card {
@@ -373,14 +397,10 @@
           justify-content: center;
 }
 
-.btn-group-footer {
-  padding: 32px 0 10px 0;
-  margin: 0;
+.worker-check-transfer-card .pagination-root {
+  padding: 12px 0;
+  margin: 0 0 20px 0;
   position: relative;
-}
-
-.btn-group-footer .btn.btn-general {
-  margin-bottom: 5px;
 }
 
 @media (min-width: 1025px) {
@@ -492,6 +512,18 @@
     font-size: 12px;
     padding: 0 0 0 8px;
   }
+  .normal-check-transfer-card .io-box-text.pl-10per {
+    padding-left: 0;
+  }
+  .normal-check-transfer-card .btn-group-footer .btn.btn-general {
+    padding: 6px 12px 5px 12px;
+    min-width: 92px;
+    font-size: 12px;
+    min-height: 36px;
+  }
+  .normal-check-transfer-card .btn-group-footer .btn.btn-general.mr-16 {
+    margin-right: 6px;
+  }
   .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text {
     margin: 5px 0 10px 0;
   }
@@ -522,15 +554,6 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-  }
-  .btn-group-footer .btn.btn-general {
-    padding: 6px 12px 5px 12px;
-    min-width: 92px;
-    font-size: 12px;
-    min-height: 36px;
-  }
-  .btn-group-footer .btn.btn-general.mr-16 {
-    margin-right: 6px;
   }
 }
 
@@ -615,6 +638,13 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+  .normal-check-transfer-card .io-box-text {
+    padding: 10px 0 10px 0;
+    margin: 0;
+  }
+  .normal-check-transfer-card .io-box-text.pl-10per {
+    padding-left: 0;
   }
 }
 /*# sourceMappingURL=transfer.css.map */

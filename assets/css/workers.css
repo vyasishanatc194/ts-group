@@ -1,0 +1,227 @@
+.check-top-row {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.check-top-row .check-top-right {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.check-transfer-card-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .check-top-row .check-top-right {
+    width: 100%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .img-text-col {
+    padding-left: 10px;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .img-text-col .text-div h3 {
+    font-size: 16px;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-25 {
+    width: 100%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-10 {
+    width: 50%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-15 {
+    width: 50%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row h4 {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0 0 5px 0;
+    min-height: auto;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row p {
+    font-size: 12px;
+    line-height: 1.4;
+    min-height: auto;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .center-text h4,
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .center-text p {
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-col {
+    width: 50%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-div {
+    width: 100%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-div .btn.btn-common-primary.btn-next {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    padding: 5px 20px 4px 20px;
+    min-height: 40px;
+    font-size: 13px;
+  }
+  .normal-check-transfer-card .io-box-text {
+    padding: 10px 0 10px 0;
+    margin: 0;
+  }
+  .normal-check-transfer-card .io-box-text h4 {
+    font-size: 12px;
+    margin: 0 0 2px 0;
+    min-height: 23px;
+  }
+  .normal-check-transfer-card .io-box-text p {
+    font-size: 12px;
+    padding: 0 0 0 8px;
+  }
+  .normal-check-transfer-card .io-box-text.pl-10per {
+    padding-left: 0;
+  }
+  .normal-check-transfer-card .btn-group-footer .btn.btn-general {
+    padding: 6px 12px 5px 12px;
+    min-width: 92px;
+    font-size: 12px;
+    min-height: 36px;
+  }
+  .normal-check-transfer-card .btn-group-footer .btn.btn-general.mr-16 {
+    margin-right: 6px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text {
+    margin: 5px 0 10px 0;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .label-thumb {
+    width: 100px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .status-label {
+    font-size: 12px;
+    line-height: 16px;
+    min-height: 30px;
+    min-width: 90px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .text-div {
+    padding: 0 0 0 5px;
+    width: calc(100% - 100px);
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .text-div h3 {
+    font-size: 14px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-text h2 {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0 0 5px 0;
+    min-height: auto;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .center-text h2 {
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .img-text-col {
+    padding-left: 10px;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .img-text-col .text-div h3 {
+    font-size: 16px;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-25 {
+    width: 100%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-10 {
+    width: 50%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-15 {
+    width: 50%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row h4 {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0 0 5px 0;
+    min-height: auto;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row p {
+    font-size: 12px;
+    line-height: 1.4;
+    min-height: auto;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .center-text h4,
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .center-text p {
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-col {
+    width: 50%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-div {
+    width: 100%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-div .btn.btn-common-primary.btn-next {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    padding: 5px 20px 4px 20px;
+    min-height: 40px;
+    font-size: 13px;
+  }
+  .worker-check-transfer-card .worker-card-box {
+    padding: 10px 10px 5px 10px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text {
+    margin: 5px 0 10px 0;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .label-thumb {
+    width: 100px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .status-label {
+    font-size: 12px;
+    line-height: 16px;
+    min-height: 30px;
+    min-width: 90px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .text-div {
+    padding: 0 0 0 5px;
+    width: calc(100% - 100px);
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .text-div h3 {
+    font-size: 14px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-text h2 {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0 0 5px 0;
+    min-height: auto;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .center-text h2 {
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .normal-check-transfer-card .io-box-text {
+    padding: 10px 0 10px 0;
+    margin: 0;
+  }
+  .normal-check-transfer-card .io-box-text.pl-10per {
+    padding-left: 0;
+  }
+}
+/*# sourceMappingURL=workers.css.map */

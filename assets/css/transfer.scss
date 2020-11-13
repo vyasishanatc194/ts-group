@@ -186,7 +186,7 @@
 
   .io-box-text {
     padding: 15px 10px 15px 10px;
-    margin: 0 0 5px 0;
+    margin: 0 0 15px 0;
     position: relative;
 
     h4 {
@@ -207,6 +207,30 @@
       display: block;
       padding: 0 0 0 15px;
       margin: 0 0 0 0;
+    }
+
+    &.pl-10per {
+      padding-left: 10%;
+    }
+
+    &.title-box-text {
+      padding: 0;
+      margin: 0 0 10px 0;
+
+      h4 {
+        min-height: auto;
+        margin: 0;
+      }
+    }
+  }
+
+  .btn-group-footer {
+    padding: 22px 0 10px 0;
+    margin: 0;
+    position: relative;
+
+    .btn.btn-general {
+      margin-bottom: 5px;
     }
   }
 }
@@ -314,15 +338,11 @@
       }
     }
   }
-}
 
-.btn-group-footer {
-  padding: 32px 0 10px 0;
-  margin: 0;
-  position: relative;
-
-  .btn.btn-general {
-    margin-bottom: 5px;
+  .pagination-root {
+    padding: 12px 0;
+    margin: 0 0 20px 0;
+    position: relative;
   }
 }
 
@@ -461,6 +481,23 @@
         font-size: 12px;
         padding: 0 0 0 8px;
       }
+
+      &.pl-10per {
+        padding-left: 0;
+      }
+    }
+
+    .btn-group-footer {
+      .btn.btn-general {
+        padding: 6px 12px 5px 12px;
+        min-width: 92px;
+        font-size: 12px;
+        min-height: 36px;
+  
+        &.mr-16 {
+          margin-right: 6px;
+        }
+      }
     }
   }
 
@@ -506,19 +543,6 @@
             justify-content: flex-start;
           }
         }
-      }
-    }
-  }
-
-  .btn-group-footer {
-    .btn.btn-general {
-      padding: 6px 12px 5px 12px;
-      min-width: 92px;
-      font-size: 12px;
-      min-height: 36px;
-
-      &.mr-16 {
-        margin-right: 6px;
       }
     }
   }
@@ -637,6 +661,17 @@
             justify-content: flex-start;
           }
         }
+      }
+    }
+  }
+
+  .normal-check-transfer-card {
+    .io-box-text {
+      padding: 10px 0 10px 0;
+      margin: 0;
+
+      &.pl-10per {
+        padding-left: 0;
       }
     }
   }
