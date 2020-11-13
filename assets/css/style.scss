@@ -137,6 +137,61 @@
   }
 }
 
+.btn.btn-general {
+  background-color: #f2f4f6;
+  border: 1px solid #f2f4f6;
+  border-radius: 4px;
+  color: #778ca2;
+  padding: 7px 20px 6px 20px;
+  min-height: 40px;
+  margin: 0 auto;
+  min-width: 126px;
+  font-weight: 500;
+  border: none;
+  transition: all 0.8s;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: #fff;
+    background: #778ca2;
+    border: 1px solid #778ca2;
+  }
+
+  &.btn-approve {
+    background-color: #00b718;
+    border: 1px solid #00b718;
+    color: #fff;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #008f13;
+      border: 1px solid #008f13;
+    }
+  }
+
+  &.btn-decline {
+    background-color: #c70000;
+    border: 1px solid #c70000;
+    color: #fff;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #e40101;
+      border: 1px solid #e40101;
+    }
+  }
+
+  &.mr-16 {
+    margin-right: 16px;
+  }
+}
+
 /* End of Button */
 
 /* select2 */
@@ -720,7 +775,7 @@
   padding: 0 0;
   margin: 0 0 15px 0;
   width: 100%;
-  
+
   .search-row {
     padding: 0;
     margin: 0;
@@ -750,8 +805,8 @@
 
       .form-search {
         background: transparent;
-        border:1px solid transparent;
-        border-bottom: 1px solid #E5E5E5;
+        border: 1px solid transparent;
+        border-bottom: 1px solid #e5e5e5;
         border-radius: 0;
         font-weight: 400;
         font-size: 14px;
@@ -763,19 +818,19 @@
         min-height: 36px;
         width: 100%;
         transition: all 0.8s;
-  
+
         &::-webkit-input-placeholder {
           color: #778ca2;
         }
-  
+
         &::-moz-placeholder {
           color: #778ca2;
         }
-  
+
         &:-ms-input-placeholder {
           color: #778ca2;
         }
-  
+
         &:-moz-placeholder {
           color: #778ca2;
         }
@@ -785,7 +840,7 @@
 
   .dropdown-menu-card {
     background: #fff;
-    box-shadow: 0 6px 20px 0 rgba(153,155,168,0.10);
+    box-shadow: 0 6px 20px 0 rgba(153, 155, 168, 0.1);
     border-radius: 8px;
     width: 100%;
     padding: 0;
@@ -806,7 +861,7 @@
       overflow-y: auto;
       flex: 1 1 auto;
       min-height: 1px;
-      
+
       .list-group {
         display: flex;
         flex-direction: column;
@@ -844,8 +899,8 @@
           p {
             font-weight: 400;
             font-size: 14px;
-            color: #8181A5;
-            line-height: 1.5  ;
+            color: #8181a5;
+            line-height: 1.5;
             margin: 0 0 0 0;
             display: block;
           }
@@ -870,7 +925,7 @@
       margin: 0 2px;
 
       .page-link {
-        border: 1px solid #E8ECEF;
+        border: 1px solid #e8ecef;
         background-color: transparent;
         height: 40px;
         min-width: 40px;
@@ -878,7 +933,7 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        color: #778CA2;
+        color: #778ca2;
         font-size: 14px;
         letter-spacing: 0.21px;
         text-align: center;
@@ -904,18 +959,17 @@
           background-color: #f2f4f6;
           font-size: 18px;
           width: 40px;
-        } 
+        }
       }
 
       &.active {
-        color:#4d7cfe;
+        color: #4d7cfe;
 
         a {
           color: inherit;
         }
       }
     }
-    
   }
 }
 
@@ -2100,6 +2154,40 @@
       }
     }
   }
+
+  .pagination-root {
+    .pagination-row {
+      justify-content: center;
+      
+      .page-item {
+        .page-link {
+          height: 30px;
+          min-width: 30px;
+          font-size: 12px;
+          line-height: 16px;
+          padding: 4px 4px 3px 4px;
+        }
+
+        &.page-left {
+          margin-right: 8px;
+
+          .page-link {
+            font-size: 15px;
+            width: 30px;
+          }
+        }
+
+        &.page-right {
+          margin-left: 8px;
+
+          .page-link {
+            font-size: 15px;
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -2222,5 +2310,12 @@
     padding: 20px 0 0 0;
     margin: 0;
     position: relative;
+  }
+}
+
+@media (min-width: 1921px) {
+  .container-fluid {
+    max-width: 1665px;
+    margin: 0 auto;
   }
 }

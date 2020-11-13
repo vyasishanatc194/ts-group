@@ -14,17 +14,17 @@
   }
 }
 
-.check-in-out-card-section {
+.check-transfer-card-section {
   padding: 0;
   margin: 0;
   position: relative;
 }
 
-.check-in-out-card {
+.check-transfer-card {
   padding: 0;
   margin: 0 0 16px 0;
 
-  .check-in-out-card-row {
+  .check-transfer-card-row {
     padding: 0;
     margin: 0;
     position: relative;
@@ -173,17 +173,13 @@
   }
 }
 
-.check-in-out-details-section {
+.check-transfer-details-section {
   padding: 0;
   margin: 0;
   position: relative;
-
-  .check-in-out-card.mm-20 {
-    margin: -20px -20px 16px -20px;
-  }
 }
 
-.normal-check-io-card {
+.normal-check-transfer-card {
   padding: 0;
   margin: 0 0 15px 0;
   position: relative;
@@ -215,7 +211,7 @@
   }
 }
 
-.worker-check-io-card {
+.worker-check-transfer-card {
   padding: 0;
   margin: 0;
   position: relative;
@@ -234,17 +230,17 @@
         align-items: center;
       }
 
-      .wio-box-text {
-        padding: 5px 10px 5px 10px;
+      .wk-transfer-box-text {
+        padding: 10px 10px 5px 10px;
         margin: 0 0 5px 0;
         position: relative;
 
-        h4 {
+        h2 {
           font-weight: 400;
           font-size: 14px;
-          color: #98a9bc;
+          color: #9c9fb8;
           line-height: 1.5;
-          margin: 0 0 5px 0;
+          margin: 0 0 0 0;
           min-height: 40px;
           display: flex;
           align-items: center;
@@ -252,26 +248,6 @@
 
           span.text {
             width: 100%;
-            word-break: break-word;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
-            overflow: hidden;
-          }
-        }
-
-        p {
-          font-weight: 500;
-          font-size: 14px;
-          color: #98a9bc;
-          line-height: 1.5;
-          margin: 0;
-          min-height: 40px;
-          display: flex;
-          align-items: center;
-          flex-wrap: wrap;
-
-          span.text {
             word-break: break-word;
             display: -webkit-box;
             -webkit-box-orient: vertical;
@@ -301,16 +277,9 @@
           }
         }
 
-        &.pl-30 {
-          padding-left: 30px;
-        }
-
-        &.pr-30 {
-          padding-right: 30px;
-        }
       }
 
-      .wio-box-label-text {
+      .wk-transfer-box-label-text {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -326,14 +295,7 @@
           margin: 0;
           width: calc(100% - 140px);
 
-          h3 {
-            font-weight: 400;
-            font-size: 18px;
-            color: #000;
-            line-height: 1.4;
-            margin: 0 0 0 0;
-            display: block;
-
+          h2 {
             a {
               color: inherit;
             }
@@ -351,31 +313,21 @@
         }
       }
     }
-
-    .form-custom-div {
-      padding: 15px 30px 0 30px;
-
-      .form-group-custom {
-        .form-control {
-          background: #f7f8ff;
-        }
-      }
-    }
   }
+}
 
-  .btn-group-footer {
-    padding: 32px 0 10px 0;
-    margin: 0;
-    position: relative;
+.btn-group-footer {
+  padding: 32px 0 10px 0;
+  margin: 0;
+  position: relative;
 
-    .btn.btn-general {
-      margin-bottom: 5px;
-    }
+  .btn.btn-general {
+    margin-bottom: 5px;
   }
 }
 
 @media (min-width: 1025px) {
-  .normal-check-io-card {
+  .normal-check-transfer-card {
     .col-width-18 {
       flex: 0 0 18%;
       max-width: 18%;
@@ -387,7 +339,7 @@
     }
   }
 
-  .worker-check-io-card {
+  .worker-check-transfer-card {
     .worker-card-box {
       .text-top-worker-card-row {
         .col-width-29 {
@@ -426,8 +378,8 @@
     }
   }
 
-  .check-in-out-card {
-    .check-in-out-card-row {
+  .check-transfer-card {
+    .check-transfer-card-row {
       .check-io-top {
         .check-io-top-row {
           .img-text-col {
@@ -494,7 +446,7 @@
     }
   }
 
-  .normal-check-io-card {
+  .normal-check-transfer-card {
     .io-box-text {
       padding: 10px 0 10px 0;
       margin: 0;
@@ -512,10 +464,10 @@
     }
   }
 
-  .worker-check-io-card {
+  .worker-check-transfer-card {
     .worker-card-box {
       .text-top-worker-card-row {
-        .wio-box-label-text {
+        .wk-transfer-box-label-text {
           margin: 5px 0 10px 0;
 
           .label-thumb {
@@ -539,74 +491,42 @@
           }
         }
 
-        .wio-box-text {
-          h4 {
+        .wk-transfer-box-text {
+          h2 {
             font-size: 12px;
             line-height: 1.4;
             margin: 0 0 5px 0;
             min-height: auto;
           }
-
-          p {
-            font-size: 12px;
-            line-height: 1.4;
-            min-height: auto;
-          }
-
-          &.pl-30 {
-            padding-left: 10px;
-          }
-
-          &.pr-30 {
-            padding-right: 10px;
-          }
         }
 
         .center-text {
-          h4,
-          p {
+          h2 {
             text-align: left;
             justify-content: flex-start;
           }
         }
       }
-
-      .form-custom-div {
-        padding: 15px 10px 0 10px;
-
-        .form-group-custom {
-          label {
-            font-size: 12px;
-            margin: 0 0 8px 0;
-          }
-
-          .form-control {
-            font-size: 12px;
-            min-height: 40px;
-            padding: 6px 10px 6px 10px;
-          }
-        }
-      }
     }
+  }
 
-    .btn-group-footer {
-      .btn.btn-general {
-        padding: 6px 12px 5px 12px;
-        min-width: 92px;
-        font-size: 12px;
-        min-height: 36px;
+  .btn-group-footer {
+    .btn.btn-general {
+      padding: 6px 12px 5px 12px;
+      min-width: 92px;
+      font-size: 12px;
+      min-height: 36px;
 
-        &.mr-16 {
-          margin-right: 6px;
-        }
+      &.mr-16 {
+        margin-right: 6px;
       }
     }
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .check-in-out-card {
-    .check-in-out-card-row {
+  .check-transfer-card {
+    .check-transfer-card-row {
       .check-io-top {
         .check-io-top-row {
           .img-text-col {
@@ -673,12 +593,12 @@
     }
   }
 
-  .worker-check-io-card {
+  .worker-check-transfer-card {
     .worker-card-box {
       padding: 10px 10px 5px 10px;
 
       .text-top-worker-card-row {
-        .wio-box-label-text {
+        .wk-transfer-box-label-text {
           margin: 5px 0 10px 0;
 
           .label-thumb {
@@ -702,51 +622,19 @@
           }
         }
 
-        .wio-box-text {
-          h4 {
+        .wk-transfer-box-text {
+          h2 {
             font-size: 12px;
             line-height: 1.4;
             margin: 0 0 5px 0;
             min-height: auto;
           }
-
-          p {
-            font-size: 12px;
-            line-height: 1.4;
-            min-height: auto;
-          }
-
-          &.pl-30 {
-            padding-left: 10px;
-          }
-
-          &.pr-30 {
-            padding-right: 10px;
-          }
         }
 
         .center-text {
-          h4,
-          p {
+          h2 {
             text-align: left;
             justify-content: flex-start;
-          }
-        }
-      }
-
-      .form-custom-div {
-        padding: 15px 10px 0 10px;
-
-        .form-group-custom {
-          label {
-            font-size: 12px;
-            margin: 0 0 8px 0;
-          }
-
-          .form-control {
-            font-size: 12px;
-            min-height: 40px;
-            padding: 6px 10px 6px 10px;
           }
         }
       }

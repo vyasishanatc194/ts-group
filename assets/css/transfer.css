@@ -1,0 +1,620 @@
+.check-top-row {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.check-top-row .check-top-right {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.check-transfer-card-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.check-transfer-card {
+  padding: 0;
+  margin: 0 0 16px 0;
+}
+
+.check-transfer-card .check-transfer-card-row {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top {
+  padding: 10px 10px;
+  margin: 0;
+  position: relative;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  min-height: 108px;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .col-width {
+  padding: 10px;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-25 {
+  width: 25%;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-15 {
+  width: 15%;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-10 {
+  width: 10%;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .img-text-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 20px;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .img-text-col .img-thumb {
+  width: 40px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .img-text-col .img-thumb .img-responsive {
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .img-text-col .text-div {
+  padding: 0 0 0 15px;
+  margin: 0;
+  width: calc(100% - 40px);
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .img-text-col .text-div h3 {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  line-height: 1.4;
+  margin: 0 0 0 0;
+  display: block;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .img-text-col .text-div h3 a {
+  color: inherit;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-div .btn.btn-common-primary {
+  min-width: 120px;
+  width: 100%;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-div .btn.btn-common-primary.btn-next {
+  max-width: 130px;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .center-text {
+  text-align: center;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .center-text h4,
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .center-text p {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row h4 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #98a9bc;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row h4 span.text {
+  width: 100%;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #98a9bc;
+  line-height: 1.5;
+  margin: 0;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row p span.text {
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.check-transfer-details-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.normal-check-transfer-card {
+  padding: 0;
+  margin: 0 0 15px 0;
+  position: relative;
+}
+
+.normal-check-transfer-card .io-box-text {
+  padding: 15px 10px 15px 10px;
+  margin: 0 0 5px 0;
+  position: relative;
+}
+
+.normal-check-transfer-card .io-box-text h4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #252631;
+  display: block;
+  margin: 0 0 10px 0;
+  min-height: 24px;
+}
+
+.normal-check-transfer-card .io-box-text p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #98a9bc;
+  display: block;
+  padding: 0 0 0 15px;
+  margin: 0 0 0 0;
+}
+
+.worker-check-transfer-card {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.worker-check-transfer-card .worker-card-box {
+  padding: 10px 10px;
+  margin: 0 0 10px 0;
+  position: relative;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.worker-check-transfer-card .worker-card-box .text-top-worker-card-row {
+  width: 100%;
+}
+
+.worker-check-transfer-card .worker-card-box .text-top-worker-card-row .align-center-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-text {
+  padding: 10px 10px 5px 10px;
+  margin: 0 0 5px 0;
+  position: relative;
+}
+
+.worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-text h2 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9c9fb8;
+  line-height: 1.5;
+  margin: 0 0 0 0;
+  min-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-text h2 span.text {
+  width: 100%;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-text .status-label {
+  background: #1fcd00;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: #fff;
+  text-align: center;
+  min-height: 36px;
+  min-width: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 6px 10px 4px 10px;
+}
+
+.worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-text .status-label.valid-label {
+  background: #1fcd00;
+}
+
+.worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .label-thumb {
+  width: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .text-div {
+  padding: 0 0 0 15px;
+  margin: 0;
+  width: calc(100% - 140px);
+}
+
+.worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .text-div h2 a {
+  color: inherit;
+}
+
+.worker-check-transfer-card .worker-card-box .text-top-worker-card-row .center-text {
+  text-align: center;
+}
+
+.worker-check-transfer-card .worker-card-box .text-top-worker-card-row .center-text h4,
+.worker-check-transfer-card .worker-card-box .text-top-worker-card-row .center-text p {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn-group-footer {
+  padding: 32px 0 10px 0;
+  margin: 0;
+  position: relative;
+}
+
+.btn-group-footer .btn.btn-general {
+  margin-bottom: 5px;
+}
+
+@media (min-width: 1025px) {
+  .normal-check-transfer-card .col-width-18 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 18%;
+            flex: 0 0 18%;
+    max-width: 18%;
+  }
+  .normal-check-transfer-card .col-width-28 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 28%;
+            flex: 0 0 28%;
+    max-width: 28%;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .col-width-29 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 29%;
+            flex: 0 0 29%;
+    max-width: 29%;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .col-width-25 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .col-width-14 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 14%;
+            flex: 0 0 14%;
+    max-width: 14%;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .col-width-15 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 15%;
+            flex: 0 0 15%;
+    max-width: 15%;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .col-width-17 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 17%;
+            flex: 0 0 17%;
+    max-width: 17%;
+  }
+}
+
+@media (max-width: 767px) {
+  .check-top-row .check-top-right {
+    width: 100%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .img-text-col {
+    padding-left: 10px;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .img-text-col .text-div h3 {
+    font-size: 16px;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-25 {
+    width: 100%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-10 {
+    width: 50%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-15 {
+    width: 50%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row h4 {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0 0 5px 0;
+    min-height: auto;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row p {
+    font-size: 12px;
+    line-height: 1.4;
+    min-height: auto;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .center-text h4,
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .center-text p {
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-col {
+    width: 50%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-div {
+    width: 100%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-div .btn.btn-common-primary.btn-next {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    padding: 5px 20px 4px 20px;
+    min-height: 40px;
+    font-size: 13px;
+  }
+  .normal-check-transfer-card .io-box-text {
+    padding: 10px 0 10px 0;
+    margin: 0;
+  }
+  .normal-check-transfer-card .io-box-text h4 {
+    font-size: 12px;
+    margin: 0 0 2px 0;
+    min-height: 23px;
+  }
+  .normal-check-transfer-card .io-box-text p {
+    font-size: 12px;
+    padding: 0 0 0 8px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text {
+    margin: 5px 0 10px 0;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .label-thumb {
+    width: 100px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .status-label {
+    font-size: 12px;
+    line-height: 16px;
+    min-height: 30px;
+    min-width: 90px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .text-div {
+    padding: 0 0 0 5px;
+    width: calc(100% - 100px);
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .text-div h3 {
+    font-size: 14px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-text h2 {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0 0 5px 0;
+    min-height: auto;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .center-text h2 {
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .btn-group-footer .btn.btn-general {
+    padding: 6px 12px 5px 12px;
+    min-width: 92px;
+    font-size: 12px;
+    min-height: 36px;
+  }
+  .btn-group-footer .btn.btn-general.mr-16 {
+    margin-right: 6px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .img-text-col {
+    padding-left: 10px;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .img-text-col .text-div h3 {
+    font-size: 16px;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-25 {
+    width: 100%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-10 {
+    width: 50%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .width-15 {
+    width: 50%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row h4 {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0 0 5px 0;
+    min-height: auto;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row p {
+    font-size: 12px;
+    line-height: 1.4;
+    min-height: auto;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .center-text h4,
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .center-text p {
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-col {
+    width: 50%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-div {
+    width: 100%;
+  }
+  .check-transfer-card .check-transfer-card-row .check-io-top .check-io-top-row .btn-div .btn.btn-common-primary.btn-next {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+    padding: 5px 20px 4px 20px;
+    min-height: 40px;
+    font-size: 13px;
+  }
+  .worker-check-transfer-card .worker-card-box {
+    padding: 10px 10px 5px 10px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text {
+    margin: 5px 0 10px 0;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .label-thumb {
+    width: 100px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .status-label {
+    font-size: 12px;
+    line-height: 16px;
+    min-height: 30px;
+    min-width: 90px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .text-div {
+    padding: 0 0 0 5px;
+    width: calc(100% - 100px);
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-label-text .text-div h3 {
+    font-size: 14px;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .wk-transfer-box-text h2 {
+    font-size: 12px;
+    line-height: 1.4;
+    margin: 0 0 5px 0;
+    min-height: auto;
+  }
+  .worker-check-transfer-card .worker-card-box .text-top-worker-card-row .center-text h2 {
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+/*# sourceMappingURL=transfer.css.map */
