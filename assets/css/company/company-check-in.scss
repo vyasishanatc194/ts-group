@@ -1,0 +1,636 @@
+.panel-card-div {
+  margin: 0 0 20px 0;
+  position: relative;
+  min-height: calc(100vh - 340px);
+
+  .panel-card-row {
+    .check-step-form-div {
+      padding: 20px 0 0 0;
+
+      .border-text-note-box {
+        padding: 30px 22px;
+        margin: 0 0 20px 0;
+        position: relative;
+        border: 1px solid #9c9fb8;
+
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          color: #9c9fb8;
+          text-align: center;
+          line-height: 1.5;
+        }
+      }
+
+      .text-general-note-card {
+        padding: 0;
+        margin: 0;
+        position: relative;
+
+        .title-div {
+          padding: 0;
+          margin: 0;
+          position: relative;
+
+          h4 {
+            font-weight: 400;
+            font-size: 14px;
+            color: #000;
+            line-height: 1.5;
+            margin: 0 0 10px 0;
+            display: block;
+          }
+        }
+
+        .content-div {
+          padding: 0;
+          margin: 0;
+          position: relative;
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            color: #9c9fb8;
+            line-height: 1.5;
+            margin: 0 0 8px 0;
+
+            .black-text-underline {
+              color: #000;
+              text-decoration: underline;
+            }
+
+            .text-color2 {
+              color: #ff0000;
+            }
+          }
+        }
+      }
+
+      .heading-title-div-h4 {
+        padding: 0;
+        margin: 15px 0 20px 0;
+
+        h4 {
+          font-weight: 400;
+          font-size: 14px;
+          color: #000;
+          line-height: 1.4;
+        }
+      }
+
+      .form-custom-div {
+        .form-group-custom-text {
+          h3.h3-text {
+            color: #98a9bc;
+          }
+        }
+      }
+    }
+  }
+}
+
+.comp-check-in-card {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  .comp-check-in-card-box {
+    padding: 10px 10px;
+    margin: 0 0 10px 0;
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+
+    .text-top-check-in-card-row {
+      width: 100%;
+
+      .align-center-row {
+        align-items: center;
+      }
+
+      .wk-check-in-box-text {
+        padding: 10px 10px 5px 10px;
+        margin: 0 0 5px 0;
+        position: relative;
+
+        h2 {
+          font-weight: 400;
+          font-size: 18px;
+          color: #252631;
+          line-height: 1.5;
+          margin: 0 0 0 0;
+          min-height: 40px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          text-transform: uppercase;
+
+          span.text {
+            width: 100%;
+            word-break: break-word;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+          }
+        }
+
+        h4 {
+          font-weight: 400;
+          font-size: 14px;
+          color: #98a9bc;
+          line-height: 1.5;
+          min-height: 40px;
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+
+          span.text {
+            width: 100%;
+            word-break: break-word;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+          }
+        }
+
+        .status-label {
+          background: #1fcd00;
+          border-radius: 4px;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 18px;
+          color: #fff;
+          text-align: center;
+          min-height: 36px;
+          min-width: 125px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          padding: 6px 10px 4px 10px;
+
+          &.valid-label {
+            background: #1fcd00;
+          }
+
+          &.expired-label {
+            background: #c70000;
+          }
+        }
+      }
+
+      .wk-check-in-box-label-text {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .label-thumb {
+          width: 140px;
+          display: flex;
+          align-items: center;
+        }
+
+        .text-div {
+          padding: 0 0 0 15px;
+          margin: 0;
+          width: calc(100% - 140px);
+
+          h2 {
+            a {
+              color: inherit;
+            }
+          }
+        }
+      }
+
+      .action-check-in-box {
+        .action-div {
+          display: flex;
+          justify-content: flex-end;
+          flex-wrap: wrap;
+          padding: 0 5px;
+        }
+      }
+
+      .center-text {
+        text-align: center;
+
+        h4,
+        p {
+          text-align: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .pagination-root {
+    padding: 12px 0;
+    margin: 0 0 20px 0;
+    position: relative;
+  }
+}
+
+.check-in-top-first-row {
+  padding: 0;
+  margin: 10px 0 15px 0;
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .check-in-top-first-left {
+    padding: 0;
+    margin: 0 0 5px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  .check-wk-top-first-right {
+    padding: 0;
+    margin: 0 0 5px 0;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  .check-in-text-box {
+    p {
+      font-weight: 400;
+      font-size: 14px;
+      color: #000;
+      line-height: 20px;
+      margin: 0;
+    }
+  }
+
+  .new-link-box {
+    padding: 5px 0;
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+
+    .link.link-new {
+      font-weight: 500;
+      font-size: 12px;
+      color: #4d7cfe;
+      text-transform: uppercase;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      line-height: 1.3;
+
+      .las {
+        font-size: 18px;
+        margin: 0 5px 0 0;
+        display: inline-block;
+      }
+
+      .text {
+        display: inline-block;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+.search-div-c2 {
+  .input-control {
+    position: relative;
+  }
+
+  .search-icon-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 52px;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+}
+
+.worker-check-list-root {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  .worker-check-list-row {
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    .worker-check-list-box {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      width: 100%;
+      position: relative;
+      margin: 0 0 30px 0;
+
+      .worker-check-left-box {
+        width: calc(100% - 50px);
+
+        h4 {
+          font-size: 18px;
+          font-weight: 400;
+          color: #252631;
+          line-height: 1.4;
+        }
+      }
+
+      .worker-check-right-box {
+        width: 50px;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+.selected-wk-check-root {
+  padding: 0;
+  margin: 0;
+  position: relative;
+
+  .selected-wk-check-row {
+    padding: 0;
+    margin: 0;
+    position: relative;
+
+    .heading-div-row {
+      padding: 0;
+      margin: 0;
+      position: relative;
+
+      h4 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.4;
+        color: #252631;
+        margin: 0 0 20px 0;
+      }
+    }
+
+    .selected-wk-check-list {
+      padding: 0;
+      margin: 0 0 20px 0;
+      position: relative;
+      max-height: 290px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color: transparent;
+      }
+    
+      &::-webkit-scrollbar {
+        width: 16px;
+        background-color: #fff;
+      }
+    
+      &::-webkit-scrollbar-thumb {
+        border-radius: 16px;
+        border: 4px solid #fff;
+        background-color: #f2f2f2;
+      }
+
+      .img-text-col-box {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px 0;
+        
+        .img-thumb {
+          width: 40px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+
+          .img-responsive {
+            height: 40px;
+            width: 40px;
+            border-radius: 100px;
+          }
+        }
+
+        .text-div {
+          padding: 0 0 0 15px;
+          margin: 0;
+          width: calc(100% - 40px);
+
+          h3 {
+            font-weight: 400;
+            font-size: 18px;
+            color: #000;
+            line-height: 1.4;
+            margin: 0 0 0 0;
+            display: block;
+
+            a {
+              color: inherit;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .comp-check-in-card {
+    .comp-check-in-card-box {
+      .text-top-check-in-card-row {
+        .col-width-29 {
+          flex: 0 0 29%;
+          max-width: 29%;
+        }
+
+        .col-width-25 {
+          flex: 0 0 25%;
+          max-width: 25%;
+        }
+
+        .col-width-14 {
+          flex: 0 0 14%;
+          max-width: 14%;
+        }
+
+        .col-width-15 {
+          flex: 0 0 15%;
+          max-width: 15%;
+        }
+
+        .col-width-17 {
+          flex: 0 0 17%;
+          max-width: 17%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .panel-card-div {
+    .panel-card-row {
+      .check-step-form-div {
+        .border-text-note-box {
+          margin: 0 0 30px 0;
+        }
+      }
+    }
+  }
+
+  .comp-check-in-card {
+    .comp-check-in-card-box {
+      .text-top-check-in-card-row {
+        .wk-check-in-box-label-text {
+          margin: 5px 0 10px 0;
+
+          .label-thumb {
+            width: 100px;
+          }
+
+          .status-label {
+            font-size: 12px;
+            line-height: 16px;
+            min-height: 30px;
+            min-width: 90px;
+          }
+
+          .text-div {
+            padding: 0 0 0 5px;
+            width: calc(100% - 100px);
+
+            h3 {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .wk-check-in-box-text {
+          h2 {
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 0 0 5px 0;
+            min-height: auto;
+          }
+
+          h4 {
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 0 0 0 0;
+            min-height: auto;
+          }
+        }
+
+        .action-check-in-box {
+          padding: 0 10px 0 10px;
+
+          .action-div {
+            padding: 0;
+          }
+        }
+
+        .center-text {
+          h2 {
+            text-align: left;
+            justify-content: flex-start;
+          }
+
+          h4 {
+            text-align: left;
+            justify-content: flex-start;
+            min-height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .panel-card-div {
+    .panel-card-row {
+      .check-step-form-div {
+        .border-text-note-box {
+          padding: 20px 12px;
+
+          p {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .comp-check-in-card {
+    .comp-check-in-card-box {
+      padding: 10px 10px 5px 10px;
+
+      .text-top-check-in-card-row {
+        .wk-check-in-box-label-text {
+          margin: 5px 0 10px 0;
+
+          .label-thumb {
+            width: 100px;
+          }
+
+          .status-label {
+            font-size: 12px;
+            line-height: 16px;
+            min-height: 30px;
+            min-width: 90px;
+          }
+
+          .text-div {
+            padding: 0 0 0 5px;
+            width: calc(100% - 100px);
+
+            h3 {
+              font-size: 14px;
+            }
+          }
+        }
+
+        .wk-check-in-box-text {
+          h2 {
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 0 0 5px 0;
+            min-height: auto;
+          }
+        }
+
+        .center-text {
+          h2 {
+            text-align: left;
+            justify-content: flex-start;
+          }
+        }
+
+        .tab-left-text {
+          h4 {
+            text-align: left;
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+}

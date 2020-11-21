@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Check In | TS Group</title>
+<meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+<meta name="theme-color" content="#0D2A76">
+<meta name="msapplication-navbutton-color" content="#0D2A76">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#0D2A76">
+<link href='assets/images/favicon.png' rel='shortcut icon'>
+<link href="assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/fonts/rubik/rubik-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/fonts/lato/lato-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/line-awesome.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/left-sidebar.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/custom-form.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/company/step-form-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/company/company-check-in.css" media="all" rel="stylesheet" type="text/css" />
+<script src="assets/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper" class="wrapper dashboard-wrapper">
+
+  <!-- left-side -->
+  <div class="left-side-nav">
+    <div class="left-side-nav-inner">
+
+        <div class="nav-logo-section">
+          <a href="company-dashboard.html" class="dash-logo" >
+            <img src="assets/images/logo.png" class="logo" alt="logo" /> 
+          </a>
+
+          <div class="mobile-menu-div desktop-hidden">
+            <button class="navbar-toggler mobile-menu-button" id="menu-open" type="button">
+                <span class="navbar-toggler-icon"> <i class="fe fe-menu"></i> </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="left-side-menu" id="dashboard-menu-clone">
+          <div class="left-side-inner">
+
+            <!--  mobile  -->
+            <a href="javascript:void(0)" class="closebtn desktop-hidden" id="menu-closed"> <i class="fe fe-x"></i> </a>
+            <!--  End of mobile  -->
+
+            <div class="side-nav-item accordion" id="menu-collapse">
+              <ul class="main-listing">
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="company-dashboard.html">
+                    <span class="text-collapse-menu">Dashboard</span>
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link nav-normal" href="#">
+                    <span class="text-collapse-menu">CHECK IN</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="#">
+                    <span class="text-collapse-menu">CHECK OUT</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="#">
+                    <span class="text-collapse-menu">Workers</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="#">
+                    <span class="text-collapse-menu">TRANSFER</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="#">
+                    <span class="text-collapse-menu">History</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+              
+          </div>
+        </div>
+        
+        <!--  mobile  -->
+        <div id="cd-shadow-layer" class="menu-closed backdrop-menu-layer"></div>
+        <!--  End of mobile  -->
+
+    </div>
+  </div>
+  <!--  End of left-side  -->
+
+  <!-- Begin page content -->
+  <main role="main" class="middle-area-dashboard main-dashboard">
+    <div class="main-middle-area">
+
+        <!--  Header  -->
+        <header class="header header-dashboard">
+            <nav class="navbar navbar-light">
+                <div class="container-fluid d-block">
+                    
+                    <div class="row col-header-row">
+                        <div class="col-lg-12 col-12">
+
+                            <div class="nav-dashboard-row">
+
+                                <div class="nav-dashboard-left">
+                                  <div class="heading-div"><h1>Dashboard</h1></div>
+                                </div>
+
+                                <div class="nav-dashboard-right">
+                                  <div class="user-drop-down">
+                                    <div class="dropdown drop-left dropdown-custom-top">
+                                      <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="user-profile">
+                                          <div class="user-img">
+                                            <img src="assets/images/profile.jpg" class="user-top-image" alt="user image" />
+                                          </div>
+                                        </div>
+                                      </a>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <ul>
+                                          <li><a class="dropdown-item" href="company-settings.html"> Settings</a></li>
+                                          <li class="logout-li"><a class="dropdown-item" href="login.html"> <i class="fe fe-log-in"></i> Logout</a></li>
+                                        </ul>                   
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                
+                </div>
+            </nav>
+        </header>
+        <!-- End of header -->
+        
+        <!--  main  -->
+        <div class="main-section">
+          <div class="main-div">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+
+                  <section class="step-forms-section">
+                    <div class="step-forms-inner">
+                      
+                      <!-- tabs top -->
+                      <div class="row mlr-10">
+                        <div class="col-lg-12 plr-10">
+                          
+                          <div class="step-forms-nav-tab">
+                            <ul class="nav nav-tabs" role="tablist">
+                              <li class="active">
+                                <a class="active" data-toggle="tab" aria-controls="step1" role="tab" href="#menu1">
+                                  <span class="title-text">STEP ONE</span>
+                                  <span class="round-number"></span>
+                                </a>
+                              </li>
+                              <li class="disabled">
+                                <a data-toggle="tab" aria-controls="step2" role="tab" href="#menu2">
+                                  <span class="title-text">STEP TWO</span>
+                                  <span class="round-number"></span>
+                                </a>
+                              </li>
+                              <li class="disabled">
+                                <a data-toggle="tab" aria-controls="step3" role="tab" href="#menu3">
+                                  <span class="title-text">STEP THREE</span>
+                                  <span class="round-number"></span>
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+          
+                        </div>
+                      </div>
+                      <!-- End of tabs top -->
+          
+                      <div class="row">
+                        <div class="col-lg-12">
+          
+                          <div class="step-forms-tab-content">
+                            <div class="tab-content">
+                  
+                              <div id="menu1" class="tab-pane tab-pane-one fade">
+                  
+                                <div class="panel-card-div">
+                                  <div class="panel-card-row">
+
+                                    <div class="row mlr-10">
+                                      <div class="col-lg-12 col-md-12 plr-10">
+
+                                        <div class="check-step-form-div">
+
+                                          <div class="form-custom-div">
+
+                                            <div class="row mlr-10">
+                                              <div class="col-lg-8 col-md-8 plr-10 left-order-div">
+
+                                                <div class="row mlr-10">
+          
+                                                  <div class="col-lg-6 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom">
+                                                      <label>Contact Person (Admin) / (OPS)</label>
+                                                      <div class="input-control">
+                                                        <input type="text" class="form-control" placeholder="-" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+          
+                                                  <div class="col-lg-6 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom">
+                                                      <label>Contact Number</label>
+                                                      <div class="input-control">
+                                                        <input type="text" class="form-control" placeholder="-" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+          
+                                                  <div class="col-lg-6 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom">
+                                                      <label>Check-In Date</label>
+                                                      <div class="input-control">
+                                                        <input type="text" class="form-control" placeholder="Please enter date" data-mask="00/00/0000" autocomplete="off" maxlength="15" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+          
+                                                  <div class="col-lg-6 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom">
+                                                      <label>Check-In Time</label>
+                                                      <div class="input-control">
+                                                        <input type="text" class="form-control" placeholder="Please enter time" data-mask="00:00" autocomplete="off" maxlength="15" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="col-lg-6 col-md-12 plr-10">
+                                                    <div class="form-group form-group-custom">
+                                                      <label>Tenancy Agreement Number</label>
+                                                      <div class="input-control">
+                                                        <input type="text" class="form-control" placeholder="ASE-" value="ASE-" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="col-lg-3 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom">
+                                                      <label>Number of Room</label>
+                                                      <div class="input-control">
+                                                        <input type="number" class="form-control" placeholder="-" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+
+                                                  <div class="col-lg-3 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom">
+                                                      <label>Number of Pax</label>
+                                                      <div class="input-control">
+                                                        <input type="number" class="form-control" placeholder="-" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+          
+                                                </div>
+
+                                              </div>
+
+                                              <div class="col-lg-4 col-md-4 plr-10 right-order-div">
+
+                                                <div class="row mlr-10">
+                                                  <div class="col-lg-12 col-md-12">
+
+                                                    <div class="border-text-note-box">
+                                                      <div class="border-text-note-inner">
+                                                        <p>Weekdays 9am-5.30pm; Saturday 9am to 1pm </p>
+                                                        <p><span class="block">Public Holidays & Sun : No Check-in. </span>
+                                                          <span class="block">(Kindly adhere to the timing strictly)</span>
+                                                          <span class="block">Administration charge will applicable S$20.00 per pax/hr for check-in beyond the above mentioned timing </span>
+                                                        </p> 
+                                                      </div>
+                                                    </div>
+
+                                                  </div>
+                                                </div>
+
+                                              </div>
+                                            </div>
+
+                                            <div class="row mlr-10">
+                                              <div class="col-lg-12 col-md-12 plr-10">
+
+                                                <div class="text-general-note-card">
+                                                  <div class="text-general-note-inner">
+                                                    <div class="title-div">
+                                                      <h4>Note:</h4>
+                                                    </div>
+                                                    <div class="content-div">
+                                                      <p>A) Please complete this application form in <span class="black-text-underline">BLOCK LETTERS</span> (<span class="text-color2">not hand written</span>)(Incomplete information or without the relevant documents attached will not be considered). </p>
+                                                      <p>B) Photocopies of the valid work permit (both sides) and passport copy of each worker must be attached. Photocopies of documents and original copies to bring along on day of check-in for Verification</p>
+                                                      <p>C) Soft copy to be email to TVD 2 days prior to check-in . Email:  umapathy@tsgrp.sg;  suresh@tsgrp.sg; ranjan@tsgrp.sg; ghosh@tsgrp.sg</p>
+                                                      <p>D) All rooms would be provided with 12 Beds, 12 Lockers, 12 Mattress, 12 Win-Board and 12 Pillow for the Residents</p>
+                                                      <p>E) Used mattress & pillows are not allowed in the dormitory</p>
+                                                      <p>Particulars recorded must be as per in the <span class="black-text-underline">TRAVEL DOCUMENT</span> and <span class="black-text-underline">WORK PERMIT</span>.  Each form is applicable for individual room with a <span class="black-text-underline">maximum of 12 persons per room</span></p>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                              </div>
+                                            </div>
+
+                                          </div>
+
+                                        </div>
+
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                  
+                                <div class="tab-footer">
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      
+                                      <div class="button-div">
+                                        <div class="button-div-row">
+                                          <button class="btn btn-general btn-primary-common btn-next mr-15">NEXT</button>
+                                        </div>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+          
+                              </div>
+                  
+                              <div id="menu2" class="tab-pane tab-pane-two fade active show">
+                                
+                                <div class="panel-card-div">
+                                  <div class="panel-card-row">
+
+                                    <div class="row mlr-10">
+                                      <div class="col-lg-12 col-md-12 plr-10">
+
+                                        <div class="comp-check-in-card">
+
+                                          <div class="row">
+                                            <div class="col-lg-12 col-md-12">
+
+                                              <div class="check-in-top-first-row">
+                                                <div class="check-in-top-first-left">
+                                                  <div class="check-in-text-box">
+                                                    <p>Select your workers:</p>
+                                                  </div>
+                                                </div>
+                    
+                                                <div class="check-wk-top-first-right">
+                                                  <div class="new-link-box">
+                                                    <a href="#" data-toggle="modal" data-target="#company-add-worker-modal" class="link link-new"> <i class="las la-plus-circle"></i> <span class="text">add worker</span> </a>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                            </div>
+                                          </div>
+
+                                          <div class="row">
+                                            <div class="col-lg-12 col-md-12">
+                
+                                              <div class="comp-check-in-card-box">
+                                                <div class="text-top-check-in-card-row">
+                                                  <div class="row align-center-row mlr-10">
+                
+                                                    <div class="col-lg-4 col-md-12 plr-10">
+                                                      <div class="wk-check-in-box-text wk-check-in-box-label-text">
+                                                        <div class="label-thumb">
+                                                          <label class="status-label valid-label">VALID</label>
+                                                        </div>
+                                                        <div class="text-div">
+                                                          <h2> <a class="link" href="#">Nicholas Gordon</a> </h2>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-2 col-md-3 plr-10">
+                                                      <div class="wk-check-in-box-text center-text tab-left-text">
+                                                        <h4><span class="text">FIN NO.</span></h4>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-3 col-md-4 plr-10">
+                                                      <div class="wk-check-in-box-text center-text">
+                                                        <h4><span class="text">WORK PERMIT NUMBER</span></h4>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-2 col-md-3 plr-10">
+                                                      <div class="wk-check-in-box-text center-text">
+                                                        <h4><span class="text">PASSPORT NUMBER</span></h4>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="col-lg-1 col-md-2 plr-10">
+                                                      <div class="wk-check-in-box-text action-check-in-box">
+                                                        <div class="action-div">
+                                                          <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                
+                                                  </div>
+                
+                                                </div>
+                                              </div>
+
+                                              <div class="comp-check-in-card-box">
+                                                <div class="text-top-check-in-card-row">
+                                                  <div class="row align-center-row mlr-10">
+                
+                                                    <div class="col-lg-4 col-md-12 plr-10">
+                                                      <div class="wk-check-in-box-text wk-check-in-box-label-text">
+                                                        <div class="label-thumb">
+                                                          <label class="status-label valid-label">VALID</label>
+                                                        </div>
+                                                        <div class="text-div">
+                                                          <h2> <a class="link" href="#">Bradley Malone</a> </h2>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-2 col-md-3 plr-10">
+                                                      <div class="wk-check-in-box-text center-text tab-left-text">
+                                                        <h4><span class="text">FIN NO.</span></h4>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-3 col-md-4 plr-10">
+                                                      <div class="wk-check-in-box-text center-text">
+                                                        <h4><span class="text">WORK PERMIT NUMBER</span></h4>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-2 col-md-3 plr-10">
+                                                      <div class="wk-check-in-box-text center-text">
+                                                        <h4><span class="text">PASSPORT NUMBER</span></h4>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="col-lg-1 col-md-2 plr-10">
+                                                      <div class="wk-check-in-box-text action-check-in-box">
+                                                        <div class="action-div">
+                                                          <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                
+                                                  </div>
+                
+                                                </div>
+                                              </div>
+
+                                              <div class="comp-check-in-card-box">
+                                                <div class="text-top-check-in-card-row">
+                                                  <div class="row align-center-row mlr-10">
+                
+                                                    <div class="col-lg-4 col-md-12 plr-10">
+                                                      <div class="wk-check-in-box-text wk-check-in-box-label-text">
+                                                        <div class="label-thumb">
+                                                          <label class="status-label valid-label">VALID</label>
+                                                        </div>
+                                                        <div class="text-div">
+                                                          <h2> <a class="link" href="#">Janie Todd</a> </h2>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-2 col-md-3 plr-10">
+                                                      <div class="wk-check-in-box-text center-text tab-left-text">
+                                                        <h4><span class="text">FIN NO.</span></h4>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-3 col-md-4 plr-10">
+                                                      <div class="wk-check-in-box-text center-text">
+                                                        <h4><span class="text">WORK PERMIT NUMBER</span></h4>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-2 col-md-3 plr-10">
+                                                      <div class="wk-check-in-box-text center-text">
+                                                        <h4><span class="text">PASSPORT NUMBER</span></h4>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="col-lg-1 col-md-2 plr-10">
+                                                      <div class="wk-check-in-box-text action-check-in-box">
+                                                        <div class="action-div">
+                                                          <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                
+                                                  </div>
+                
+                                                </div>
+                                              </div>
+
+                                              <div class="comp-check-in-card-box">
+                                                <div class="text-top-check-in-card-row">
+                                                  <div class="row align-center-row mlr-10">
+                
+                                                    <div class="col-lg-4 col-md-12 plr-10">
+                                                      <div class="wk-check-in-box-text wk-check-in-box-label-text">
+                                                        <div class="label-thumb">
+                                                          <label class="status-label valid-label">VALID</label>
+                                                        </div>
+                                                        <div class="text-div">
+                                                          <h2> <a class="link" href="#">Marvin Lambert</a> </h2>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-2 col-md-3 plr-10">
+                                                      <div class="wk-check-in-box-text center-text tab-left-text">
+                                                        <h4><span class="text">FIN NO.</span></h4>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-3 col-md-4 plr-10">
+                                                      <div class="wk-check-in-box-text center-text">
+                                                        <h4><span class="text">WORK PERMIT NUMBER</span></h4>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-2 col-md-3 plr-10">
+                                                      <div class="wk-check-in-box-text center-text">
+                                                        <h4><span class="text">PASSPORT NUMBER</span></h4>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="col-lg-1 col-md-2 plr-10">
+                                                      <div class="wk-check-in-box-text action-check-in-box">
+                                                        <div class="action-div">
+                                                          <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                
+                                                  </div>
+                
+                                                </div>
+                                              </div>
+
+                                              <div class="comp-check-in-card-box">
+                                                <div class="text-top-check-in-card-row">
+                                                  <div class="row align-center-row mlr-10">
+                
+                                                    <div class="col-lg-4 col-md-12 plr-10">
+                                                      <div class="wk-check-in-box-text wk-check-in-box-label-text">
+                                                        <div class="label-thumb">
+                                                          <label class="status-label valid-label">VALID</label>
+                                                        </div>
+                                                        <div class="text-div">
+                                                          <h2> <a class="link" href="#">Janie Todd</a> </h2>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-2 col-md-3 plr-10">
+                                                      <div class="wk-check-in-box-text center-text tab-left-text">
+                                                        <h4><span class="text">FIN NO.</span></h4>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-3 col-md-4 plr-10">
+                                                      <div class="wk-check-in-box-text center-text">
+                                                        <h4><span class="text">WORK PERMIT NUMBER</span></h4>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-2 col-md-3 plr-10">
+                                                      <div class="wk-check-in-box-text center-text">
+                                                        <h4><span class="text">PASSPORT NUMBER</span></h4>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="col-lg-1 col-md-2 plr-10">
+                                                      <div class="wk-check-in-box-text action-check-in-box">
+                                                        <div class="action-div">
+                                                          <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                
+                                                  </div>
+                
+                                                </div>
+                                              </div>
+
+                                              <div class="comp-check-in-card-box">
+                                                <div class="text-top-check-in-card-row">
+                                                  <div class="row align-center-row mlr-10">
+                
+                                                    <div class="col-lg-4 col-md-12 plr-10">
+                                                      <div class="wk-check-in-box-text wk-check-in-box-label-text">
+                                                        <div class="label-thumb">
+                                                          <label class="status-label expired-label">EXPIRED</label>
+                                                        </div>
+                                                        <div class="text-div">
+                                                          <h2> <a class="link" href="#">Marvin Lambert</a> </h2>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-2 col-md-3 plr-10">
+                                                      <div class="wk-check-in-box-text center-text tab-left-text">
+                                                        <h4><span class="text">FIN NO.</span></h4>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-3 col-md-4 plr-10">
+                                                      <div class="wk-check-in-box-text center-text">
+                                                        <h4><span class="text">WORK PERMIT NUMBER</span></h4>
+                                                      </div>
+                                                    </div>
+                
+                                                    <div class="col-lg-2 col-md-3 plr-10">
+                                                      <div class="wk-check-in-box-text center-text">
+                                                        <h4><span class="text">PASSPORT NUMBER</span></h4>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="col-lg-1 col-md-2 plr-10">
+                                                      <div class="wk-check-in-box-text action-check-in-box">
+                                                        <div class="action-div">
+                                                          <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                
+                                                  </div>
+                
+                                                </div>
+                                              </div>
+                
+                                            </div>
+                                          </div>
+                
+                                          <div class="row">
+                                            <div class="col-lg-12 col-md-12">
+                      
+                                              <div class="pagination-root">
+                                                <div class="pagination-row">
+                                                  <ul class="pagination pagination-custom">
+                                                    <li class="page-item page-left disabled"><a class="page-link" href="#"><i class="las la-angle-left"></i></a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item page-right"><a class="page-link" href="#"><i class="las la-angle-right"></i></a></li>
+                                                  </ul>
+                                                </div>
+                                              </div>
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                  
+                                <div class="tab-footer">
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      
+                                      <div class="button-div">
+                                        <div class="button-div-row">
+                                          <button class="btn btn-general btn-primary-common btn-next mr-15">NEXT</button>
+                                          <button class="btn btn-general btn-back">BACK</button>
+                                        </div>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                              </div>
+                  
+                              <div id="menu3" class="tab-pane tab-pane-three fade">
+                                
+                                <div class="panel-card-div">
+                                  <div class="panel-card-row">
+
+                                    <div class="row mlr-10">
+                                      <div class="col-lg-12 col-md-12 plr-10">
+
+                                        <div class="check-step-form-div">
+
+                                          <div class="form-custom-div">
+
+                                            <div class="row mlr-10">
+                                              <div class="col-lg-8 col-md-8 plr-10 left-order-div">
+
+                                                <div class="row mlr-10">
+          
+                                                  <div class="col-lg-6 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom">
+                                                      <label>No. of PU Board</label>
+                                                      <div class="input-control">
+                                                        <input type="text" class="form-control" placeholder="-" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+          
+                                                  <div class="col-lg-6 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom">
+                                                      <label>No. of Pillow</label>
+                                                      <div class="input-control">
+                                                        <input type="text" class="form-control" placeholder="-" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+          
+                                                  <div class="col-lg-6 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom">
+                                                      <label>No. of Mattress</label>
+                                                      <div class="input-control">
+                                                        <input type="text" class="form-control" placeholder="-" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+          
+                                                  <div class="col-lg-6 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom">
+                                                      <label>No. of Bamboo Mat</label>
+                                                      <div class="input-control">
+                                                        <input type="text" class="form-control" placeholder="-" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+          
+                                                </div>
+
+                                              </div>
+
+                                              <div class="col-lg-4 col-md-4 plr-10 right-order-div">
+
+                                                <div class="row mlr-10">
+                                                  <div class="col-lg-12 col-md-12">
+
+                                                    <div class="border-text-note-box">
+                                                      <div class="border-text-note-inner">
+                                                        <p>Weekdays 9am-5.30pm; Saturday 9am to 1pm </p>
+                                                        <p><span class="block">Public Holidays & Sun : No Check-in. </span>
+                                                          <span class="block">(Kindly adhere to the timing strictly)</span>
+                                                          <span class="block">Administration charge will applicable S$20.00 per pax/hr for check-in beyond the above mentioned timing </span>
+                                                        </p> 
+                                                      </div>
+                                                    </div>
+
+                                                  </div>
+                                                </div>
+
+                                              </div>
+
+                                              <div class="col-lg-12 col-md-12 plr-10 order-number-03">
+
+                                                <div class="heading-title-div-h4">
+                                                  <h4>This is to certify that the above information is true and correct.</h4>
+                                                </div>
+
+                                                <div class="row mlr-10">
+          
+                                                  <div class="col-lg-4 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom">
+                                                      <label>Name</label>
+                                                      <div class="input-control">
+                                                        <input type="text" class="form-control" placeholder="-" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+          
+                                                  <div class="col-lg-2 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom">
+                                                      <label>Designation</label>
+                                                      <div class="input-control">
+                                                        <input type="text" class="form-control" placeholder="-" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+          
+                                                  <div class="col-lg-2 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom">
+                                                      <label>Contact Number</label>
+                                                      <div class="input-control">
+                                                        <input type="text" class="form-control" placeholder="-" />
+                                                      </div>
+                                                    </div>
+                                                  </div>
+          
+                                                  <div class="col-lg-4 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom form-group-custom-text">
+                                                      <label>Submission Date</label>
+                                                      <div class="input-control">
+                                                        <h3 class="h3-text"> <span>30th December 2020</span> </h3>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+          
+                                                </div>
+
+                                              </div>
+
+                                            </div>
+
+                                          </div>
+
+                                        </div>
+
+                                      </div>
+                                    </div>
+
+                                  </div>
+                                </div>
+                  
+                                <div class="tab-footer">
+                                  <div class="row">
+                                    <div class="col-lg-12">
+                                      
+                                      <div class="button-div">
+                                        <div class="button-div-row">
+                                          <button class="btn btn-general btn-primary-common btn-submit mr-15">SUBMIT</button>
+                                          <button class="btn btn-general btn-back">BACK</button>
+                                        </div>
+                                      </div>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+          
+                              </div>
+                      
+                            </div>
+                          </div>
+                        
+                        </div>
+                      </div>
+                      <!-- end -->
+          
+                    </div>
+                  </section>
+                  
+                </div>  
+              </div>        
+            </div>
+          </div>
+        </div><!--  end of main  -->
+
+        <footer class="footer">
+          <div class="footer-div">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <p> &copy; 2020 <a href="#" class="link"> TSGroup </a>- All Rights Reserved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+  </main>
+
+</div><!-- end of wrapper -->
+
+<!-- The Delete -->
+<div class="modal modal-message fade" id="delete-message">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        
+        <div class="modal-message-root">
+          <div class="modal-message-row">
+            <div class="modal-message-text">
+              <h2>YOU SURE YOU WANT TO DELETE?</h2>
+            </div>
+            <div class="modal-btn-group">
+              <div class="modal-btn-group-row">
+                <button class="btn btn-general btn-primary-common mr-4p">DELETE</button>
+                <button class="btn btn-general btn-back ml-4p" data-dismiss="modal">CANCEL</button>
+              </div>    
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
+<div class="modal right right-slider-modal fade" id="company-add-worker-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Add worker</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"> <i class="fe fe-x close-icon-x"></i> </span></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="common-modal-body">
+          
+          <div class="common-body-div">
+            <div class="common-body-inner-div">
+
+              <div class="modal-top-height-div form-custom-div">
+                <div class="row mlr-13">
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="search-div search-div-c2">
+                      <div class="form-group form-group-custom">
+                        <label>Search</label>
+                        <div class="input-control">
+                          <input type="text" class="form-control form-search-input" id="form-search" placeholder="-" />
+                          <button class="search-icon-box" id="form-search-btn">
+                            <span class="bg-custom-icon search-icon"></span>
+                          </button>
+                        </div>
+
+                        <div class="dropdown-menu dropdown-menu-card" id="search-dropdown">
+                          <div class="back-dropdown"></div>
+                          <div class="card-body">
+                            <div class="list-group">
+                              <div class="list-group-item">
+                                <div class="row align-items-center">
+                                  <div class="col-auto">
+                                    <h4 class="text-h4">
+                                      <a href="#" class="link"> WORKER NAME </a>
+                                    </h4>
+                                    <p>FIN. NO.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="list-group-item">
+                                <div class="row align-items-center">
+                                  <div class="col-auto">
+                                    <h4 class="text-h4">
+                                      <a href="#" class="link"> WORKER NAME </a>
+                                    </h4>
+                                    <p>FIN. NO.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="worker-check-list-root">
+                      <div class="worker-check-list-row">
+
+                        <div class="worker-check-list-box">
+                          <div class="worker-check-left-box">
+                            <h4>Worker Name</h4>
+                          </div>
+                          <div class="worker-check-right-box">
+                            <div class="custom-control custom-checkbox custom-checkbox-c2">
+                              <input type="checkbox" class="custom-control-input" id="worker-check-01">
+                              <label class="custom-control-label" for="worker-check-01">&nbsp;</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="worker-check-list-box">
+                          <div class="worker-check-left-box">
+                            <h4>Worker Name</h4>
+                          </div>
+                          <div class="worker-check-right-box">
+                            <div class="custom-control custom-checkbox custom-checkbox-c2">
+                              <input type="checkbox" class="custom-control-input" id="worker-check-02">
+                              <label class="custom-control-label" for="worker-check-02">&nbsp;</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="worker-check-list-box">
+                          <div class="worker-check-left-box">
+                            <h4>Worker Name</h4>
+                          </div>
+                          <div class="worker-check-right-box">
+                            <div class="custom-control custom-checkbox custom-checkbox-c2">
+                              <input type="checkbox" class="custom-control-input" id="worker-check-03">
+                              <label class="custom-control-label" for="worker-check-03">&nbsp;</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="worker-check-list-box">
+                          <div class="worker-check-left-box">
+                            <h4>Worker Name</h4>
+                          </div>
+                          <div class="worker-check-right-box">
+                            <div class="custom-control custom-checkbox custom-checkbox-c2">
+                              <input type="checkbox" class="custom-control-input" id="worker-check-04">
+                              <label class="custom-control-label" for="worker-check-04">&nbsp;</label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="worker-check-list-box">
+                          <div class="worker-check-left-box">
+                            <h4>Worker Name</h4>
+                          </div>
+                          <div class="worker-check-right-box">
+                            <div class="custom-control custom-checkbox custom-checkbox-c2">
+                              <input type="checkbox" class="custom-control-input" id="worker-check-05">
+                              <label class="custom-control-label" for="worker-check-05">&nbsp;</label>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="selected-wk-check-root">
+                      <div class="selected-wk-check-row">
+
+                        <div class="heading-div-row">
+                          <h4>Selected Workers</h4>
+                        </div>
+
+                        <div class="selected-wk-check-list">
+
+                          <div class="selected-wk-check-box">
+                            <div class="img-text-col-box">
+                              <div class="img-thumb">
+                                <img src="assets/images/background-default.jpg" alt="worker" class="img-fluid img-responsive">
+                              </div>
+                              <div class="text-div">
+                                <h3> <a class="link" href="#">Worker Name</a> </h3>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="selected-wk-check-box">
+                            <div class="img-text-col-box">
+                              <div class="img-thumb">
+                                <img src="assets/images/background-default.jpg" alt="worker" class="img-fluid img-responsive">
+                              </div>
+                              <div class="text-div">
+                                <h3> <a class="link" href="#">Worker Name</a> </h3>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="selected-wk-check-box">
+                            <div class="img-text-col-box">
+                              <div class="img-thumb">
+                                <img src="assets/images/background-default.jpg" alt="worker" class="img-fluid img-responsive">
+                              </div>
+                              <div class="text-div">
+                                <h3> <a class="link" href="#">Worker Name</a> </h3>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="selected-wk-check-box">
+                            <div class="img-text-col-box">
+                              <div class="img-thumb">
+                                <img src="assets/images/background-default.jpg" alt="worker" class="img-fluid img-responsive">
+                              </div>
+                              <div class="text-div">
+                                <h3> <a class="link" href="#">Worker Name</a> </h3>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="selected-wk-check-box">
+                            <div class="img-text-col-box">
+                              <div class="img-thumb">
+                                <img src="assets/images/background-default.jpg" alt="worker" class="img-fluid img-responsive">
+                              </div>
+                              <div class="text-div">
+                                <h3> <a class="link" href="#">Worker Name</a> </h3>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="selected-wk-check-box">
+                            <div class="img-text-col-box">
+                              <div class="img-thumb">
+                                <img src="assets/images/background-default.jpg" alt="worker" class="img-fluid img-responsive">
+                              </div>
+                              <div class="text-div">
+                                <h3> <a class="link" href="#">Worker Name</a> </h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="modal-btn-space-group">
+                <div class="modal-btn-space-group-row">
+                  <button class="btn btn-general btn-primary-common mr-15">Add</button>
+                  <button class="btn btn-general btn-back" data-dismiss="modal">CANCEL</button>
+                </div>    
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.mask.js"></script>
+<script src="assets/js/custom.js"></script>
+
+<script>
+  $('.step-forms-nav-tab ul li a').click(function() { $(this).parent().addClass('active'); });
+
+  $("#form-search").focus(function(e){
+    $("#search-dropdown").addClass("show");
+    $(".back-dropdown").click(function(){
+      $("#search-dropdown").removeClass("show");
+    });
+  });
+
+  $("#company-add-worker-modal").modal("show");
+</script>
+
+</body>
+</html>

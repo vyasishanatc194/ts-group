@@ -185,30 +185,30 @@
   }
 }
 
-.check-wk-card-section {
+.check-companies-card-section {
   padding: 0;
   margin: 0;
   position: relative;
 }
 
-.wk-check-io-card {
+.companies-check-io-card {
   padding: 0;
   margin: 0 0 10px 0;
   position: relative;
 
-  .wk-card-box {
+  .companies-card-box {
     padding: 10px 20px;
-    margin: 0 0 16px 0;
+    margin: 0 0 10px 0;
     position: relative;
     background: #fff;
     border-radius: 4px;
 
-    .text-top-wk-card-row {
+    .text-top-companies-card-row {
       width: 100%;
       display: flex;
       flex-wrap: wrap;
 
-      .text-top-wk-card-left {
+      .text-top-companies-card-left {
         width: calc(100% - 130px);
       }
 
@@ -220,7 +220,7 @@
         align-items: center;
       }
 
-      .wio-box-text {
+      .cio-box-text {
         padding: 5px 10px 5px 10px;
         margin: 0 0 5px 0;
         position: relative;
@@ -228,7 +228,7 @@
         h4 {
           font-weight: 400;
           font-size: 14px;
-          color: #98a9bc;
+          color: #252631;
           line-height: 1.5;
           margin: 0 0 5px 0;
           min-height: 40px;
@@ -287,6 +287,45 @@
           }
         }
 
+        .user-img-text-col {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          padding: 10px;
+  
+          .img-thumb {
+            width: 40px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+  
+            .img-responsive {
+              height: 40px;
+              width: 40px;
+              border-radius: 100px;
+            }
+          }
+  
+          .text-div {
+            padding: 0 0 0 15px;
+            margin: 0;
+            width: calc(100% - 40px);
+  
+            h3 {
+              font-weight: 400;
+              font-size: 18px;
+              color: #000;
+              line-height: 1.4;
+              margin: 0 0 0 0;
+              display: block;
+  
+              a {
+                color: inherit;
+              }
+            }
+          }
+        }
+
         &.pl-30 {
           padding-left: 30px;
         }
@@ -296,7 +335,7 @@
         }
       }
 
-      .wio-box-label-text {
+      .cio-box-label-text {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -358,132 +397,10 @@
         }
       }
     }
-
-    .text-bottom-wk-card-row {
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      position: relative;
-
-      .text-bottom-wk-card-left {
-        width: calc(100% - 130px);
-      }
-
-      .text-bottom-wk-card-right {
-        width: 130px;
-      }
-
-      .user-img-text-col {
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 10px;
-
-        .img-thumb {
-          width: 40px;
-          height: 50px;
-          display: flex;
-          align-items: center;
-
-          .img-responsive {
-            height: 40px;
-            width: 40px;
-            border-radius: 100px;
-          }
-        }
-
-        .text-div {
-          padding: 0 0 0 15px;
-          margin: 0;
-          width: calc(100% - 40px);
-
-          h3 {
-            font-weight: 400;
-            font-size: 18px;
-            color: #000;
-            line-height: 1.4;
-            margin: 0 0 0 0;
-            display: block;
-
-            a {
-              color: inherit;
-            }
-          }
-        }
-      }
-    }
-
-    .collapsible-button-div {
-      padding: 0;
-      margin: 0;
-      position: relative;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-      height: 100%;
-
-      .collapsible-button-row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-      }
-
-      .btn.btn-default-collapse {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 0;
-        font-weight: 500;
-        font-size: 14px;
-        color: #555;
-        letter-spacing: 0;
-        outline: none;
-        box-shadow: none;
-        transition: all 0.8s;
-        text-decoration: none;
-        background-color: transparent;
-        z-index: 9;
-        position: relative;
-
-        .down-arrow-icon {
-          transform: rotate(180deg);
-          margin: 0 0 0 10px;
-          transition: all 0.8s;
-          color: #222;
-          font-size: 16px;
-        }
-
-        .show-text {
-          display: none;
-        }
-
-        .close-text {
-          display: inline-block;
-        }
-
-        &.collapsed {
-          .down-arrow-icon {
-            transform: rotate(0deg);
-            transition: all 0.8s;
-          }
-
-          .show-text {
-            display: inline-block;
-            transition: all 0.8s;
-          }
-
-          .close-text {
-            display: none;
-            transition: all 0.8s;
-          }
-        }
-      }
-    }
   }
 }
 
-.worker-padding-div {
+.companies-padding-div {
   padding: 0 10px;
 }
 
@@ -535,9 +452,9 @@
 }
 
 @media (min-width: 1025px) {
-  .wk-check-io-card {
-    .wk-card-box {
-      .text-top-wk-card-row {
+  .companies-check-io-card {
+    .companies-card-box {
+      .text-top-companies-card-row {
         .width-16 {
           flex: 0 0 16%;
           max-width: 16%;
@@ -588,12 +505,12 @@
     }
   }
 
-  .wk-check-io-card {
-    .wk-card-box {
+  .companies-check-io-card {
+    .companies-card-box {
       padding: 10px 10px;
 
-      .text-top-wk-card-row {
-        .text-top-wk-card-left {
+      .text-top-companies-card-row {
+        .text-top-companies-card-left {
           width: 100%;
         }
 
@@ -601,7 +518,7 @@
           width: 100%;
         }
 
-        .wio-box-text {
+        .cio-box-text {
           h4 {
             font-size: 12px;
             min-height: 24px;
@@ -611,55 +528,49 @@
             font-size: 12px;
             min-height: auto;
           }
+
+          .status-label {
+            font-size: 12px;
+            line-height: 16px;
+            min-height: 30px;
+            min-width: 85px;
+          }
+
+          .user-img-text-col {
+            .img-thumb {
+              width: 32px;
+              height: 40px;
+  
+              .img-responsive {
+                height: 32px;
+                width: 32px;
+              }
+            }
+  
+            .text-div {
+              padding: 0 0 0 10px;
+              width: calc(100% - 32px);
+  
+              h3 {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        .cio-box-label-text {
+          .label-thumb {
+            width: 85px;
+          }
+
+          .text-div {
+            padding: 0 0 0 5px;
+            width: calc(100% - 85px);
+          }
         }
 
         .action-div {
           padding: 0 5px 0 0;
-        }
-      }
-
-      .text-bottom-wk-card-row {
-        .text-bottom-wk-card-left {
-          width: calc(100% - 100px);
-        }
-
-        .text-bottom-wk-card-right {
-          width: 100px;
-        }
-
-        .user-img-text-col {
-          .img-thumb {
-            width: 32px;
-            height: 40px;
-
-            .img-responsive {
-              height: 32px;
-              width: 32px;
-            }
-          }
-
-          .text-div {
-            padding: 0 0 0 10px;
-            width: calc(100% - 32px);
-
-            h3 {
-              font-size: 14px;
-            }
-          }
-        }
-      }
-
-      .collapsible-button-div {
-        align-items: center;
-
-        .btn.btn-default-collapse {
-          padding: 10px 5px;
-          font-size: 12px;
-
-          .down-arrow-icon {
-            margin: 0 0 0 5px;
-            font-size: 14px;
-          }
         }
       }
     }
@@ -699,7 +610,7 @@
     }
   }
 
-  .worker-padding-div {
+  .companies-padding-div {
     padding: 0;
   }
 }
@@ -708,4 +619,54 @@
   .data-not-found-div {
     min-height: calc(100vh - 320px);
   }
+
+  .companies-check-io-card {
+    .companies-card-box {
+      padding: 10px 20px 10px 10px;
+
+      .text-top-companies-card-row {
+        .cio-box-text {
+          h4 {
+            font-size: 12px;
+          }
+
+          .user-img-text-col {
+            padding: 0;
+            
+            .text-div {
+              padding: 0 0 0 10px;
+              width: calc(100% - 32px);
+
+              h3 {
+                font-size: 14px;
+              }
+            }
+
+            .img-thumb {
+              width: 32px;
+
+              .img-responsive {
+                height: 32px;
+                width: 32px;
+              }
+            }
+          }
+        }
+
+        .text-top-companies-card-left {
+          width: calc(100% - 100px);
+        }
+
+        .text-top-wk-card-right {
+          width: 100px;
+        }
+
+        .cio-box-label-text {
+          .text-div {
+            padding: 0 0 0 5px;
+          }
+        }
+      }
+    }
+  }  
 }

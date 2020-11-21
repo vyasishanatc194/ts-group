@@ -187,6 +187,19 @@
     }
   }
 
+  &.btn-primary-common {
+    background-color: #4d7cfe;
+    border: 1px solid #4d7cfe;
+    color: #fff;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #3769f2;
+      border: 1px solid #3769f2;
+    }
+  }
+
   &.mr-16 {
     margin-right: 16px;
   }
@@ -499,7 +512,7 @@
   .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
     background-color: #4d7cfe;
   }
-
+  
   /* End of checkbox */
 }
 
@@ -2188,6 +2201,12 @@
       }
     }
   }
+
+  .search-div {
+    .search-row {
+      min-width: 100%;
+    }
+  }  
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

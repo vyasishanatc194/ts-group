@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>Workers | TS Group</title>
+<title>Companies | TS Group</title>
 <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
 <meta name="theme-color" content="#0D2A76">
 <meta name="msapplication-navbutton-color" content="#0D2A76">
@@ -19,10 +19,11 @@
 <link href="assets/css/left-sidebar.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/select2.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/select-custom.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/flatpickr.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/custom-form.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
-<link href="assets/css/workers.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/companies.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
 </head>
 
@@ -75,12 +76,12 @@
                     <span class="text-collapse-menu">TRANSFER</span>
                   </a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link nav-normal" href="admin-workers.html">
                     <span class="text-collapse-menu">Workers</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link nav-normal" href="admin-companies.html">
                     <span class="text-collapse-menu">companies</span>
                   </a>
@@ -119,7 +120,7 @@
                             <div class="nav-dashboard-row">
 
                                 <div class="nav-dashboard-left">
-                                    <div class="heading-div"><h1>Workers</h1></div>
+                                    <div class="heading-div"><h1>Companies</h1></div>
                                 </div>
 
                                 <div class="nav-dashboard-right">
@@ -158,7 +159,7 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-lg-12 col-md-12">
-                  <div class="worker-padding-div">
+                  <div class="companies-padding-div">
                     <div class="check-top-root">
                       <div class="row">
                         <div class="col-lg-12 col-md-12">
@@ -184,6 +185,12 @@
                                     </div>
                                   </div>
                                 </div>
+                              </div>
+                            </div>
+
+                            <div class="check-wk-top-first-right">
+                              <div class="new-link-box">
+                                <a href="#" data-toggle="modal" data-target="#create-new-company-account-modal" class="link link-new"> <i class="las la-plus-circle"></i> <span class="text">new company</span> </a>
                               </div>
                             </div>
                           </div>
@@ -243,100 +250,79 @@
                             </div>
 
                           </div>
+
                         </div>
                       </div>
                     </div>
 
-                    <section class="check-wk-card-section">
+                    <section class="check-companies-card-section">
                       <div class="row">
                         <div class="col-lg-12 col-md-12">
 
-                          <div class="wk-check-io-card">
+                          <div class="companies-check-io-card">
                             <div class="row">
                               <div class="col-lg-12 col-md-12">
 
-                                <div class="wk-card-box">
-                                  <div class="text-top-wk-card-row">
-                                    <div class="text-top-wk-card-left">
+                                <div class="companies-card-box">
+                                  <div class="text-top-companies-card-row">
+                                    <div class="text-top-companies-card-left">
                                     
                                       <div class="row align-center-row mlr-10">
 
-                                        <div class="col-lg-2 col-md-4 width-16 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">NAME</span></h4>
-                                            <p> <span class="text">-</span></p>
+                                        <div class="col-lg-6 col-md-12 col-12 plr-10">
+                                          <div class="cio-box-text cio-box-label-text">
+                                            <div class="label-thumb">
+                                              <label class="status-label valid-label">VALID</label>
+                                            </div>
+                                            <div class="text-div">
+                                              <div class="user-img-text-col">
+                                                <div class="img-thumb">
+                                                  <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive">
+                                                </div>
+                                                <div class="text-div">
+                                                  <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
+                                                </div>
+                                              </div>
+                                            </div>
                                           </div>
                                         </div>
 
-                                        <div class="col-lg-2 col-md-4 width-16 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">NATIONALITY</span></h4>
-                                            <p> <span class="text">-</span></p>
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">EMPLOYER NAME</span></h4>
                                           </div>
                                         </div>
 
-                                        <div class="col-lg-2 col-md-4 width-15 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">DATE OF BIRTH</span></h4>
-                                            <p> <span class="text">-</span></p>
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">EMAIL</span></h4>
                                           </div>
                                         </div>
-
-                                        <div class="col-lg-2 col-md-4 width-13 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">FIN NO.</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-20 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">PASSPORT NUMBER</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-20 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">CONTACT NUMBER</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                      </div>
-
-                                      <div id="admin-workers-collapse01" class="collapse show">
-                                        <div class="row align-center-row mlr-10">
                                           
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">WORK PERMIT NO.</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">PHONE NUMBER</span></h4>
                                           </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">INDUSTRY CLASSIFICATION</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PERMIT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PASSPORT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-                                        
                                         </div>
+
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">ADDRESS</span></h4>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">PASSWORD</span></h4>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">TENANCY PERIOD (START-END)</span></h4>
+                                          </div>
+                                        </div>
+                                      
                                       </div>
                                       
                                     </div>
@@ -344,124 +330,74 @@
                                     <div class="text-top-wk-card-right">
 
                                       <div class="action-div">
-                                        <a href="#" data-toggle="modal" data-target="#edit-worker-details-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
+                                        <a href="#" data-toggle="modal" data-target="#edit-company-account-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
                                         <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
-                                      </div>
-
-                                    </div>
-                                  </div>
-
-                                  <div class="text-bottom-wk-card-row">
-                                    <div class="text-bottom-wk-card-left">
-
-                                      <div class="user-img-text-col">
-                                        <div class="img-thumb">
-                                          <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive">
-                                        </div>
-                                        <div class="text-div">
-                                          <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                    <div class="text-bottom-wk-card-right">
-
-                                      <div class="collapsible-button-div">
-                                        <div class="collapsible-button-row">
-                                          <button type="button" class="btn btn-default-collapse" data-toggle="collapse" data-target="#admin-workers-collapse01" aria-expanded="false">
-                                            <span class="text-span show-text">See more</span>
-                                            <span class="text-span close-text">See less</span>
-                                            <i class="las la-angle-double-down down-arrow-icon"></i>
-                                          </button>
-                                        </div>
                                       </div>
 
                                     </div>
                                   </div>
                                 </div>
 
-                                <div class="wk-card-box">
-                                  <div class="text-top-wk-card-row">
-                                    <div class="text-top-wk-card-left">
+                                <div class="companies-card-box">
+                                  <div class="text-top-companies-card-row">
+                                    <div class="text-top-companies-card-left">
                                     
                                       <div class="row align-center-row mlr-10">
 
-                                        <div class="col-lg-2 col-md-4 width-16 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">NAME</span></h4>
-                                            <p> <span class="text">-</span></p>
+                                        <div class="col-lg-6 col-md-12 col-12 plr-10">
+                                          <div class="cio-box-text cio-box-label-text">
+                                            <div class="label-thumb">
+                                              <label class="status-label valid-label">VALID</label>
+                                            </div>
+                                            <div class="text-div">
+                                              <div class="user-img-text-col">
+                                                <div class="img-thumb">
+                                                  <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive">
+                                                </div>
+                                                <div class="text-div">
+                                                  <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
+                                                </div>
+                                              </div>
+                                            </div>
                                           </div>
                                         </div>
 
-                                        <div class="col-lg-2 col-md-4 width-16 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">NATIONALITY</span></h4>
-                                            <p> <span class="text">-</span></p>
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">EMPLOYER NAME</span></h4>
                                           </div>
                                         </div>
 
-                                        <div class="col-lg-2 col-md-4 width-15 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">DATE OF BIRTH</span></h4>
-                                            <p> <span class="text">-</span></p>
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">EMAIL</span></h4>
                                           </div>
                                         </div>
-
-                                        <div class="col-lg-2 col-md-4 width-13 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">FIN NO.</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-20 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">PASSPORT NUMBER</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-20 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">CONTACT NUMBER</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                      </div>
-
-                                      <div id="admin-workers-collapse02" class="collapse">
-                                        <div class="row align-center-row mlr-10">
                                           
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">WORK PERMIT NO.</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">PHONE NUMBER</span></h4>
                                           </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">INDUSTRY CLASSIFICATION</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PERMIT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PASSPORT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-                                        
                                         </div>
+
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">ADDRESS</span></h4>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">PASSWORD</span></h4>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">TENANCY PERIOD (START-END)</span></h4>
+                                          </div>
+                                        </div>
+                                      
                                       </div>
                                       
                                     </div>
@@ -469,124 +405,74 @@
                                     <div class="text-top-wk-card-right">
 
                                       <div class="action-div">
-                                        <a href="#" data-toggle="modal" data-target="#edit-worker-details-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
+                                        <a href="#" data-toggle="modal" data-target="#edit-company-account-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
                                         <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
-                                      </div>
-
-                                    </div>
-                                  </div>
-
-                                  <div class="text-bottom-wk-card-row">
-                                    <div class="text-bottom-wk-card-left">
-
-                                      <div class="user-img-text-col">
-                                        <div class="img-thumb">
-                                          <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive">
-                                        </div>
-                                        <div class="text-div">
-                                          <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                    <div class="text-bottom-wk-card-right">
-
-                                      <div class="collapsible-button-div">
-                                        <div class="collapsible-button-row">
-                                          <button type="button" class="btn btn-default-collapse collapsed" data-toggle="collapse" data-target="#admin-workers-collapse02" aria-expanded="false">
-                                            <span class="text-span show-text">See more</span>
-                                            <span class="text-span close-text">See less</span>
-                                            <i class="las la-angle-double-down down-arrow-icon"></i>
-                                          </button>
-                                        </div>
                                       </div>
 
                                     </div>
                                   </div>
                                 </div>
 
-                                <div class="wk-card-box">
-                                  <div class="text-top-wk-card-row">
-                                    <div class="text-top-wk-card-left">
+                                <div class="companies-card-box">
+                                  <div class="text-top-companies-card-row">
+                                    <div class="text-top-companies-card-left">
                                     
                                       <div class="row align-center-row mlr-10">
 
-                                        <div class="col-lg-2 col-md-4 width-16 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">NAME</span></h4>
-                                            <p> <span class="text">-</span></p>
+                                        <div class="col-lg-6 col-md-12 col-12 plr-10">
+                                          <div class="cio-box-text cio-box-label-text">
+                                            <div class="label-thumb">
+                                              <label class="status-label valid-label">VALID</label>
+                                            </div>
+                                            <div class="text-div">
+                                              <div class="user-img-text-col">
+                                                <div class="img-thumb">
+                                                  <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive">
+                                                </div>
+                                                <div class="text-div">
+                                                  <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
+                                                </div>
+                                              </div>
+                                            </div>
                                           </div>
                                         </div>
 
-                                        <div class="col-lg-2 col-md-4 width-16 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">NATIONALITY</span></h4>
-                                            <p> <span class="text">-</span></p>
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">EMPLOYER NAME</span></h4>
                                           </div>
                                         </div>
 
-                                        <div class="col-lg-2 col-md-4 width-15 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">DATE OF BIRTH</span></h4>
-                                            <p> <span class="text">-</span></p>
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">EMAIL</span></h4>
                                           </div>
                                         </div>
-
-                                        <div class="col-lg-2 col-md-4 width-13 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">FIN NO.</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-20 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">PASSPORT NUMBER</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-20 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">CONTACT NUMBER</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                      </div>
-
-                                      <div id="admin-workers-collapse03" class="collapse">
-                                        <div class="row align-center-row mlr-10">
                                           
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">WORK PERMIT NO.</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">PHONE NUMBER</span></h4>
                                           </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">INDUSTRY CLASSIFICATION</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PERMIT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PASSPORT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-                                        
                                         </div>
+
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">ADDRESS</span></h4>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">PASSWORD</span></h4>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">TENANCY PERIOD (START-END)</span></h4>
+                                          </div>
+                                        </div>
+                                      
                                       </div>
                                       
                                     </div>
@@ -594,36 +480,83 @@
                                     <div class="text-top-wk-card-right">
 
                                       <div class="action-div">
-                                        <a href="#" data-toggle="modal" data-target="#edit-worker-details-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
+                                        <a href="#" data-toggle="modal" data-target="#edit-company-account-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
                                         <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
                                       </div>
 
                                     </div>
                                   </div>
+                                </div>
 
-                                  <div class="text-bottom-wk-card-row">
-                                    <div class="text-bottom-wk-card-left">
+                                <div class="companies-card-box">
+                                  <div class="text-top-companies-card-row">
+                                    <div class="text-top-companies-card-left">
+                                    
+                                      <div class="row align-center-row mlr-10">
 
-                                      <div class="user-img-text-col">
-                                        <div class="img-thumb">
-                                          <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive">
+                                        <div class="col-lg-6 col-md-12 col-12 plr-10">
+                                          <div class="cio-box-text cio-box-label-text">
+                                            <div class="label-thumb">
+                                              <label class="status-label valid-label">VALID</label>
+                                            </div>
+                                            <div class="text-div">
+                                              <div class="user-img-text-col">
+                                                <div class="img-thumb">
+                                                  <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive">
+                                                </div>
+                                                <div class="text-div">
+                                                  <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
                                         </div>
-                                        <div class="text-div">
-                                          <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
+
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">EMPLOYER NAME</span></h4>
+                                          </div>
                                         </div>
+
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">EMAIL</span></h4>
+                                          </div>
+                                        </div>
+                                          
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">PHONE NUMBER</span></h4>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">ADDRESS</span></h4>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">PASSWORD</span></h4>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                          <div class="cio-box-text">
+                                            <h4><span class="text">TENANCY PERIOD (START-END)</span></h4>
+                                          </div>
+                                        </div>
+                                      
                                       </div>
-
+                                      
                                     </div>
-                                    <div class="text-bottom-wk-card-right">
 
-                                      <div class="collapsible-button-div">
-                                        <div class="collapsible-button-row">
-                                          <button type="button" class="btn btn-default-collapse collapsed" data-toggle="collapse" data-target="#admin-workers-collapse03" aria-expanded="false">
-                                            <span class="text-span show-text">See more</span>
-                                            <span class="text-span close-text">See less</span>
-                                            <i class="las la-angle-double-down down-arrow-icon"></i>
-                                          </button>
-                                        </div>
+                                    <div class="text-top-wk-card-right">
+
+                                      <div class="action-div">
+                                        <a href="#" data-toggle="modal" data-target="#edit-company-account-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
+                                        <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
                                       </div>
 
                                     </div>
@@ -766,12 +699,12 @@
   </div>
 </div>
 
-<div class="modal right right-slider-modal fade" id="edit-worker-details-modal" tabindex="-1" role="dialog">
+<div class="modal right right-slider-modal fade" id="create-new-company-account-modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
 
       <div class="modal-header">
-        <h4 class="modal-title">Edit worker details</h4>
+        <h4 class="modal-title">Create new company account</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"> <i class="fe fe-x close-icon-x"></i> </span></button>
       </div>
 
@@ -786,62 +719,158 @@
                 <div class="row mlr-13">
 
                   <div class="col-lg-12 col-md-12 plr-13">
-                    <div class="download-text-group">
-                      <div class="label-heading-div">
-                        <h4>Download Supporting Documents <i class="las la-download icon-download"></i></h4>
-                      </div>
-                      <div class="label-body-div">
-                        <ul>
-                          <li><a href="#" class="link link-download"> <span class="text">- FILE NAME</span> <i class="las la-download icon-download"></i> </a></li>
-                          <li><a href="#" class="link link-download"> <span class="text">- FILE NAME</span> <i class="las la-download icon-download"></i> </a></li>
-                          <li><a href="#" class="link link-download"> <span class="text">- FILE NAME</span> <i class="las la-download icon-download"></i> </a></li>
-                          <li><a href="#" class="link link-download"> <span class="text">- FILE NAME</span> <i class="las la-download icon-download"></i> </a></li>
-                        </ul>
+                    <div class="main-heading-h4">
+                      <h4>Send registration link</h4>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="form-group form-group-custom">
+                      <label>Company email</label>
+                      <div class="input-control">
+                        <input type="email" class="form-control" />
                       </div>
                     </div>
                   </div>
 
                   <div class="col-lg-12 col-md-12 plr-13">
                     <div class="form-group form-group-custom">
-                      <label>Fields</label>
+                      <label>Number of workers allowed</label>
                       <div class="input-control">
-                        <input type="text" class="form-control" />
+                        <input type="number" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="form-group form-group-custom date-group-custom">
+                      <label>Tenancy Period</label>
+                      <div class="input-control">
+                        <div class="row mlr-13">
+                          <div class="col-lg-6 col-md-6 plr-13">
+                            <input class="form-control flatpickr" type="text" placeholder="Start date" id="firstRangeInput1" data-id="rangePlugin1">    
+                          </div>
+                          <div class="col-lg-6 col-md-6 plr-13">
+                            <input class="form-control" type="text" placeholder="End date" id="secondRangeInput1">    
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="modal-btn-space-group">
+                <div class="modal-btn-space-group-row">
+                  <button class="btn btn-general btn-primary-common mr-15">SENT LINK</button>
+                  <button class="btn btn-general btn-back" data-dismiss="modal">CANCEL</button>
+                </div>    
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal right right-slider-modal fade" id="edit-company-account-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Edit company account</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"> <i class="fe fe-x close-icon-x"></i> </span></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="common-modal-body">
+          
+          <div class="common-body-div">
+            <div class="common-body-inner-div">
+
+              <div class="modal-top-height-div form-custom-div">
+                <div class="row mlr-13">
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="main-heading-h4">
+                      <h4>Company details</h4>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="form-group form-group-custom">
+                      <label>Company name</label>
+                      <div class="input-control">
+                        <input type="text" class="form-control" value="ABC" />
                       </div>
                     </div>
                   </div>
 
                   <div class="col-lg-12 col-md-12 plr-13">
                     <div class="form-group form-group-custom">
-                      <label>Fields</label>
+                      <label>Email</label>
                       <div class="input-control">
-                        <input type="text" class="form-control" />
+                        <input type="email" class="form-control" value="stephen@abc.com" />
                       </div>
                     </div>
                   </div>
 
                   <div class="col-lg-12 col-md-12 plr-13">
                     <div class="form-group form-group-custom">
-                      <label>Fields</label>
+                      <label>Phone</label>
                       <div class="input-control">
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" placeholder="Enter phone number" value="+65|61234567" data-mask="+00 | 0000 0000" autocomplete="off" maxlength="15" />
                       </div>
                     </div>
                   </div>
 
                   <div class="col-lg-12 col-md-12 plr-13">
                     <div class="form-group form-group-custom">
-                      <label>Fields</label>
+                      <label>Address</label>
                       <div class="input-control">
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" placeholder="Enter address" value="BLOCK 888, STREET 888" />
                       </div>
                     </div>
                   </div>
 
                   <div class="col-lg-12 col-md-12 plr-13">
                     <div class="form-group form-group-custom">
-                      <label>Fields</label>
+                      <label>Password</label>
                       <div class="input-control">
-                        <input type="text" class="form-control" />
+                        <input type="password" class="form-control" placeholder="Enter password" value="********" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="form-group form-group-custom">
+                      <label>Number of workers allowed</label>
+                      <div class="input-control">
+                        <input type="number" class="form-control" value="24" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="form-group form-group-custom date-group-custom">
+                      <label>Tenancy Period</label>
+                      <div class="input-control">
+                        <div class="row mlr-13">
+                          <div class="col-lg-6 col-md-6 plr-13">
+                            <input class="form-control flatpickr" type="text" placeholder="Start date" id="firstRangeInput2" data-id="rangePlugin2">    
+                          </div>
+                          <div class="col-lg-6 col-md-6 plr-13">
+                            <input class="form-control" type="text" placeholder="End date" id="secondRangeInput2">    
+                          </div>
+                        </div>
+
                       </div>
                     </div>
                   </div>
@@ -870,6 +899,10 @@
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/select2.full.js"></script>
+<script src="assets/js/flatpickr/dist/flatpickr.js"></script>
+<script src="assets/js/flatpickr/rangePlugin.js"></script>
+<script src="assets/js/flatpickr/flatpickr.js"></script>
+<script src="assets/js/jquery.mask.js"></script>
 <script src="assets/js/custom.js"></script>
 <script>
   // search-dropdown
@@ -888,7 +921,15 @@
       minimumResultsForSearch: -1,
     });
 
-    // $("#edit-worker-details-modal").modal("show");
+    /* date flat picker */
+    flatpickr("#firstRangeInput1", {
+      "plugins": [new rangePlugin({ input: "#secondRangeInput1"})]
+    });
+
+    flatpickr("#firstRangeInput2", {
+      "plugins": [new rangePlugin({ input: "#secondRangeInput2"})]
+    });
+    // $("#edit-company-account-modal").modal("show");
   });
 </script>
 

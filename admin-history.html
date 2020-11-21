@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>Workers | TS Group</title>
+<title>History | TS Group</title>
 <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
 <meta name="theme-color" content="#0D2A76">
 <meta name="msapplication-navbutton-color" content="#0D2A76">
@@ -19,10 +19,11 @@
 <link href="assets/css/left-sidebar.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/select2.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/select-custom.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/flatpickr.min.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/custom-form.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
-<link href="assets/css/workers.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/history.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
 </head>
 
@@ -75,7 +76,7 @@
                     <span class="text-collapse-menu">TRANSFER</span>
                   </a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link nav-normal" href="admin-workers.html">
                     <span class="text-collapse-menu">Workers</span>
                   </a>
@@ -85,7 +86,7 @@
                     <span class="text-collapse-menu">companies</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link nav-normal" href="admin-history.html">
                     <span class="text-collapse-menu">History</span>
                   </a>
@@ -119,7 +120,7 @@
                             <div class="nav-dashboard-row">
 
                                 <div class="nav-dashboard-left">
-                                    <div class="heading-div"><h1>Workers</h1></div>
+                                    <div class="heading-div"><h1>History</h1></div>
                                 </div>
 
                                 <div class="nav-dashboard-right">
@@ -158,13 +159,15 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-lg-12 col-md-12">
-                  <div class="worker-padding-div">
+                  <div class="history-padding-div">
+                    
                     <div class="check-top-root">
                       <div class="row">
                         <div class="col-lg-12 col-md-12">
                           
-                          <div class="check-wk-top-first-row">
-                            <div class="check-wk-top-first-left">
+                          <div class="check-history-top-first-row">
+
+                            <div class="check-history-top-first-left">
                               <div class="check-wk-sort-box">
                                 <div class="form-group form-sort-group">
                                   <div class="form-group-row">
@@ -186,21 +189,8 @@
                                 </div>
                               </div>
                             </div>
-                          </div>
 
-                          <div class="check-wk-top-row">
-
-                            <div class="check-wk-top-left">
-                              <div class="check-wk-box">
-                                <a href="#" class="link link-download"> <span class="text">Download CSV.FILE</span> <i class="las la-download icon-download"></i> </a>
-                              </div>
-                            </div>
-
-                            <div class="check-wk-top-right">
-                              <div class="text-right-box">
-                                <p>152312 entries</p>
-                              </div>
-
+                            <div class="check-history-top-first-right">
                               <div class="search-div">
                                 <div class="search-row">
                                   <div class="search-icon-box">
@@ -243,403 +233,251 @@
                             </div>
 
                           </div>
+
                         </div>
                       </div>
                     </div>
 
-                    <section class="check-wk-card-section">
+                    <div class="graph-history-root">
+                      <div class="check-history-top-row">
+
+                        <div class="check-history-top-left">
+                          <div class="hst-text">
+                            <h3>1,480</h3>
+                            <p>Approvals done</p>
+                          </div>
+                        </div>
+
+                        <div class="check-history-top-right">
+                          <div class="date-picker-range-root">
+                            <div class="form-group input-group">
+                              <a href="#" class="input-group-addon date-calendar" id="range-date">
+                                <i class="las la-calendar"></i> <span class="text">period</span>
+                              </a>
+                              <input class="form-control date-picker-range" type="text" placeholder="START-END" id="date-picker-range">
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <div class="graph-history-view-div">
+                        <div class="graph-history-view-row">
+                          <div class="graph-history-thumb">
+                            <img src="assets/images/background/status-graph-01.svg" class="img-fluid img-responsive" alt="status" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <hr class="hr-custom-01">
+
+                    <section class="check-history-card-section">
                       <div class="row">
                         <div class="col-lg-12 col-md-12">
-
-                          <div class="wk-check-io-card">
+  
+                          <div class="history-check-io-card">
                             <div class="row">
                               <div class="col-lg-12 col-md-12">
-
-                                <div class="wk-card-box">
-                                  <div class="text-top-wk-card-row">
-                                    <div class="text-top-wk-card-left">
+  
+                                <div class="history-card-box">
+                                  <div class="text-top-history-card-row">
                                     
-                                      <div class="row align-center-row mlr-10">
+                                    <div class="row align-center-row mlr-10">
 
-                                        <div class="col-lg-2 col-md-4 width-16 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">NAME</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-16 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">NATIONALITY</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-15 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">DATE OF BIRTH</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-13 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">FIN NO.</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-20 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">PASSPORT NUMBER</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-20 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">CONTACT NUMBER</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                      </div>
-
-                                      <div id="admin-workers-collapse01" class="collapse show">
-                                        <div class="row align-center-row mlr-10">
-                                          
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">WORK PERMIT NO.</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">INDUSTRY CLASSIFICATION</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PERMIT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PASSPORT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-                                        
+                                      <div class="col-lg-2 col-md-3 width-20 col-6 plr-10">
+                                        <div class="history-box-text">
+                                          <h4><span class="text">Check In</span></h4>
+                                          <p> <span class="text">31st December 2020</span></p>
                                         </div>
                                       </div>
-                                      
-                                    </div>
 
-                                    <div class="text-top-wk-card-right">
+                                      <div class="col-lg-2 col-md-2 width-20 col-6 plr-10">
+                                        <div class="history-box-text center-text">
+                                          <h4><span class="text">42</span></h4>
+                                          <p> <span class="text">Workers</span></p>
+                                        </div>
+                                      </div>
 
-                                      <div class="action-div">
-                                        <a href="#" data-toggle="modal" data-target="#edit-worker-details-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                      <div class="col-lg-2 col-md-3 width-20 col-6 plr-10">
+                                        <div class="history-box-text center-text">
+                                          <h4><span class="text">28th February</span></h4>
+                                          <p> <span class="text">Check-In Date</span></p>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-2 col-md-2 width-20 col-6 plr-10">
+                                        <div class="history-box-text center-text">
+                                          <h4><span class="text">10:30am</span></h4>
+                                          <p> <span class="text">Check-In Time</span></p>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-3 col-md-2 width-20 col-12 plr-10">
+                                        <div class="history-box-text history-status-box-text">
+                                          <div class="status-label-text rejected-label-text">
+                                            <span class="round-dot"></span> <span class="text">REJECTED</span>
+                                          </div>
+                                        </div>
                                       </div>
 
                                     </div>
+                                    
                                   </div>
-
-                                  <div class="text-bottom-wk-card-row">
-                                    <div class="text-bottom-wk-card-left">
-
-                                      <div class="user-img-text-col">
-                                        <div class="img-thumb">
-                                          <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive">
-                                        </div>
-                                        <div class="text-div">
-                                          <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                    <div class="text-bottom-wk-card-right">
-
-                                      <div class="collapsible-button-div">
-                                        <div class="collapsible-button-row">
-                                          <button type="button" class="btn btn-default-collapse" data-toggle="collapse" data-target="#admin-workers-collapse01" aria-expanded="false">
-                                            <span class="text-span show-text">See more</span>
-                                            <span class="text-span close-text">See less</span>
-                                            <i class="las la-angle-double-down down-arrow-icon"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                  </div>
+  
                                 </div>
 
-                                <div class="wk-card-box">
-                                  <div class="text-top-wk-card-row">
-                                    <div class="text-top-wk-card-left">
+                                <div class="history-card-box">
+                                  <div class="text-top-history-card-row">
                                     
-                                      <div class="row align-center-row mlr-10">
+                                    <div class="row align-center-row mlr-10">
 
-                                        <div class="col-lg-2 col-md-4 width-16 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">NAME</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-16 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">NATIONALITY</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-15 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">DATE OF BIRTH</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-13 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">FIN NO.</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-20 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">PASSPORT NUMBER</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-20 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">CONTACT NUMBER</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                      </div>
-
-                                      <div id="admin-workers-collapse02" class="collapse">
-                                        <div class="row align-center-row mlr-10">
-                                          
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">WORK PERMIT NO.</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">INDUSTRY CLASSIFICATION</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PERMIT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PASSPORT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-                                        
+                                      <div class="col-lg-2 col-md-3 width-20 col-6 plr-10">
+                                        <div class="history-box-text">
+                                          <h4><span class="text">Check In</span></h4>
+                                          <p> <span class="text">31st December 2020</span></p>
                                         </div>
                                       </div>
-                                      
-                                    </div>
 
-                                    <div class="text-top-wk-card-right">
+                                      <div class="col-lg-2 col-md-2 width-20 col-6 plr-10">
+                                        <div class="history-box-text center-text">
+                                          <h4><span class="text">42</span></h4>
+                                          <p> <span class="text">Workers</span></p>
+                                        </div>
+                                      </div>
 
-                                      <div class="action-div">
-                                        <a href="#" data-toggle="modal" data-target="#edit-worker-details-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                      <div class="col-lg-2 col-md-3 width-20 col-6 plr-10">
+                                        <div class="history-box-text center-text">
+                                          <h4><span class="text">28th February</span></h4>
+                                          <p> <span class="text">Check-In Date</span></p>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-2 col-md-2 width-20 col-6 plr-10">
+                                        <div class="history-box-text center-text">
+                                          <h4><span class="text">10:30am</span></h4>
+                                          <p> <span class="text">Check-In Time</span></p>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-3 col-md-2 width-20 col-12 plr-10">
+                                        <div class="history-box-text history-status-box-text">
+                                          <div class="status-label-text approved-label-text">
+                                            <span class="round-dot"></span> <span class="text">APPROVED</span>
+                                          </div>
+                                        </div>
                                       </div>
 
                                     </div>
+                                    
                                   </div>
-
-                                  <div class="text-bottom-wk-card-row">
-                                    <div class="text-bottom-wk-card-left">
-
-                                      <div class="user-img-text-col">
-                                        <div class="img-thumb">
-                                          <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive">
-                                        </div>
-                                        <div class="text-div">
-                                          <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                    <div class="text-bottom-wk-card-right">
-
-                                      <div class="collapsible-button-div">
-                                        <div class="collapsible-button-row">
-                                          <button type="button" class="btn btn-default-collapse collapsed" data-toggle="collapse" data-target="#admin-workers-collapse02" aria-expanded="false">
-                                            <span class="text-span show-text">See more</span>
-                                            <span class="text-span close-text">See less</span>
-                                            <i class="las la-angle-double-down down-arrow-icon"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                  </div>
+  
                                 </div>
 
-                                <div class="wk-card-box">
-                                  <div class="text-top-wk-card-row">
-                                    <div class="text-top-wk-card-left">
+                                <div class="history-card-box">
+                                  <div class="text-top-history-card-row">
                                     
-                                      <div class="row align-center-row mlr-10">
+                                    <div class="row align-center-row mlr-10">
 
-                                        <div class="col-lg-2 col-md-4 width-16 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">NAME</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-16 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">NATIONALITY</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-15 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">DATE OF BIRTH</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-13 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">FIN NO.</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-20 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">PASSPORT NUMBER</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-2 col-md-4 width-20 col-6 plr-10">
-                                          <div class="wio-box-text">
-                                            <h4><span class="text">CONTACT NUMBER</span></h4>
-                                            <p> <span class="text">-</span></p>
-                                          </div>
-                                        </div>
-
-                                      </div>
-
-                                      <div id="admin-workers-collapse03" class="collapse">
-                                        <div class="row align-center-row mlr-10">
-                                          
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">WORK PERMIT NO.</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">INDUSTRY CLASSIFICATION</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PERMIT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PASSPORT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-                                        
+                                      <div class="col-lg-2 col-md-3 width-20 col-6 plr-10">
+                                        <div class="history-box-text">
+                                          <h4><span class="text">Check In</span></h4>
+                                          <p> <span class="text">31st December 2020</span></p>
                                         </div>
                                       </div>
-                                      
-                                    </div>
 
-                                    <div class="text-top-wk-card-right">
+                                      <div class="col-lg-2 col-md-2 width-20 col-6 plr-10">
+                                        <div class="history-box-text center-text">
+                                          <h4><span class="text">42</span></h4>
+                                          <p> <span class="text">Workers</span></p>
+                                        </div>
+                                      </div>
 
-                                      <div class="action-div">
-                                        <a href="#" data-toggle="modal" data-target="#edit-worker-details-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
-                                        <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                      <div class="col-lg-2 col-md-3 width-20 col-6 plr-10">
+                                        <div class="history-box-text center-text">
+                                          <h4><span class="text">28th February</span></h4>
+                                          <p> <span class="text">Check-In Date</span></p>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-2 col-md-2 width-20 col-6 plr-10">
+                                        <div class="history-box-text center-text">
+                                          <h4><span class="text">10:30am</span></h4>
+                                          <p> <span class="text">Check-In Time</span></p>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-3 col-md-2 width-20 col-12 plr-10">
+                                        <div class="history-box-text history-status-box-text">
+                                          <div class="status-label-text rejected-label-text">
+                                            <span class="round-dot"></span> <span class="text">REJECTED</span>
+                                          </div>
+                                        </div>
                                       </div>
 
                                     </div>
+                                    
                                   </div>
-
-                                  <div class="text-bottom-wk-card-row">
-                                    <div class="text-bottom-wk-card-left">
-
-                                      <div class="user-img-text-col">
-                                        <div class="img-thumb">
-                                          <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive">
-                                        </div>
-                                        <div class="text-div">
-                                          <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                    <div class="text-bottom-wk-card-right">
-
-                                      <div class="collapsible-button-div">
-                                        <div class="collapsible-button-row">
-                                          <button type="button" class="btn btn-default-collapse collapsed" data-toggle="collapse" data-target="#admin-workers-collapse03" aria-expanded="false">
-                                            <span class="text-span show-text">See more</span>
-                                            <span class="text-span close-text">See less</span>
-                                            <i class="las la-angle-double-down down-arrow-icon"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                  </div>
+  
                                 </div>
 
+                                <div class="history-card-box">
+                                  <div class="text-top-history-card-row">
+                                    
+                                    <div class="row align-center-row mlr-10">
+
+                                      <div class="col-lg-2 col-md-3 width-20 col-6 plr-10">
+                                        <div class="history-box-text">
+                                          <h4><span class="text">Check In</span></h4>
+                                          <p> <span class="text">31st December 2020</span></p>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-2 col-md-2 width-20 col-6 plr-10">
+                                        <div class="history-box-text center-text">
+                                          <h4><span class="text">42</span></h4>
+                                          <p> <span class="text">Workers</span></p>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-2 col-md-3 width-20 col-6 plr-10">
+                                        <div class="history-box-text center-text">
+                                          <h4><span class="text">28th February</span></h4>
+                                          <p> <span class="text">Check-In Date</span></p>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-2 col-md-2 width-20 col-6 plr-10">
+                                        <div class="history-box-text center-text">
+                                          <h4><span class="text">10:30am</span></h4>
+                                          <p> <span class="text">Check-In Time</span></p>
+                                        </div>
+                                      </div>
+
+                                      <div class="col-lg-3 col-md-2 width-20 col-12 plr-10">
+                                        <div class="history-box-text history-status-box-text">
+                                          <div class="status-label-text approved-label-text">
+                                            <span class="round-dot"></span> <span class="text">APPROVED</span>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                    
+                                  </div>
+  
+                                </div>
+  
                               </div>
                             </div>
                           </div>
-
+  
                         </div>
                       </div>
-
+  
                       <div class="row">
                         <div class="col-lg-12 col-md-12">
-
+  
                           <div class="pagination-root">
                             <div class="pagination-row">
                               <ul class="pagination pagination-custom">
@@ -656,9 +494,11 @@
                           
                         </div>
                       </div>
-
+  
                     </section>
+
                   </div>
+                
                 </div>  
               </div>        
             </div>
@@ -870,6 +710,9 @@
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/select2.full.js"></script>
+<script src="assets/js/flatpickr/dist/flatpickr.js"></script>
+<script src="assets/js/flatpickr/rangePlugin.js"></script>
+<script src="assets/js/flatpickr/flatpickr.js"></script>
 <script src="assets/js/custom.js"></script>
 <script>
   // search-dropdown
@@ -886,6 +729,23 @@
       placeholder: "Select here",
       dropdownPosition: 'below',
       minimumResultsForSearch: -1,
+    });
+
+    /* datepicker */
+    var startdate;
+    startdate = flatpickr("#date-picker-range", {
+      mode: "range",
+      minDate: "today",
+      enableTime: false,
+      altInput: false,
+      dateFormat: "d M",
+      altFormat: "j F Y",
+      onChange: function (selectedDates, dateStr, instance) {
+        instance.element.value = dateStr.replace('to', ' - ');
+      },
+    });
+    $("#range-date").click(function () {
+      startdate.toggle()
     });
 
     // $("#edit-worker-details-modal").modal("show");
