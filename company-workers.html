@@ -21,8 +21,10 @@
 <link href="assets/css/select-custom.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/custom-form.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/dropzone.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/dropzone-custom.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
-<link href="assets/css/workers.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/company/company-workers.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
 </head>
 
@@ -35,7 +37,7 @@
     <div class="left-side-nav-inner">
 
         <div class="nav-logo-section">
-          <a href="admin-dashboard.html" class="dash-logo" >
+          <a href="company-dashboard.html" class="dash-logo" >
             <img src="assets/images/logo.png" class="logo" alt="logo" /> 
           </a>
 
@@ -56,37 +58,32 @@
             <div class="side-nav-item accordion" id="menu-collapse">
               <ul class="main-listing">
                 <li class="nav-item">
-                  <a class="nav-link nav-normal" href="admin-dashboard.html">
+                  <a class="nav-link nav-normal" href="company-dashboard.html">
                     <span class="text-collapse-menu">Dashboard</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-normal" href="admin-checkin.html">
+                  <a class="nav-link nav-normal" href="company-check-in.html">
                     <span class="text-collapse-menu">CHECK IN</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-normal" href="admin-checkout.html">
+                  <a class="nav-link nav-normal" href="company-check-out.html">
                     <span class="text-collapse-menu">CHECK OUT</span>
                   </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link nav-normal" href="admin-transfer.html">
-                    <span class="text-collapse-menu">TRANSFER</span>
-                  </a>
-                </li>
                 <li class="nav-item active">
-                  <a class="nav-link nav-normal" href="admin-workers.html">
+                  <a class="nav-link nav-normal" href="company-workers.html">
                     <span class="text-collapse-menu">Workers</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-normal" href="admin-companies.html">
-                    <span class="text-collapse-menu">companies</span>
+                  <a class="nav-link nav-normal" href="company-check-transfer.html">
+                    <span class="text-collapse-menu">TRANSFER</span>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link nav-normal" href="admin-history.html">
+                  <a class="nav-link nav-normal" href="company-history.html">
                     <span class="text-collapse-menu">History</span>
                   </a>
                 </li>
@@ -119,27 +116,27 @@
                             <div class="nav-dashboard-row">
 
                                 <div class="nav-dashboard-left">
-                                    <div class="heading-div"><h1>Workers</h1></div>
+                                  <div class="heading-div"><h1>Workers</h1></div>
                                 </div>
 
                                 <div class="nav-dashboard-right">
-                                    <div class="user-drop-down">
-                                        <div class="dropdown drop-left dropdown-custom-top">
-                                            <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                <div class="user-profile">
-                                                  <div class="user-img">
-                                                      <img src="assets/images/profile.jpg" class="user-top-image" alt="user image" />
-                                                  </div>
-                                                </div>
-                                            </a>
-                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                                <ul>
-                                                    <li><a class="dropdown-item" href="admin-settings.html"> Settings</a></li>
-                                                    <li class="logout-li"><a class="dropdown-item" href="login.html"> <i class="fe fe-log-in"></i> Logout</a></li>
-                                                </ul>                   
-                                            </div>
+                                  <div class="user-drop-down">
+                                    <div class="dropdown drop-left dropdown-custom-top">
+                                      <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="user-profile">
+                                          <div class="user-img">
+                                            <img src="assets/images/profile.jpg" class="user-top-image" alt="user image" />
+                                          </div>
                                         </div>
+                                      </a>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <ul>
+                                          <li><a class="dropdown-item" href="company-settings.html"> Settings</a></li>
+                                          <li class="logout-li"><a class="dropdown-item" href="login.html"> <i class="fe fe-log-in"></i> Logout</a></li>
+                                        </ul>                   
+                                      </div>
                                     </div>
+                                  </div>
                                 </div>
 
                             </div>
@@ -185,6 +182,11 @@
                                     </div>
                                   </div>
                                 </div>
+                              </div>
+                            </div>
+                            <div class="check-wk-top-first-right">
+                              <div class="new-link-box">
+                                <a href="#" class="link link-new" data-toggle="modal" data-target="#add-company-new-worker-modal"> <i class="las la-plus-circle"></i> <span class="text">new worker</span> </a>
                               </div>
                             </div>
                           </div>
@@ -304,40 +306,34 @@
                                           </div>
                                         </div>
 
-                                      </div>
-
-                                      <div id="admin-workers-collapse01" class="collapse show">
-                                        <div class="row align-center-row mlr-10">
-                                          
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">WORK PERMIT NO.</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
+                                        <div class="col-lg-3 col-md-6 col-12 plr-10">
+                                          <div class="wio-box-text">
+                                            <h4><span class="text">WORK PERMIT NO.</span></h4>
+                                            <p> <span class="text">-</span></p>
                                           </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">INDUSTRY CLASSIFICATION</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PERMIT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PASSPORT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-                                        
                                         </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12 plr-10">
+                                          <div class="wio-box-text">
+                                            <h4><span class="text">INDUSTRY CLASSIFICATION</span></h4>
+                                            <p> <span class="text">-</span></p>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12 plr-10">
+                                          <div class="wio-box-text">
+                                            <h4><span class="text">PERMIT VALIDITY PERIOD</span></h4>
+                                            <p> <span class="text">-</span></p>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12 plr-10">
+                                          <div class="wio-box-text">
+                                            <h4><span class="text">PASSPORT VALIDITY PERIOD</span></h4>
+                                            <p> <span class="text">-</span></p>
+                                          </div>
+                                        </div>
+
                                       </div>
                                       
                                     </div>
@@ -345,40 +341,13 @@
                                     <div class="text-top-wk-card-right">
 
                                       <div class="action-div">
-                                        <a href="#" data-toggle="modal" data-target="#edit-worker-details-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
+                                        <a href="#" data-toggle="modal" data-target="#edit-company-worker-details-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
                                         <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
                                       </div>
 
                                     </div>
                                   </div>
 
-                                  <div class="text-bottom-wk-card-row">
-                                    <div class="text-bottom-wk-card-left">
-
-                                      <div class="user-img-text-col">
-                                        <div class="img-thumb">
-                                          <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive">
-                                        </div>
-                                        <div class="text-div">
-                                          <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                    <div class="text-bottom-wk-card-right">
-
-                                      <div class="collapsible-button-div">
-                                        <div class="collapsible-button-row">
-                                          <button type="button" class="btn btn-default-collapse" data-toggle="collapse" data-target="#admin-workers-collapse01" aria-expanded="false">
-                                            <span class="text-span show-text">See more</span>
-                                            <span class="text-span close-text">See less</span>
-                                            <i class="las la-angle-double-down down-arrow-icon"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                  </div>
                                 </div>
 
                                 <div class="wk-card-box">
@@ -429,40 +398,34 @@
                                           </div>
                                         </div>
 
-                                      </div>
-
-                                      <div id="admin-workers-collapse02" class="collapse">
-                                        <div class="row align-center-row mlr-10">
-                                          
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">WORK PERMIT NO.</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
+                                        <div class="col-lg-3 col-md-6 col-12 plr-10">
+                                          <div class="wio-box-text">
+                                            <h4><span class="text">WORK PERMIT NO.</span></h4>
+                                            <p> <span class="text">-</span></p>
                                           </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">INDUSTRY CLASSIFICATION</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PERMIT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PASSPORT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-                                        
                                         </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12 plr-10">
+                                          <div class="wio-box-text">
+                                            <h4><span class="text">INDUSTRY CLASSIFICATION</span></h4>
+                                            <p> <span class="text">-</span></p>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12 plr-10">
+                                          <div class="wio-box-text">
+                                            <h4><span class="text">PERMIT VALIDITY PERIOD</span></h4>
+                                            <p> <span class="text">-</span></p>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12 plr-10">
+                                          <div class="wio-box-text">
+                                            <h4><span class="text">PASSPORT VALIDITY PERIOD</span></h4>
+                                            <p> <span class="text">-</span></p>
+                                          </div>
+                                        </div>
+
                                       </div>
                                       
                                     </div>
@@ -470,40 +433,13 @@
                                     <div class="text-top-wk-card-right">
 
                                       <div class="action-div">
-                                        <a href="#" data-toggle="modal" data-target="#edit-worker-details-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
+                                        <a href="#" data-toggle="modal" data-target="#edit-company-worker-details-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
                                         <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
                                       </div>
 
                                     </div>
                                   </div>
 
-                                  <div class="text-bottom-wk-card-row">
-                                    <div class="text-bottom-wk-card-left">
-
-                                      <div class="user-img-text-col">
-                                        <div class="img-thumb">
-                                          <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive">
-                                        </div>
-                                        <div class="text-div">
-                                          <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                    <div class="text-bottom-wk-card-right">
-
-                                      <div class="collapsible-button-div">
-                                        <div class="collapsible-button-row">
-                                          <button type="button" class="btn btn-default-collapse collapsed" data-toggle="collapse" data-target="#admin-workers-collapse02" aria-expanded="false">
-                                            <span class="text-span show-text">See more</span>
-                                            <span class="text-span close-text">See less</span>
-                                            <i class="las la-angle-double-down down-arrow-icon"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                  </div>
                                 </div>
 
                                 <div class="wk-card-box">
@@ -554,40 +490,34 @@
                                           </div>
                                         </div>
 
-                                      </div>
-
-                                      <div id="admin-workers-collapse03" class="collapse">
-                                        <div class="row align-center-row mlr-10">
-                                          
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">WORK PERMIT NO.</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
+                                        <div class="col-lg-3 col-md-6 col-12 plr-10">
+                                          <div class="wio-box-text">
+                                            <h4><span class="text">WORK PERMIT NO.</span></h4>
+                                            <p> <span class="text">-</span></p>
                                           </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">INDUSTRY CLASSIFICATION</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PERMIT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-
-                                          <div class="col-lg-3 col-md-6 col-12 plr-10">
-                                            <div class="wio-box-text">
-                                              <h4><span class="text">PASSPORT VALIDITY PERIOD</span></h4>
-                                              <p> <span class="text">-</span></p>
-                                            </div>
-                                          </div>
-                                        
                                         </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12 plr-10">
+                                          <div class="wio-box-text">
+                                            <h4><span class="text">INDUSTRY CLASSIFICATION</span></h4>
+                                            <p> <span class="text">-</span></p>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12 plr-10">
+                                          <div class="wio-box-text">
+                                            <h4><span class="text">PERMIT VALIDITY PERIOD</span></h4>
+                                            <p> <span class="text">-</span></p>
+                                          </div>
+                                        </div>
+
+                                        <div class="col-lg-3 col-md-6 col-12 plr-10">
+                                          <div class="wio-box-text">
+                                            <h4><span class="text">PASSPORT VALIDITY PERIOD</span></h4>
+                                            <p> <span class="text">-</span></p>
+                                          </div>
+                                        </div>
+
                                       </div>
                                       
                                     </div>
@@ -595,40 +525,13 @@
                                     <div class="text-top-wk-card-right">
 
                                       <div class="action-div">
-                                        <a href="#" data-toggle="modal" data-target="#edit-worker-details-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
+                                        <a href="#" data-toggle="modal" data-target="#edit-company-worker-details-modal" class="action-btn edit-action-btn mr-15"><i class="las la-pencil-alt"></i></a>
                                         <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
                                       </div>
 
                                     </div>
                                   </div>
 
-                                  <div class="text-bottom-wk-card-row">
-                                    <div class="text-bottom-wk-card-left">
-
-                                      <div class="user-img-text-col">
-                                        <div class="img-thumb">
-                                          <img src="assets/images/background-default.jpg" alt="company" class="img-fluid img-responsive">
-                                        </div>
-                                        <div class="text-div">
-                                          <h3> <a class="link" href="#">COMPANY NAME</a> </h3>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                    <div class="text-bottom-wk-card-right">
-
-                                      <div class="collapsible-button-div">
-                                        <div class="collapsible-button-row">
-                                          <button type="button" class="btn btn-default-collapse collapsed" data-toggle="collapse" data-target="#admin-workers-collapse03" aria-expanded="false">
-                                            <span class="text-span show-text">See more</span>
-                                            <span class="text-span close-text">See less</span>
-                                            <i class="las la-angle-double-down down-arrow-icon"></i>
-                                          </button>
-                                        </div>
-                                      </div>
-
-                                    </div>
-                                  </div>
                                 </div>
 
                               </div>
@@ -684,62 +587,6 @@
 
 </div><!-- end of wrapper -->
 
-<!-- The Approve -->
-<div class="modal modal-message fade" id="approve-message">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-    
-      <!-- Modal body -->
-      <div class="modal-body">
-        
-        <div class="modal-message-root">
-          <div class="modal-message-row">
-            <div class="modal-message-text">
-              <h2>YOU SURE YOU WANT TO APPROVE?</h2>
-            </div>
-            <div class="modal-btn-group">
-              <div class="modal-btn-group-row">
-                <button class="btn btn-general btn-approve mr-4p">APPROVE</button>
-                <button class="btn btn-general btn-back ml-4p" data-dismiss="modal">CANCEL</button>
-              </div>    
-            </div>
-          </div>
-        </div>
-
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-<!-- The Decline -->
-<div class="modal modal-message fade" id="decline-message">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-    
-      <!-- Modal body -->
-      <div class="modal-body">
-        
-        <div class="modal-message-root">
-          <div class="modal-message-row">
-            <div class="modal-message-text">
-              <h2>YOU SURE YOU WANT TO DECLINE?</h2>
-            </div>
-            <div class="modal-btn-group">
-              <div class="modal-btn-group-row">
-                <button class="btn btn-general btn-decline mr-4p">DECLINE</button>
-                <button class="btn btn-general btn-back ml-4p" data-dismiss="modal">CANCEL</button>
-              </div>    
-            </div>
-          </div>
-        </div>
-
-      </div>
-      
-    </div>
-  </div>
-</div>
-
 <!-- The Delete -->
 <div class="modal modal-message fade" id="delete-message">
   <div class="modal-dialog modal-dialog-centered">
@@ -768,7 +615,7 @@
   </div>
 </div>
 
-<div class="modal right right-slider-modal fade" id="edit-worker-details-modal" tabindex="-1" role="dialog">
+<div class="modal right right-slider-modal fade" id="edit-company-worker-details-modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
 
@@ -790,15 +637,16 @@
                   <div class="col-lg-12 col-md-12 plr-13">
                     <div class="download-text-group">
                       <div class="label-heading-div">
-                        <h4>Download Supporting Documents <i class="las la-download icon-download"></i></h4>
+                        <h4>Upload Supporting Documents </h4>
                       </div>
                       <div class="label-body-div">
-                        <ul>
-                          <li><a href="#" class="link link-download"> <span class="text">- FILE NAME</span> <i class="las la-download icon-download"></i> </a></li>
-                          <li><a href="#" class="link link-download"> <span class="text">- FILE NAME</span> <i class="las la-download icon-download"></i> </a></li>
-                          <li><a href="#" class="link link-download"> <span class="text">- FILE NAME</span> <i class="las la-download icon-download"></i> </a></li>
-                          <li><a href="#" class="link link-download"> <span class="text">- FILE NAME</span> <i class="las la-download icon-download"></i> </a></li>
-                        </ul>
+                        <div class="dropzone-root" id="dropzone">
+                          <form class="dropzone dropzone-single needsclick" id="demo-upload" action="/upload">
+                            <div class="dz-message needsclick">    
+                              <p>select or drag file</p> 
+                            </div>
+                          </form>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -868,30 +716,105 @@
   </div>
 </div>
 
+<div class="modal right right-slider-modal fade" id="add-company-new-worker-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Add new worker</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"> <i class="fe fe-x close-icon-x"></i> </span></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="common-modal-body">
+          
+          <div class="common-body-div">
+            <div class="common-body-inner-div">
+
+              <div class="modal-add-nw-top-height-div form-custom-div">
+                <div class="row mlr-13">
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="download-text-group">
+                      <div class="label-heading-div mb-15">
+                        <h4>Upload file </h4>
+                      </div>
+                      <div class="label-body-div">
+                        <div class="dropzone-root" id="dropzone">
+                          <form class="dropzone dropzone-single needsclick" id="demo-upload" action="/upload">
+                            <div class="dz-message needsclick">    
+                              <p>select or drag CSV.file</p> 
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="text-detail-view-new-worker">
+                      <h3>Worker details must include:</h3>
+                      <div class="cwk-list-details-div">
+                        <p>- Full name</p>
+                        <p>- Nationality</p>
+                        <p>- Date of Birth</p>
+                        <p>- Fin. No.</p>
+                        <p>- Passport No.</p>
+                        <p>- Validity Period of Passport</p>
+                        <p>- Work Permit No.</p>
+                        <p>- Industry Classification</p>
+                        <p>- Validity Period of Permit</p>
+                        <p>- Contact Number</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="modal-btn-space-group">
+                <div class="modal-btn-space-group-row">
+                  <button class="btn btn-general btn-primary-common mr-15">ADD</button>
+                  <button class="btn btn-general btn-back" data-dismiss="modal">CANCEL</button>
+                </div>    
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/popper.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/select2.full.js"></script>
+<script src="assets/js/dropzone.min.js"></script>
 <script src="assets/js/custom.js"></script>
+
 <script>
-  // search-dropdown
-  $(document).ready(function(){
-    $("#form-search").focus(function(e){
-      $("#search-dropdown").addClass("show");
-      $(".back-dropdown").click(function(){
-        $("#search-dropdown").removeClass("show");
-      });
-    });
 
-    /* select 2 */
-    $(".js-select2").select2({
-      placeholder: "Select here",
-      dropdownPosition: 'below',
-      minimumResultsForSearch: -1,
+  $("#form-search").focus(function(e){
+    $("#search-dropdown").addClass("show");
+    $(".back-dropdown").click(function(){
+      $("#search-dropdown").removeClass("show");
     });
-
-    // $("#edit-worker-details-modal").modal("show");
   });
+
+  /* select 2 */
+  $(".js-select2").select2({
+    placeholder: "Select here",
+    dropdownPosition: 'below',
+    minimumResultsForSearch: -1,
+  });
+  
+  // $("#add-company-new-worker-modal").modal("show");
 </script>
 
 </body>

@@ -83,13 +83,13 @@
   color: #98a9bc;
 }
 
-.comp-check-in-card {
+.comp-check-transfer-card {
   padding: 0;
   margin: 0;
   position: relative;
 }
 
-.comp-check-in-card .comp-check-in-card-box {
+.comp-check-transfer-card .comp-check-transfer-card-box {
   padding: 10px 10px;
   margin: 0 0 10px 0;
   position: relative;
@@ -97,26 +97,26 @@
   border-radius: 4px;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row {
   width: 100%;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .align-center-row {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .align-center-row {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-text {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-text {
   padding: 10px 10px 5px 10px;
   margin: 0 0 5px 0;
   position: relative;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-text h2 {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-text h2 {
   font-weight: 400;
-  font-size: 18px;
-  color: #252631;
+  font-size: 14px;
+  color: #98a9bc;
   line-height: 1.5;
   margin: 0 0 0 0;
   min-height: 40px;
@@ -131,7 +131,7 @@
   text-transform: uppercase;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-text h2 span.text {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-text h2 span.text {
   width: 100%;
   word-break: break-word;
   display: -webkit-box;
@@ -140,7 +140,7 @@
   overflow: hidden;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-text h4 {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-text h4 {
   font-weight: 400;
   font-size: 14px;
   color: #98a9bc;
@@ -156,7 +156,7 @@
       flex-wrap: wrap;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-text h4 span.text {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-text h4 span.text {
   width: 100%;
   word-break: break-word;
   display: -webkit-box;
@@ -165,7 +165,7 @@
   overflow: hidden;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-text .status-label {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-text .status-label {
   background: #1fcd00;
   border-radius: 4px;
   font-weight: 700;
@@ -189,15 +189,15 @@
   padding: 6px 10px 4px 10px;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-text .status-label.valid-label {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-text .status-label.valid-label {
   background: #1fcd00;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-text .status-label.expired-label {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-text .status-label.expired-label {
   background: #c70000;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-label-text {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,7 +208,7 @@
       flex-wrap: wrap;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-label-text .label-thumb {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text .label-thumb {
   width: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,17 +218,17 @@
           align-items: center;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-label-text .text-div {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text .text-div {
   padding: 0 0 0 15px;
   margin: 0;
   width: calc(100% - 140px);
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-label-text .text-div h2 a {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text .text-div h2 a {
   color: inherit;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .action-check-in-box .action-div {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-text .right-side-check-out {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,28 +237,27 @@
           justify-content: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 5px;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .center-text {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .center-text {
   text-align: center;
 }
 
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .center-text h4,
-.comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .center-text p {
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .center-text h4,
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .center-text p {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.comp-check-in-card .pagination-root {
+.comp-check-transfer-card .pagination-root {
   padding: 12px 0;
   margin: 0 0 20px 0;
   position: relative;
 }
 
-.check-in-top-first-row {
+.check-transfer-top-first-row {
   padding: 0;
   margin: 10px 0 15px 0;
   position: relative;
@@ -273,22 +272,22 @@
           justify-content: space-between;
 }
 
-.check-in-top-first-row .check-in-top-first-left {
+.check-transfer-top-first-row .check-transfer-top-first-left {
   padding: 0;
   margin: 0 0 5px 0;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 50%;
 }
 
-.check-in-top-first-row .check-wk-top-first-right {
+.check-transfer-top-first-row .check-wk-top-first-right {
   padding: 0;
   margin: 0 0 5px 0;
   position: relative;
@@ -306,7 +305,13 @@
   width: 50%;
 }
 
-.check-in-top-first-row .check-in-text-box p {
+.check-transfer-top-first-row .check-wk-top-first-right .search-div {
+  max-width: 300px;
+  position: relative;
+  margin: 0;
+}
+
+.check-transfer-top-first-row .check-out-text-box p {
   font-weight: 400;
   font-size: 14px;
   color: #000;
@@ -314,7 +319,7 @@
   margin: 0;
 }
 
-.check-in-top-first-row .new-link-box {
+.check-transfer-top-first-row .new-link-box {
   padding: 5px 0;
   margin: 0;
   position: relative;
@@ -325,7 +330,7 @@
       flex-wrap: wrap;
 }
 
-.check-in-top-first-row .new-link-box .link.link-new {
+.check-transfer-top-first-row .new-link-box .link.link-new {
   font-weight: 500;
   font-size: 12px;
   color: #4d7cfe;
@@ -341,13 +346,13 @@
   line-height: 1.3;
 }
 
-.check-in-top-first-row .new-link-box .link.link-new .las {
+.check-transfer-top-first-row .new-link-box .link.link-new .las {
   font-size: 18px;
   margin: 0 5px 0 0;
   display: inline-block;
 }
 
-.check-in-top-first-row .new-link-box .link.link-new .text {
+.check-transfer-top-first-row .new-link-box .link.link-new .text {
   display: inline-block;
   line-height: 18px;
 }
@@ -528,31 +533,31 @@
 }
 
 @media (min-width: 1025px) {
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .col-width-29 {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .col-width-29 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 29%;
             flex: 0 0 29%;
     max-width: 29%;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .col-width-25 {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .col-width-25 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
     max-width: 25%;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .col-width-14 {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .col-width-14 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 14%;
             flex: 0 0 14%;
     max-width: 14%;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .col-width-15 {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .col-width-15 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 15%;
             flex: 0 0 15%;
     max-width: 15%;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .col-width-17 {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .col-width-17 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 17%;
             flex: 0 0 17%;
@@ -561,53 +566,66 @@
 }
 
 @media (max-width: 767px) {
+  .check-transfer-top-first-row .check-transfer-top-first-left {
+    margin: 0 0 15px 0;
+    width: 100%;
+  }
+  .check-transfer-top-first-row .check-wk-top-first-right {
+    width: 100%;
+  }
+  .check-transfer-top-first-row .check-wk-top-first-right .search-div {
+    max-width: 100%;
+  }
   .panel-card-div .panel-card-row .check-step-form-div .border-text-note-box {
     margin: 0 0 30px 0;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-label-text {
+  .panel-card-div .panel-card-row .check-step-form-div .form-custom-div .form-group-custom-text h3.h3-text {
+    min-height: auto;
+  }
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text {
     margin: 5px 0 10px 0;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-label-text .label-thumb {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text .label-thumb {
     width: 100px;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-label-text .status-label {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text .status-label {
     font-size: 12px;
     line-height: 16px;
     min-height: 30px;
     min-width: 90px;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-label-text .text-div {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text .text-div {
     padding: 0 0 0 5px;
     width: calc(100% - 100px);
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-label-text .text-div h3 {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text .text-div h3 {
     font-size: 14px;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-text h2 {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-text h2 {
     font-size: 12px;
     line-height: 1.4;
     margin: 0 0 5px 0;
     min-height: auto;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-text h4 {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-text h4 {
     font-size: 12px;
     line-height: 1.4;
     margin: 0 0 0 0;
     min-height: auto;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .action-check-in-box {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .action-check-out-box {
     padding: 0 10px 0 10px;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .action-check-in-box .action-div {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .action-check-out-box .action-div {
     padding: 0;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .center-text h2 {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .center-text h2 {
     text-align: left;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .center-text h4 {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .center-text h4 {
     text-align: left;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -649,45 +667,45 @@
   .panel-card-div .panel-card-row .check-step-form-div .border-text-note-box p {
     font-size: 12px;
   }
-  .comp-check-in-card .comp-check-in-card-box {
+  .comp-check-transfer-card .comp-check-transfer-card-box {
     padding: 10px 10px 5px 10px;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-label-text {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text {
     margin: 5px 0 10px 0;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-label-text .label-thumb {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text .label-thumb {
     width: 100px;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-label-text .status-label {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text .status-label {
     font-size: 12px;
     line-height: 16px;
     min-height: 30px;
     min-width: 90px;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-label-text .text-div {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text .text-div {
     padding: 0 0 0 5px;
     width: calc(100% - 100px);
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-label-text .text-div h3 {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text .text-div h3 {
     font-size: 14px;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .wk-check-in-box-text h2 {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-text h2 {
     font-size: 12px;
     line-height: 1.4;
     margin: 0 0 5px 0;
     min-height: auto;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .center-text h2 {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .center-text h2 {
     text-align: left;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .comp-check-in-card .comp-check-in-card-box .text-top-check-in-card-row .tab-left-text h4 {
+  .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .tab-left-text h4 {
     text-align: left;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
 }
-/*# sourceMappingURL=company-check-in.css.map */
+/*# sourceMappingURL=company-transfer.css.map */

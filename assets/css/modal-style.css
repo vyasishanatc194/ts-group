@@ -174,6 +174,10 @@
   display: block;
 }
 
+.modal.right .common-modal-body .download-text-group .label-heading-div.mb-15 {
+  margin-bottom: 15px;
+}
+
 .modal.right .common-modal-body .download-text-group .label-heading-div h4 {
   font-weight: 400;
   font-size: 16px;
@@ -250,6 +254,44 @@
   color: #252631;
   line-height: 24px;
   margin: 0 0 5px 0;
+}
+
+.modal.right .common-modal-body .text-detail-view-new-worker {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+}
+
+.modal.right .common-modal-body .text-detail-view-new-worker h3 {
+  padding: 0;
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #9c9fb8;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+}
+
+.modal.right .common-modal-body .text-detail-view-new-worker .cwk-list-details-div {
+  padding: 0;
+  margin: 0;
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+.modal.right .common-modal-body .text-detail-view-new-worker .cwk-list-details-div p {
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #9c9fb8;
+  display: block;
+}
+
+.modal.right .common-modal-body .modal-add-nw-top-height-div {
+  min-height: calc(100vh - 155px);
 }
 
 @media (max-width: 767px) {

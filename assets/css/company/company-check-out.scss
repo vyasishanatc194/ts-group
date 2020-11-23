@@ -89,34 +89,34 @@
   }
 }
 
-.comp-check-in-card {
+.comp-check-out-card {
   padding: 0;
   margin: 0;
   position: relative;
 
-  .comp-check-in-card-box {
+  .comp-check-out-card-box {
     padding: 10px 10px;
     margin: 0 0 10px 0;
     position: relative;
     background: #fff;
     border-radius: 4px;
 
-    .text-top-check-in-card-row {
+    .text-top-check-out-card-row {
       width: 100%;
 
       .align-center-row {
         align-items: center;
       }
 
-      .wk-check-in-box-text {
+      .wk-check-out-box-text {
         padding: 10px 10px 5px 10px;
         margin: 0 0 5px 0;
         position: relative;
 
         h2 {
           font-weight: 400;
-          font-size: 18px;
-          color: #252631;
+          font-size: 14px;
+          color: #98a9bc;
           line-height: 1.5;
           margin: 0 0 0 0;
           min-height: 40px;
@@ -181,7 +181,7 @@
         }
       }
 
-      .wk-check-in-box-label-text {
+      .wk-check-out-box-label-text {
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -205,12 +205,11 @@
         }
       }
 
-      .action-check-in-box {
-        .action-div {
+      .wk-check-out-box-text {
+        .right-side-check-out {
           display: flex;
           justify-content: flex-end;
           flex-wrap: wrap;
-          padding: 0 5px;
         }
       }
 
@@ -233,7 +232,7 @@
   }
 }
 
-.check-in-top-first-row {
+.check-out-top-first-row {
   padding: 0;
   margin: 10px 0 15px 0;
   position: relative;
@@ -242,12 +241,12 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  .check-in-top-first-left {
+  .check-out-top-first-left {
     padding: 0;
     margin: 0 0 5px 0;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
     width: 50%;
   }
@@ -261,9 +260,15 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     width: 50%;
+
+    .search-div {
+      max-width: 300px;
+      position: relative;
+      margin: 0;
+    }
   }
 
-  .check-in-text-box {
+  .check-out-text-box {
     p {
       font-weight: 400;
       font-size: 14px;
@@ -400,12 +405,12 @@
         border-radius: 10px;
         background-color: transparent;
       }
-    
+
       &::-webkit-scrollbar {
         width: 16px;
         background-color: #fff;
       }
-    
+
       &::-webkit-scrollbar-thumb {
         border-radius: 16px;
         border: 4px solid #fff;
@@ -417,7 +422,7 @@
         align-items: center;
         flex-wrap: wrap;
         padding: 10px 0;
-        
+
         .img-thumb {
           width: 40px;
           height: 50px;
@@ -455,9 +460,9 @@
 }
 
 @media (min-width: 1025px) {
-  .comp-check-in-card {
-    .comp-check-in-card-box {
-      .text-top-check-in-card-row {
+  .comp-check-out-card {
+    .comp-check-out-card-box {
+      .text-top-check-out-card-row {
         .col-width-29 {
           flex: 0 0 29%;
           max-width: 29%;
@@ -488,6 +493,21 @@
 }
 
 @media (max-width: 767px) {
+  .check-out-top-first-row {
+    .check-out-top-first-left {
+      margin: 0 0 15px 0;
+      width: 100%;
+    }
+
+    .check-wk-top-first-right {
+      width: 100%;
+
+      .search-div {
+        max-width: 100%;
+      }
+    }
+  }
+
   .panel-card-div {
     .panel-card-row {
       .check-step-form-div {
@@ -498,10 +518,10 @@
     }
   }
 
-  .comp-check-in-card {
-    .comp-check-in-card-box {
-      .text-top-check-in-card-row {
-        .wk-check-in-box-label-text {
+  .comp-check-out-card {
+    .comp-check-out-card-box {
+      .text-top-check-out-card-row {
+        .wk-check-out-box-label-text {
           margin: 5px 0 10px 0;
 
           .label-thumb {
@@ -525,7 +545,7 @@
           }
         }
 
-        .wk-check-in-box-text {
+        .wk-check-out-box-text {
           h2 {
             font-size: 12px;
             line-height: 1.4;
@@ -541,7 +561,7 @@
           }
         }
 
-        .action-check-in-box {
+        .action-check-out-box {
           padding: 0 10px 0 10px;
 
           .action-div {
@@ -608,7 +628,7 @@
         }
       }
     }
-  }  
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -626,12 +646,12 @@
     }
   }
 
-  .comp-check-in-card {
-    .comp-check-in-card-box {
+  .comp-check-out-card {
+    .comp-check-out-card-box {
       padding: 10px 10px 5px 10px;
 
-      .text-top-check-in-card-row {
-        .wk-check-in-box-label-text {
+      .text-top-check-out-card-row {
+        .wk-check-out-box-label-text {
           margin: 5px 0 10px 0;
 
           .label-thumb {
@@ -655,7 +675,7 @@
           }
         }
 
-        .wk-check-in-box-text {
+        .wk-check-out-box-text {
           h2 {
             font-size: 12px;
             line-height: 1.4;

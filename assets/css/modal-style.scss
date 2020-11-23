@@ -162,6 +162,10 @@
         padding: 0;
         margin: 0 0 20px 0;
         display: block;
+
+        &.mb-15 {
+          margin-bottom: 15px;
+        }
         
         h4 {
           font-weight: 400;
@@ -240,6 +244,44 @@
         line-height: 24px;
         margin: 0 0 5px 0;
       }
+    }
+
+    .text-detail-view-new-worker {
+      padding: 0;
+      margin: 0 0 20px 0;
+      position: relative;
+
+      h3 {
+        padding: 0;
+        margin: 0 0 20px 0;
+        font-size: 16px;
+        line-height: 1.4;
+        color: #9c9fb8;
+        font-weight: 400;
+        display: block;
+        width: 100%;
+      }
+
+      .cwk-list-details-div {
+        padding: 0;
+        margin: 0;
+        display: block;
+        position: relative;
+        width: 100%;
+
+        p {
+          padding: 0;
+          margin: 0 0 10px 0;
+          font-size: 14px;
+          line-height: 1.5;
+          color: #9c9fb8;
+          display: block;
+        }
+      }
+    }
+
+    .modal-add-nw-top-height-div {
+      min-height: calc(100vh - 155px);
     }
   }
 }

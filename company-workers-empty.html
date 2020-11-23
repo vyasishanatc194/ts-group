@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Workers | TS Group</title>
+<meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+<meta name="theme-color" content="#0D2A76">
+<meta name="msapplication-navbutton-color" content="#0D2A76">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#0D2A76">
+<link href='assets/images/favicon.png' rel='shortcut icon'>
+<link href="assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/fonts/rubik/rubik-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/fonts/lato/lato-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/line-awesome.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/left-sidebar.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/select2.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/select-custom.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/custom-form.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/dropzone.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/dropzone-custom.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/company/company-workers.css" media="all" rel="stylesheet" type="text/css" />
+<script src="assets/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper" class="wrapper dashboard-wrapper">
+
+  <!-- left-side -->
+  <div class="left-side-nav">
+    <div class="left-side-nav-inner">
+
+        <div class="nav-logo-section">
+          <a href="company-dashboard.html" class="dash-logo" >
+            <img src="assets/images/logo.png" class="logo" alt="logo" /> 
+          </a>
+
+          <div class="mobile-menu-div desktop-hidden">
+            <button class="navbar-toggler mobile-menu-button" id="menu-open" type="button">
+                <span class="navbar-toggler-icon"> <i class="fe fe-menu"></i> </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="left-side-menu" id="dashboard-menu-clone">
+          <div class="left-side-inner">
+
+            <!--  mobile  -->
+            <a href="javascript:void(0)" class="closebtn desktop-hidden" id="menu-closed"> <i class="fe fe-x"></i> </a>
+            <!--  End of mobile  -->
+
+            <div class="side-nav-item accordion" id="menu-collapse">
+              <ul class="main-listing">
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="company-dashboard.html">
+                    <span class="text-collapse-menu">Dashboard</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="company-check-in.html">
+                    <span class="text-collapse-menu">CHECK IN</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="company-check-out.html">
+                    <span class="text-collapse-menu">CHECK OUT</span>
+                  </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link nav-normal" href="company-workers.html">
+                    <span class="text-collapse-menu">Workers</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="company-check-transfer.html">
+                    <span class="text-collapse-menu">TRANSFER</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link nav-normal" href="company-history.html">
+                    <span class="text-collapse-menu">History</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+              
+          </div>
+        </div>
+        
+        <!--  mobile  -->
+        <div id="cd-shadow-layer" class="menu-closed backdrop-menu-layer"></div>
+        <!--  End of mobile  -->
+
+    </div>
+  </div>
+  <!--  End of left-side  -->
+
+  <!-- Begin page content -->
+  <main role="main" class="middle-area-dashboard main-dashboard">
+    <div class="main-middle-area">
+
+        <!--  Header  -->
+        <header class="header header-dashboard">
+            <nav class="navbar navbar-light">
+                <div class="container-fluid d-block">
+                    
+                    <div class="row col-header-row">
+                        <div class="col-lg-12 col-12">
+
+                            <div class="nav-dashboard-row">
+
+                                <div class="nav-dashboard-left">
+                                  <div class="heading-div"><h1>Workers</h1></div>
+                                </div>
+
+                                <div class="nav-dashboard-right">
+                                  <div class="user-drop-down">
+                                    <div class="dropdown drop-left dropdown-custom-top">
+                                      <a class="btn btn-default dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <div class="user-profile">
+                                          <div class="user-img">
+                                            <img src="assets/images/profile.jpg" class="user-top-image" alt="user image" />
+                                          </div>
+                                        </div>
+                                      </a>
+                                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <ul>
+                                          <li><a class="dropdown-item" href="company-settings.html"> Settings</a></li>
+                                          <li class="logout-li"><a class="dropdown-item" href="login.html"> <i class="fe fe-log-in"></i> Logout</a></li>
+                                        </ul>                   
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                
+                </div>
+            </nav>
+        </header>
+        <!-- End of header -->
+        
+        <!--  main  -->
+        <div class="main-section">
+          <div class="main-div">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+
+                  <div class="worker-padding-div">
+                    <div class="check-top-root">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                          
+                          <div class="check-wk-top-first-row">
+                            <div class="check-wk-top-first-left">
+                              <div class="check-wk-sort-box">
+                                <div class="form-group form-sort-group">
+                                  <div class="form-group-row">
+                                    <label class="label-text"> <i class="las la-filter"></i> SORT: </label>
+                                    <div class="input-control-div">
+                                      <div class="select2-form-group select2-update-group f-400">
+                                        <div class="select-box select-custom2 select-custom2-general">
+                                          <select class="js-select2" id="select-sort-type">
+                                            <option> </option>
+                                            <option selected>A-Z</option>
+                                            <option>A-Z </option>
+                                            <option>A-Z </option>
+                                            <option>A-Z </option>
+                                          </select>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="check-wk-top-first-right">
+                              <div class="new-link-box">
+                                <a href="#" class="link link-new" data-toggle="modal" data-target="#add-company-new-worker-modal"> <i class="las la-plus-circle"></i> <span class="text">new worker</span> </a>
+                              </div>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="data-not-found-div">
+                    <div class="data-not-found-row">
+                      <div class="dnf-thumb-div">
+                        <img src="assets/images/background/illustration-01.svg" class="img-fuild img-illustration" alt="img" />
+                      </div>
+                      <div class="dnf-content-div">
+                        <h4>No contacts found?</h4>
+                        <p>Try to add more contacts…</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>  
+              </div>        
+            </div>
+          </div>
+        </div><!--  end of main  -->
+
+        <footer class="footer">
+          <div class="footer-div">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <p> &copy; 2020 <a href="#" class="link"> TSGroup </a>- All Rights Reserved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+    </div>
+  </main>
+
+</div><!-- end of wrapper -->
+
+<!-- The Delete -->
+<div class="modal modal-message fade" id="delete-message">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    
+      <!-- Modal body -->
+      <div class="modal-body">
+        
+        <div class="modal-message-root">
+          <div class="modal-message-row">
+            <div class="modal-message-text">
+              <h2>YOU SURE YOU WANT TO DELETE?</h2>
+            </div>
+            <div class="modal-btn-group">
+              <div class="modal-btn-group-row">
+                <button class="btn btn-general btn-primary-common mr-4p">DELETE</button>
+                <button class="btn btn-general btn-back ml-4p" data-dismiss="modal">CANCEL</button>
+              </div>    
+            </div>
+          </div>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="modal right right-slider-modal fade" id="edit-company-worker-details-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Edit worker details</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"> <i class="fe fe-x close-icon-x"></i> </span></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="common-modal-body">
+          
+          <div class="common-body-div">
+            <div class="common-body-inner-div">
+
+              <div class="modal-top-height-div form-custom-div">
+                <div class="row mlr-13">
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="download-text-group">
+                      <div class="label-heading-div">
+                        <h4>Upload Supporting Documents </h4>
+                      </div>
+                      <div class="label-body-div">
+                        <div class="dropzone-root" id="dropzone">
+                          <form class="dropzone dropzone-single needsclick" id="demo-upload" action="/upload">
+                            <div class="dz-message needsclick">    
+                              <p>select or drag file</p> 
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="form-group form-group-custom">
+                      <label>Fields</label>
+                      <div class="input-control">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="form-group form-group-custom">
+                      <label>Fields</label>
+                      <div class="input-control">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="form-group form-group-custom">
+                      <label>Fields</label>
+                      <div class="input-control">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="form-group form-group-custom">
+                      <label>Fields</label>
+                      <div class="input-control">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="form-group form-group-custom">
+                      <label>Fields</label>
+                      <div class="input-control">
+                        <input type="text" class="form-control" />
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="modal-btn-space-group">
+                <div class="modal-btn-space-group-row">
+                  <button class="btn btn-general btn-primary-common mr-15">EDIT</button>
+                  <button class="btn btn-general btn-back" data-dismiss="modal">CANCEL</button>
+                </div>    
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal right right-slider-modal fade" id="add-company-new-worker-modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Add new worker</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"> <i class="fe fe-x close-icon-x"></i> </span></button>
+      </div>
+
+      <div class="modal-body">
+
+        <div class="common-modal-body">
+          
+          <div class="common-body-div">
+            <div class="common-body-inner-div">
+
+              <div class="modal-add-nw-top-height-div form-custom-div">
+                <div class="row mlr-13">
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="download-text-group">
+                      <div class="label-heading-div mb-15">
+                        <h4>Upload file </h4>
+                      </div>
+                      <div class="label-body-div">
+                        <div class="dropzone-root" id="dropzone">
+                          <form class="dropzone dropzone-single needsclick" id="demo-upload" action="/upload">
+                            <div class="dz-message needsclick">    
+                              <p>select or drag CSV.file</p> 
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 plr-13">
+                    <div class="text-detail-view-new-worker">
+                      <h3>Worker details must include:</h3>
+                      <div class="cwk-list-details-div">
+                        <p>- Full name</p>
+                        <p>- Nationality</p>
+                        <p>- Date of Birth</p>
+                        <p>- Fin. No.</p>
+                        <p>- Passport No.</p>
+                        <p>- Validity Period of Passport</p>
+                        <p>- Work Permit No.</p>
+                        <p>- Industry Classification</p>
+                        <p>- Validity Period of Permit</p>
+                        <p>- Contact Number</p>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="modal-btn-space-group">
+                <div class="modal-btn-space-group-row">
+                  <button class="btn btn-general btn-primary-common mr-15">ADD</button>
+                  <button class="btn btn-general btn-back" data-dismiss="modal">CANCEL</button>
+                </div>    
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/select2.full.js"></script>
+<script src="assets/js/dropzone.min.js"></script>
+<script src="assets/js/custom.js"></script>
+
+<script>
+
+  $("#form-search").focus(function(e){
+    $("#search-dropdown").addClass("show");
+    $(".back-dropdown").click(function(){
+      $("#search-dropdown").removeClass("show");
+    });
+  });
+
+  /* select 2 */
+  $(".js-select2").select2({
+    placeholder: "Select here",
+    dropdownPosition: 'below',
+    minimumResultsForSearch: -1,
+  });
+  
+  // $("#add-company-new-worker-modal").modal("show");
+</script>
+
+</body>
+</html>

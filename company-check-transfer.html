@@ -4,7 +4,7 @@
 <meta name="description" content="" />
 <meta name="author" content="" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<title>Check In | TS Group</title>
+<title> Transfer | TS Group</title>
 <meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
 <meta name="theme-color" content="#0D2A76">
 <meta name="msapplication-navbutton-color" content="#0D2A76">
@@ -21,7 +21,7 @@
 <link href="assets/css/custom-form.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/company/step-form-style.css" media="all" rel="stylesheet" type="text/css" />
-<link href="assets/css/company/company-check-in.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/company/company-transfer.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
 </head>
 
@@ -59,7 +59,7 @@
                     <span class="text-collapse-menu">Dashboard</span>
                   </a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link nav-normal" href="company-check-in.html">
                     <span class="text-collapse-menu">CHECK IN</span>
                   </a>
@@ -74,7 +74,7 @@
                     <span class="text-collapse-menu">Workers</span>
                   </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                   <a class="nav-link nav-normal" href="company-check-transfer.html">
                     <span class="text-collapse-menu">TRANSFER</span>
                   </a>
@@ -113,7 +113,7 @@
                             <div class="nav-dashboard-row">
 
                                 <div class="nav-dashboard-left">
-                                  <div class="heading-div"><h1>Check In</h1></div>
+                                  <div class="heading-div"><h1>Transfer</h1></div>
                                 </div>
 
                                 <div class="nav-dashboard-right">
@@ -153,30 +153,24 @@
               <div class="row">
                 <div class="col-lg-12 col-md-12">
 
-                  <section class="step-forms-section">
+                  <section class="step-forms-section step-forms-section02">
                     <div class="step-forms-inner">
                       
                       <!-- tabs top -->
                       <div class="row mlr-10">
                         <div class="col-lg-12 plr-10">
                           
-                          <div class="step-forms-nav-tab">
+                          <div class="step-forms-nav-tab step-forms-nav-tab02">
                             <ul class="nav nav-tabs" role="tablist">
                               <li class="active">
-                                <a class="active" data-toggle="tab" aria-controls="step1" role="tab" href="#menu1">
+                                <a class="active" data-toggle="tab" aria-controls="step1" role="tab" href="#check-out-menu1">
                                   <span class="title-text">STEP ONE</span>
                                   <span class="round-number"></span>
                                 </a>
                               </li>
                               <li class="disabled">
-                                <a data-toggle="tab" aria-controls="step2" role="tab" href="#menu2">
+                                <a data-toggle="tab" aria-controls="step2" role="tab" href="#check-out-menu2">
                                   <span class="title-text">STEP TWO</span>
-                                  <span class="round-number"></span>
-                                </a>
-                              </li>
-                              <li class="disabled">
-                                <a data-toggle="tab" aria-controls="step3" role="tab" href="#menu3">
-                                  <span class="title-text">STEP THREE</span>
                                   <span class="round-number"></span>
                                 </a>
                               </li>
@@ -193,7 +187,7 @@
                           <div class="step-forms-tab-content">
                             <div class="tab-content">
                   
-                              <div id="menu1" class="tab-pane tab-pane-one fade active show">
+                              <div id="check-out-menu1" class="tab-pane tab-pane-one fade active show">
                   
                                 <div class="panel-card-div">
                                   <div class="panel-card-row">
@@ -201,174 +195,57 @@
                                     <div class="row mlr-10">
                                       <div class="col-lg-12 col-md-12 plr-10">
 
-                                        <div class="check-step-form-div">
-
-                                          <div class="form-custom-div">
-
-                                            <div class="row mlr-10">
-                                              <div class="col-lg-8 col-md-8 plr-10 left-order-div">
-
-                                                <div class="row mlr-10">
-          
-                                                  <div class="col-lg-6 col-md-6 plr-10">
-                                                    <div class="form-group form-group-custom">
-                                                      <label>Contact Person (Admin) / (OPS)</label>
-                                                      <div class="input-control">
-                                                        <input type="text" class="form-control" placeholder="-" />
-                                                      </div>
-                                                    </div>
-                                                  </div>
-          
-                                                  <div class="col-lg-6 col-md-6 plr-10">
-                                                    <div class="form-group form-group-custom">
-                                                      <label>Contact Number</label>
-                                                      <div class="input-control">
-                                                        <input type="text" class="form-control" placeholder="-" />
-                                                      </div>
-                                                    </div>
-                                                  </div>
-          
-                                                  <div class="col-lg-6 col-md-6 plr-10">
-                                                    <div class="form-group form-group-custom">
-                                                      <label>Check-In Date</label>
-                                                      <div class="input-control">
-                                                        <input type="text" class="form-control" placeholder="Please enter date" data-mask="00/00/0000" autocomplete="off" maxlength="15" />
-                                                      </div>
-                                                    </div>
-                                                  </div>
-          
-                                                  <div class="col-lg-6 col-md-6 plr-10">
-                                                    <div class="form-group form-group-custom">
-                                                      <label>Check-In Time</label>
-                                                      <div class="input-control">
-                                                        <input type="text" class="form-control" placeholder="Please enter time" data-mask="00:00" autocomplete="off" maxlength="15" />
-                                                      </div>
-                                                    </div>
-                                                  </div>
-
-                                                  <div class="col-lg-6 col-md-12 plr-10">
-                                                    <div class="form-group form-group-custom">
-                                                      <label>Tenancy Agreement Number</label>
-                                                      <div class="input-control">
-                                                        <input type="text" class="form-control" placeholder="ASE-" value="ASE-" />
-                                                      </div>
-                                                    </div>
-                                                  </div>
-
-                                                  <div class="col-lg-3 col-md-6 plr-10">
-                                                    <div class="form-group form-group-custom">
-                                                      <label>Number of Room</label>
-                                                      <div class="input-control">
-                                                        <input type="number" class="form-control" placeholder="-" />
-                                                      </div>
-                                                    </div>
-                                                  </div>
-
-                                                  <div class="col-lg-3 col-md-6 plr-10">
-                                                    <div class="form-group form-group-custom">
-                                                      <label>Number of Pax</label>
-                                                      <div class="input-control">
-                                                        <input type="number" class="form-control" placeholder="-" />
-                                                      </div>
-                                                    </div>
-                                                  </div>
-          
-                                                </div>
-
-                                              </div>
-
-                                              <div class="col-lg-4 col-md-4 plr-10 right-order-div">
-
-                                                <div class="row mlr-10">
-                                                  <div class="col-lg-12 col-md-12">
-
-                                                    <div class="border-text-note-box">
-                                                      <div class="border-text-note-inner">
-                                                        <p>Weekdays 9am-5.30pm; Saturday 9am to 1pm </p>
-                                                        <p><span class="block">Public Holidays & Sun : No Check-in. </span>
-                                                          <span class="block">(Kindly adhere to the timing strictly)</span>
-                                                          <span class="block">Administration charge will applicable S$20.00 per pax/hr for check-in beyond the above mentioned timing </span>
-                                                        </p> 
-                                                      </div>
-                                                    </div>
-
-                                                  </div>
-                                                </div>
-
-                                              </div>
-                                            </div>
-
-                                            <div class="row mlr-10">
-                                              <div class="col-lg-12 col-md-12 plr-10">
-
-                                                <div class="text-general-note-card">
-                                                  <div class="text-general-note-inner">
-                                                    <div class="title-div">
-                                                      <h4>Note:</h4>
-                                                    </div>
-                                                    <div class="content-div">
-                                                      <p>A) Please complete this application form in <span class="black-text-underline">BLOCK LETTERS</span> (<span class="text-color2">not hand written</span>)(Incomplete information or without the relevant documents attached will not be considered). </p>
-                                                      <p>B) Photocopies of the valid work permit (both sides) and passport copy of each worker must be attached. Photocopies of documents and original copies to bring along on day of check-in for Verification</p>
-                                                      <p>C) Soft copy to be email to TVD 2 days prior to check-in . Email:  umapathy@tsgrp.sg;  suresh@tsgrp.sg; ranjan@tsgrp.sg; ghosh@tsgrp.sg</p>
-                                                      <p>D) All rooms would be provided with 12 Beds, 12 Lockers, 12 Mattress, 12 Win-Board and 12 Pillow for the Residents</p>
-                                                      <p>E) Used mattress & pillows are not allowed in the dormitory</p>
-                                                      <p>Particulars recorded must be as per in the <span class="black-text-underline">TRAVEL DOCUMENT</span> and <span class="black-text-underline">WORK PERMIT</span>.  Each form is applicable for individual room with a <span class="black-text-underline">maximum of 12 persons per room</span></p>
-                                                    </div>
-                                                  </div>
-                                                </div>
-
-                                              </div>
-                                            </div>
-
-                                          </div>
-
-                                        </div>
-
-                                      </div>
-                                    </div>
-
-                                  </div>
-                                </div>
-                  
-                                <div class="tab-footer">
-                                  <div class="row">
-                                    <div class="col-lg-12">
-                                      
-                                      <div class="button-div">
-                                        <div class="button-div-row">
-                                          <button class="btn btn-general btn-primary-common btn-next mr-15">NEXT</button>
-                                        </div>
-                                      </div>
-                                      
-                                    </div>
-                                  </div>
-                                </div>
-          
-                              </div>
-                  
-                              <div id="menu2" class="tab-pane tab-pane-two fade">
-                                
-                                <div class="panel-card-div">
-                                  <div class="panel-card-row">
-
-                                    <div class="row mlr-10">
-                                      <div class="col-lg-12 col-md-12 plr-10">
-
-                                        <div class="comp-check-in-card">
+                                        <div class="comp-check-transfer-card">
 
                                           <div class="row">
                                             <div class="col-lg-12 col-md-12">
 
-                                              <div class="check-in-top-first-row">
-                                                <div class="check-in-top-first-left">
-                                                  <div class="check-in-text-box">
-                                                    <p>Select your workers:</p>
+                                              <div class="check-transfer-top-first-row">
+                                                <div class="check-transfer-top-first-left">
+                                                  <div class="check-out-text-box">
+                                                    <p>YOU MAY SELECT MORE THAN ONE:</p>
                                                   </div>
                                                 </div>
                     
                                                 <div class="check-wk-top-first-right">
-                                                  <div class="new-link-box">
-                                                    <a href="#" data-toggle="modal" data-target="#company-add-worker-modal" class="link link-new"> <i class="las la-plus-circle"></i> <span class="text">add worker</span> </a>
+                                                  <div class="search-div">
+                                                    <div class="search-row">
+                                                      <div class="search-icon-box">
+                                                        <span class="bg-custom-icon search-icon"></span>
+                                                      </div>
+                                                      <div class="search-input-box">
+                                                        <input type="text" class="form-control form-search" id="form-search" placeholder="Search..." />
+                                                      </div>
+                                                    </div>
+                    
+                                                    <div class="dropdown-menu dropdown-menu-card" id="search-dropdown">
+                                                      <div class="back-dropdown"></div>
+                                                      <div class="card-body">
+                                                        <div class="list-group">
+                                                          <div class="list-group-item">
+                                                            <div class="row align-items-center">
+                                                              <div class="col-auto">
+                                                                <h4 class="text-h4">
+                                                                  <a href="#" class="link"> WORKER NAME </a>
+                                                                </h4>
+                                                                <p>FIN. NO.</p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                          <div class="list-group-item">
+                                                            <div class="row align-items-center">
+                                                              <div class="col-auto">
+                                                                <h4 class="text-h4">
+                                                                  <a href="#" class="link"> WORKER NAME </a>
+                                                                </h4>
+                                                                <p>FIN. NO.</p>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                    
                                                   </div>
                                                 </div>
                                               </div>
@@ -379,43 +256,46 @@
                                           <div class="row">
                                             <div class="col-lg-12 col-md-12">
                 
-                                              <div class="comp-check-in-card-box">
-                                                <div class="text-top-check-in-card-row">
+                                              <div class="comp-check-transfer-card-box">
+                                                <div class="text-top-check-out-card-row">
                                                   <div class="row align-center-row mlr-10">
                 
-                                                    <div class="col-lg-4 col-md-12 plr-10">
-                                                      <div class="wk-check-in-box-text wk-check-in-box-label-text">
+                                                    <div class="col-lg-4 col-md-12 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text wk-check-out-box-label-text">
                                                         <div class="label-thumb">
                                                           <label class="status-label valid-label">VALID</label>
                                                         </div>
                                                         <div class="text-div">
-                                                          <h2> <a class="link" href="#">Nicholas Gordon</a> </h2>
+                                                          <h2> <a class="link" href="#">WORKER NAME</a> </h2>
                                                         </div>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-2 col-md-3 plr-10">
-                                                      <div class="wk-check-in-box-text center-text tab-left-text">
+                                                    <div class="col-lg-2 col-md-3 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text center-text tab-left-text">
                                                         <h4><span class="text">FIN NO.</span></h4>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-3 col-md-4 plr-10">
-                                                      <div class="wk-check-in-box-text center-text">
+                                                    <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text center-text">
                                                         <h4><span class="text">WORK PERMIT NUMBER</span></h4>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-2 col-md-3 plr-10">
-                                                      <div class="wk-check-in-box-text center-text">
-                                                        <h4><span class="text">PASSPORT NUMBER</span></h4>
+                                                    <div class="col-lg-2 col-md-3 col-8 plr-10">
+                                                      <div class="wk-check-out-box-text center-text">
+                                                        <h4><span class="text">ROOM A</span></h4>
                                                       </div>
                                                     </div>
 
-                                                    <div class="col-lg-1 col-md-2 plr-10">
-                                                      <div class="wk-check-in-box-text action-check-in-box">
-                                                        <div class="action-div">
-                                                          <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                                    <div class="col-lg-1 col-md-2 col-4 plr-10">
+                                                      <div class="wk-check-out-box-text selected-check-out-box">
+                                                        <div class="right-side-check-out">
+                                                          <div class="custom-control custom-checkbox custom-checkbox-radio-style">
+                                                            <input type="checkbox" class="custom-control-input" id="worker-select-check-01">
+                                                            <label class="custom-control-label" for="worker-select-check-01">&nbsp;</label>
+                                                          </div>
                                                         </div>
                                                       </div>
                                                     </div>
@@ -425,43 +305,46 @@
                                                 </div>
                                               </div>
 
-                                              <div class="comp-check-in-card-box">
-                                                <div class="text-top-check-in-card-row">
+                                              <div class="comp-check-transfer-card-box">
+                                                <div class="text-top-check-out-card-row">
                                                   <div class="row align-center-row mlr-10">
                 
-                                                    <div class="col-lg-4 col-md-12 plr-10">
-                                                      <div class="wk-check-in-box-text wk-check-in-box-label-text">
+                                                    <div class="col-lg-4 col-md-12 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text wk-check-out-box-label-text">
                                                         <div class="label-thumb">
                                                           <label class="status-label valid-label">VALID</label>
                                                         </div>
                                                         <div class="text-div">
-                                                          <h2> <a class="link" href="#">Bradley Malone</a> </h2>
+                                                          <h2> <a class="link" href="#">WORKER NAME</a> </h2>
                                                         </div>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-2 col-md-3 plr-10">
-                                                      <div class="wk-check-in-box-text center-text tab-left-text">
+                                                    <div class="col-lg-2 col-md-3 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text center-text tab-left-text">
                                                         <h4><span class="text">FIN NO.</span></h4>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-3 col-md-4 plr-10">
-                                                      <div class="wk-check-in-box-text center-text">
+                                                    <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text center-text">
                                                         <h4><span class="text">WORK PERMIT NUMBER</span></h4>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-2 col-md-3 plr-10">
-                                                      <div class="wk-check-in-box-text center-text">
-                                                        <h4><span class="text">PASSPORT NUMBER</span></h4>
+                                                    <div class="col-lg-2 col-md-3 col-8 plr-10">
+                                                      <div class="wk-check-out-box-text center-text">
+                                                        <h4><span class="text">ROOM A</span></h4>
                                                       </div>
                                                     </div>
 
-                                                    <div class="col-lg-1 col-md-2 plr-10">
-                                                      <div class="wk-check-in-box-text action-check-in-box">
-                                                        <div class="action-div">
-                                                          <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                                    <div class="col-lg-1 col-md-2 col-4 plr-10">
+                                                      <div class="wk-check-out-box-text selected-check-out-box">
+                                                        <div class="right-side-check-out">
+                                                          <div class="custom-control custom-checkbox custom-checkbox-radio-style">
+                                                            <input type="checkbox" class="custom-control-input" id="worker-select-check-02">
+                                                            <label class="custom-control-label" for="worker-select-check-02">&nbsp;</label>
+                                                          </div>
                                                         </div>
                                                       </div>
                                                     </div>
@@ -471,43 +354,46 @@
                                                 </div>
                                               </div>
 
-                                              <div class="comp-check-in-card-box">
-                                                <div class="text-top-check-in-card-row">
+                                              <div class="comp-check-transfer-card-box">
+                                                <div class="text-top-check-out-card-row">
                                                   <div class="row align-center-row mlr-10">
                 
-                                                    <div class="col-lg-4 col-md-12 plr-10">
-                                                      <div class="wk-check-in-box-text wk-check-in-box-label-text">
+                                                    <div class="col-lg-4 col-md-12 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text wk-check-out-box-label-text">
                                                         <div class="label-thumb">
                                                           <label class="status-label valid-label">VALID</label>
                                                         </div>
                                                         <div class="text-div">
-                                                          <h2> <a class="link" href="#">Janie Todd</a> </h2>
+                                                          <h2> <a class="link" href="#">WORKER NAME</a> </h2>
                                                         </div>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-2 col-md-3 plr-10">
-                                                      <div class="wk-check-in-box-text center-text tab-left-text">
+                                                    <div class="col-lg-2 col-md-3 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text center-text tab-left-text">
                                                         <h4><span class="text">FIN NO.</span></h4>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-3 col-md-4 plr-10">
-                                                      <div class="wk-check-in-box-text center-text">
+                                                    <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text center-text">
                                                         <h4><span class="text">WORK PERMIT NUMBER</span></h4>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-2 col-md-3 plr-10">
-                                                      <div class="wk-check-in-box-text center-text">
-                                                        <h4><span class="text">PASSPORT NUMBER</span></h4>
+                                                    <div class="col-lg-2 col-md-3 col-8 plr-10">
+                                                      <div class="wk-check-out-box-text center-text">
+                                                        <h4><span class="text">ROOM A</span></h4>
                                                       </div>
                                                     </div>
 
-                                                    <div class="col-lg-1 col-md-2 plr-10">
-                                                      <div class="wk-check-in-box-text action-check-in-box">
-                                                        <div class="action-div">
-                                                          <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                                    <div class="col-lg-1 col-md-2 col-4 plr-10">
+                                                      <div class="wk-check-out-box-text selected-check-out-box">
+                                                        <div class="right-side-check-out">
+                                                          <div class="custom-control custom-checkbox custom-checkbox-radio-style">
+                                                            <input type="checkbox" class="custom-control-input" id="worker-select-check-03">
+                                                            <label class="custom-control-label" for="worker-select-check-03">&nbsp;</label>
+                                                          </div>
                                                         </div>
                                                       </div>
                                                     </div>
@@ -517,43 +403,46 @@
                                                 </div>
                                               </div>
 
-                                              <div class="comp-check-in-card-box">
-                                                <div class="text-top-check-in-card-row">
+                                              <div class="comp-check-transfer-card-box">
+                                                <div class="text-top-check-out-card-row">
                                                   <div class="row align-center-row mlr-10">
                 
-                                                    <div class="col-lg-4 col-md-12 plr-10">
-                                                      <div class="wk-check-in-box-text wk-check-in-box-label-text">
+                                                    <div class="col-lg-4 col-md-12 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text wk-check-out-box-label-text">
                                                         <div class="label-thumb">
                                                           <label class="status-label valid-label">VALID</label>
                                                         </div>
                                                         <div class="text-div">
-                                                          <h2> <a class="link" href="#">Marvin Lambert</a> </h2>
+                                                          <h2> <a class="link" href="#">WORKER NAME</a> </h2>
                                                         </div>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-2 col-md-3 plr-10">
-                                                      <div class="wk-check-in-box-text center-text tab-left-text">
+                                                    <div class="col-lg-2 col-md-3 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text center-text tab-left-text">
                                                         <h4><span class="text">FIN NO.</span></h4>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-3 col-md-4 plr-10">
-                                                      <div class="wk-check-in-box-text center-text">
+                                                    <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text center-text">
                                                         <h4><span class="text">WORK PERMIT NUMBER</span></h4>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-2 col-md-3 plr-10">
-                                                      <div class="wk-check-in-box-text center-text">
-                                                        <h4><span class="text">PASSPORT NUMBER</span></h4>
+                                                    <div class="col-lg-2 col-md-3 col-8 plr-10">
+                                                      <div class="wk-check-out-box-text center-text">
+                                                        <h4><span class="text">ROOM A</span></h4>
                                                       </div>
                                                     </div>
 
-                                                    <div class="col-lg-1 col-md-2 plr-10">
-                                                      <div class="wk-check-in-box-text action-check-in-box">
-                                                        <div class="action-div">
-                                                          <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                                    <div class="col-lg-1 col-md-2 col-4 plr-10">
+                                                      <div class="wk-check-out-box-text selected-check-out-box">
+                                                        <div class="right-side-check-out">
+                                                          <div class="custom-control custom-checkbox custom-checkbox-radio-style">
+                                                            <input type="checkbox" class="custom-control-input" id="worker-select-check-04">
+                                                            <label class="custom-control-label" for="worker-select-check-04">&nbsp;</label>
+                                                          </div>
                                                         </div>
                                                       </div>
                                                     </div>
@@ -563,43 +452,46 @@
                                                 </div>
                                               </div>
 
-                                              <div class="comp-check-in-card-box">
-                                                <div class="text-top-check-in-card-row">
+                                              <div class="comp-check-transfer-card-box">
+                                                <div class="text-top-check-out-card-row">
                                                   <div class="row align-center-row mlr-10">
                 
-                                                    <div class="col-lg-4 col-md-12 plr-10">
-                                                      <div class="wk-check-in-box-text wk-check-in-box-label-text">
+                                                    <div class="col-lg-4 col-md-12 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text wk-check-out-box-label-text">
                                                         <div class="label-thumb">
                                                           <label class="status-label valid-label">VALID</label>
                                                         </div>
                                                         <div class="text-div">
-                                                          <h2> <a class="link" href="#">Janie Todd</a> </h2>
+                                                          <h2> <a class="link" href="#">WORKER NAME</a> </h2>
                                                         </div>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-2 col-md-3 plr-10">
-                                                      <div class="wk-check-in-box-text center-text tab-left-text">
+                                                    <div class="col-lg-2 col-md-3 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text center-text tab-left-text">
                                                         <h4><span class="text">FIN NO.</span></h4>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-3 col-md-4 plr-10">
-                                                      <div class="wk-check-in-box-text center-text">
+                                                    <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text center-text">
                                                         <h4><span class="text">WORK PERMIT NUMBER</span></h4>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-2 col-md-3 plr-10">
-                                                      <div class="wk-check-in-box-text center-text">
-                                                        <h4><span class="text">PASSPORT NUMBER</span></h4>
+                                                    <div class="col-lg-2 col-md-3 col-8 plr-10">
+                                                      <div class="wk-check-out-box-text center-text">
+                                                        <h4><span class="text">ROOM A</span></h4>
                                                       </div>
                                                     </div>
 
-                                                    <div class="col-lg-1 col-md-2 plr-10">
-                                                      <div class="wk-check-in-box-text action-check-in-box">
-                                                        <div class="action-div">
-                                                          <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                                    <div class="col-lg-1 col-md-2 col-4 plr-10">
+                                                      <div class="wk-check-out-box-text selected-check-out-box">
+                                                        <div class="right-side-check-out">
+                                                          <div class="custom-control custom-checkbox custom-checkbox-radio-style">
+                                                            <input type="checkbox" class="custom-control-input" id="worker-select-check-05">
+                                                            <label class="custom-control-label" for="worker-select-check-05">&nbsp;</label>
+                                                          </div>
                                                         </div>
                                                       </div>
                                                     </div>
@@ -609,43 +501,46 @@
                                                 </div>
                                               </div>
 
-                                              <div class="comp-check-in-card-box">
-                                                <div class="text-top-check-in-card-row">
+                                              <div class="comp-check-transfer-card-box">
+                                                <div class="text-top-check-out-card-row">
                                                   <div class="row align-center-row mlr-10">
                 
-                                                    <div class="col-lg-4 col-md-12 plr-10">
-                                                      <div class="wk-check-in-box-text wk-check-in-box-label-text">
+                                                    <div class="col-lg-4 col-md-12 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text wk-check-out-box-label-text">
                                                         <div class="label-thumb">
-                                                          <label class="status-label expired-label">EXPIRED</label>
+                                                          <label class="status-label valid-label">VALID</label>
                                                         </div>
                                                         <div class="text-div">
-                                                          <h2> <a class="link" href="#">Marvin Lambert</a> </h2>
+                                                          <h2> <a class="link" href="#">WORKER NAME</a> </h2>
                                                         </div>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-2 col-md-3 plr-10">
-                                                      <div class="wk-check-in-box-text center-text tab-left-text">
+                                                    <div class="col-lg-2 col-md-3 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text center-text tab-left-text">
                                                         <h4><span class="text">FIN NO.</span></h4>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-3 col-md-4 plr-10">
-                                                      <div class="wk-check-in-box-text center-text">
+                                                    <div class="col-lg-3 col-md-4 col-12 plr-10">
+                                                      <div class="wk-check-out-box-text center-text">
                                                         <h4><span class="text">WORK PERMIT NUMBER</span></h4>
                                                       </div>
                                                     </div>
                 
-                                                    <div class="col-lg-2 col-md-3 plr-10">
-                                                      <div class="wk-check-in-box-text center-text">
-                                                        <h4><span class="text">PASSPORT NUMBER</span></h4>
+                                                    <div class="col-lg-2 col-md-3 col-8 plr-10">
+                                                      <div class="wk-check-out-box-text center-text">
+                                                        <h4><span class="text">ROOM A</span></h4>
                                                       </div>
                                                     </div>
 
-                                                    <div class="col-lg-1 col-md-2 plr-10">
-                                                      <div class="wk-check-in-box-text action-check-in-box">
-                                                        <div class="action-div">
-                                                          <a href="#" data-toggle="modal" data-target="#delete-message" class="action-btn edit-action-btn"><i class="bg-custom-icon delete-icon"></i></a>
+                                                    <div class="col-lg-1 col-md-2 col-4 plr-10">
+                                                      <div class="wk-check-out-box-text selected-check-out-box">
+                                                        <div class="right-side-check-out">
+                                                          <div class="custom-control custom-checkbox custom-checkbox-radio-style">
+                                                            <input type="checkbox" class="custom-control-input" id="worker-select-check-06">
+                                                            <label class="custom-control-label" for="worker-select-check-06">&nbsp;</label>
+                                                          </div>
                                                         </div>
                                                       </div>
                                                     </div>
@@ -667,6 +562,9 @@
                                                     <li class="page-item page-left disabled"><a class="page-link" href="#"><i class="las la-angle-left"></i></a></li>
                                                     <li class="page-item"><a class="page-link" href="#">1</a></li>
                                                     <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">5</a></li>
                                                     <li class="page-item page-right"><a class="page-link" href="#"><i class="las la-angle-right"></i></a></li>
                                                   </ul>
                                                 </div>
@@ -674,6 +572,7 @@
                                               
                                             </div>
                                           </div>
+
                                         </div>
 
                                       </div>
@@ -689,17 +588,16 @@
                                       <div class="button-div">
                                         <div class="button-div-row">
                                           <button class="btn btn-general btn-primary-common btn-next mr-15">NEXT</button>
-                                          <button class="btn btn-general btn-back">BACK</button>
                                         </div>
                                       </div>
                                       
                                     </div>
                                   </div>
                                 </div>
-                                
+          
                               </div>
                   
-                              <div id="menu3" class="tab-pane tab-pane-three fade">
+                              <div id="check-out-menu2" class="tab-pane tab-pane-two fade ">
                                 
                                 <div class="panel-card-div">
                                   <div class="panel-card-row">
@@ -717,8 +615,17 @@
                                                 <div class="row mlr-10">
           
                                                   <div class="col-lg-6 col-md-6 plr-10">
+                                                    <div class="form-group form-group-custom form-group-custom-text">
+                                                      <label>Room Number (CURRENT)</label>
+                                                      <div class="input-control">
+                                                        <h3 class="h3-text"> <span>ROOM A</span> </h3>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+          
+                                                  <div class="col-lg-6 col-md-6 plr-10">
                                                     <div class="form-group form-group-custom">
-                                                      <label>No. of PU Board</label>
+                                                      <label>Room Number (NEW)</label>
                                                       <div class="input-control">
                                                         <input type="text" class="form-control" placeholder="-" />
                                                       </div>
@@ -727,7 +634,7 @@
           
                                                   <div class="col-lg-6 col-md-6 plr-10">
                                                     <div class="form-group form-group-custom">
-                                                      <label>No. of Pillow</label>
+                                                      <label>Operation Team Remarks</label>
                                                       <div class="input-control">
                                                         <input type="text" class="form-control" placeholder="-" />
                                                       </div>
@@ -736,16 +643,7 @@
           
                                                   <div class="col-lg-6 col-md-6 plr-10">
                                                     <div class="form-group form-group-custom">
-                                                      <label>No. of Mattress</label>
-                                                      <div class="input-control">
-                                                        <input type="text" class="form-control" placeholder="-" />
-                                                      </div>
-                                                    </div>
-                                                  </div>
-          
-                                                  <div class="col-lg-6 col-md-6 plr-10">
-                                                    <div class="form-group form-group-custom">
-                                                      <label>No. of Bamboo Mat</label>
+                                                      <label>IT Executive Remarks</label>
                                                       <div class="input-control">
                                                         <input type="text" class="form-control" placeholder="-" />
                                                       </div>
@@ -756,25 +654,6 @@
 
                                               </div>
 
-                                              <div class="col-lg-4 col-md-4 plr-10 right-order-div">
-
-                                                <div class="row mlr-10">
-                                                  <div class="col-lg-12 col-md-12">
-
-                                                    <div class="border-text-note-box">
-                                                      <div class="border-text-note-inner">
-                                                        <p>Weekdays 9am-5.30pm; Saturday 9am to 1pm </p>
-                                                        <p><span class="block">Public Holidays & Sun : No Check-in. </span>
-                                                          <span class="block">(Kindly adhere to the timing strictly)</span>
-                                                          <span class="block">Administration charge will applicable S$20.00 per pax/hr for check-in beyond the above mentioned timing </span>
-                                                        </p> 
-                                                      </div>
-                                                    </div>
-
-                                                  </div>
-                                                </div>
-
-                                              </div>
 
                                               <div class="col-lg-12 col-md-12 plr-10 order-number-03">
 
@@ -850,7 +729,7 @@
                                     </div>
                                   </div>
                                 </div>
-          
+                                
                               </div>
                       
                             </div>
