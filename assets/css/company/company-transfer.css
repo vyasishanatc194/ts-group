@@ -197,6 +197,17 @@
   background: #c70000;
 }
 
+.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-text .right-side-check-out {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,17 +237,6 @@
 
 .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-label-text .text-div h2 a {
   color: inherit;
-}
-
-.comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .wk-check-out-box-text .right-side-check-out {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .comp-check-transfer-card .comp-check-transfer-card-box .text-top-check-out-card-row .center-text {

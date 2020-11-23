@@ -281,7 +281,6 @@
   display: flex;
 }
 
-/* End of collapse-menu */
 @media (max-width: 767px) {
   .left-side-nav {
     width: 100%;

@@ -179,6 +179,12 @@
             background: #c70000;
           }
         }
+
+        .right-side-check-out {
+          display: flex;
+          justify-content: flex-end;
+          flex-wrap: wrap;
+        }
       }
 
       .wk-check-out-box-label-text {
@@ -202,14 +208,6 @@
               color: inherit;
             }
           }
-        }
-      }
-
-      .wk-check-out-box-text {
-        .right-side-check-out {
-          display: flex;
-          justify-content: flex-end;
-          flex-wrap: wrap;
         }
       }
 

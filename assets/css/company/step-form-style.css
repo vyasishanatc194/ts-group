@@ -31,9 +31,9 @@
   text-align: center;
 }
 
-.step-forms-section .step-heading P {
+.step-forms-section .step-heading p {
   padding: 0;
-  margin: 0 0 0px 0;
+  margin: 0 0 0 0;
   font-size: 24px;
   color: rgba(27, 36, 44, 0.4);
   text-align: center;
@@ -177,9 +177,8 @@
 
 .step-forms-section .step-forms-nav-tab ul li.done::before {
   content: "";
-  display: block;
   position: absolute;
-  height: 0px;
+  height: 0;
   width: 100%;
   left: 50.5%;
   top: 14px;
