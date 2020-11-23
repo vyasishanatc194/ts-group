@@ -512,7 +512,7 @@
   .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
     background-color: #4d7cfe;
   }
-  
+
   /* End of checkbox */
 }
 
@@ -827,7 +827,7 @@
         letter-spacing: 0;
         margin: 0 0 0 0;
         box-shadow: none;
-        padding: 5px 0px 5px 0;
+        padding: 5px 0 5px 0;
         min-height: 36px;
         width: 100%;
         transition: all 0.8s;
@@ -1933,9 +1933,6 @@
   }
 }
 
-@media (min-width: 1025px) and (max-width: 1150px) {
-}
-
 @media (max-width: 767px) {
   body {
     overflow-x: hidden;
@@ -2034,7 +2031,7 @@
     order: 2;
 
     .heading-div {
-      padding: 15px 0 15px 0px;
+      padding: 15px 0 15px 0;
 
       h1 {
         font-size: 18px;
@@ -2171,7 +2168,7 @@
   .pagination-root {
     .pagination-row {
       justify-content: center;
-      
+
       .page-item {
         .page-link {
           height: 30px;
@@ -2206,7 +2203,7 @@
     .search-row {
       min-width: 100%;
     }
-  }  
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

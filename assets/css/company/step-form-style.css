@@ -4,7 +4,7 @@
 
 .step-forms-section .step-heading {
   padding: 20px 0 20px 0;
-  margin: 0 0 0px 0;
+  margin: 0 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,7 +62,7 @@
 .step-forms-section .step-forms-nav-tab ul::after {
   content: "";
   position: absolute;
-  height: 0px;
+  height: 0;
   width: 66.6%;
   left: 0;
   top: 10px;
@@ -175,7 +175,7 @@
   position: relative;
 }
 
-.step-forms-section .step-forms-nav-tab ul li.done:before {
+.step-forms-section .step-forms-nav-tab ul li.done::before {
   content: "";
   display: block;
   position: absolute;
@@ -215,7 +215,7 @@
   border: 1px solid #62c2ce;
 }
 
-.step-forms-section .step-forms-nav-tab ul li:last-child:before {
+.step-forms-section .step-forms-nav-tab ul li:last-child::before {
   display: none;
 }
 

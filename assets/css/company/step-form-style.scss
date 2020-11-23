@@ -3,7 +3,7 @@
 
   .step-heading {
     padding: 20px 0 20px 0;
-    margin: 0 0 0px 0;
+    margin: 0 0 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +48,7 @@
       &::after {
         content: "";
         position: absolute;
-        height: 0px;
+        height: 0;
         width: 66.6%;
         left: 0;
         top: 10px;
@@ -139,7 +139,7 @@
       li.done {
         position: relative;
 
-        &:before {
+        &::before {
           content: "";
           display: block;
           position: absolute;
@@ -177,7 +177,7 @@
       }
 
       li:last-child {
-        &:before {
+        &::before {
           display: none;
         }
       }
@@ -222,7 +222,7 @@
 @media (max-width: 767px) {
   .step-forms-section {
     padding: 0;
-    
+
     .step-forms-nav-tab {
       ul {
         max-width: 100%;
@@ -285,7 +285,4 @@
       }
     }
   }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
 }

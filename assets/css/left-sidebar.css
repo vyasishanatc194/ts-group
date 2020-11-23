@@ -88,9 +88,6 @@
   position: relative;
   -webkit-animation: fadeIn 1s;
           animation: fadeIn 1s;
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
 }
 
 .left-side-nav .left-side-menu .left-side-inner::-webkit-scrollbar {

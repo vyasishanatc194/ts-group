@@ -422,19 +422,11 @@ hr.hr-custom-01 {
 }
 
 .history-check-io-card .history-card-box .text-top-history-card-row .history-status-box-text .status-label-text.rejected-label-text {
-  color: #ff0000;
+  color: #f00;
 }
 
 .history-check-io-card .history-card-box .text-top-history-card-row .history-status-box-text .status-label-text.rejected-label-text .round-dot {
-  background: #ff0000;
-}
-
-.history-check-io-card .history-card-box .text-top-history-card-row .history-status-box-text .status-label-text.rejected-label-text {
-  color: #ff0000;
-}
-
-.history-check-io-card .history-card-box .text-top-history-card-row .history-status-box-text .status-label-text.rejected-label-text .round-dot {
-  background: #ff0000;
+  background: #f00;
 }
 
 .history-check-io-card .history-card-box .text-top-history-card-row .center-text {
