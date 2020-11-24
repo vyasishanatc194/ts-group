@@ -315,6 +315,12 @@
     height: 14px;
     background-size: 14px;
   }
+  .form-custom-div .form-group-custom .flatpickr-wrapper {
+    width: 100%;
+  }
+  .form-custom-div .form-group-custom .form-control.flatpickr {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

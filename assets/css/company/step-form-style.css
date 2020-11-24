@@ -190,7 +190,7 @@
   z-index: 6;
 }
 
-.step-forms-section .step-forms-nav-tab ul li.done a .round-number:after {
+.step-forms-section .step-forms-nav-tab ul li.done a .round-number::after {
   background-color: #fff;
   border-radius: 100%;
   font-size: 20px;

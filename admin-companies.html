@@ -923,11 +923,15 @@
 
     /* date flat picker */
     flatpickr("#firstRangeInput1", {
-      "plugins": [new rangePlugin({ input: "#secondRangeInput1"})]
+      "plugins": [new rangePlugin({ input: "#secondRangeInput1"})],
+      disableMobile: true,
+      static: window.innerWidth <= 375,
     });
 
     flatpickr("#firstRangeInput2", {
-      "plugins": [new rangePlugin({ input: "#secondRangeInput2"})]
+      "plugins": [new rangePlugin({ input: "#secondRangeInput2"})],
+      disableMobile: true,
+      static: window.innerWidth <= 375,
     });
     // $("#edit-company-account-modal").modal("show");
   });

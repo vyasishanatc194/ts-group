@@ -305,6 +305,18 @@
         background-size: 14px;
       }
     }
+
+    .form-group-custom {
+      .flatpickr-wrapper {
+        width: 100%;
+      }
+
+      .form-control {
+        &.flatpickr {
+          width: 100%;
+        }
+      }
+    }    
   }
 }
 
